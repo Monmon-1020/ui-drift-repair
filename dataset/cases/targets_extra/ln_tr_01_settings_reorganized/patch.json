@@ -1,0 +1,20 @@
+{
+  "patch_type": "TARGET_REPLACEMENT",
+  "target_step_id": "s1",
+  "changes": {
+    "replace_anchor": {
+      "role": "button",
+      "name": "Settings",
+      "signature": {
+        "container_kind": "sidebar",
+        "section_path": [
+          "Workspace navigation"
+        ],
+        "context_text": [
+          "Open workspace settings"
+        ]
+      }
+    }
+  },
+  "rationale": "Linear redesigned their settings pages from the ground up with a new hierarchical structure. The old flat settings structure was replaced with organized categories: Account (personal settings), Features (workspace-level features), Administration (workspace settings for admins), and Your teams (team membership). Users previously accessed 'Features' directly from settings; now they must navigate through the new hierarchy."
+}

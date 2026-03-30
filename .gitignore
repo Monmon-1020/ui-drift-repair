@@ -1,0 +1,43 @@
+# Environment variables
+.env
+
+# Dependencies
+node_modules/
+
+# Build outputs
+dist/
+build/
+
+# Logs
+*.log
+npm-debug.log*
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Browser profile (Playwright persistent context)
+.browser-profile/
+
+# Results (regeneratable)
+results.jsonl
+
+# Reference files
+day5_reference.mjs
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Claude Code
+.claude/
+professor_qa.md
+mechanism_design.md
+paper_sources.md
+type_policy.yaml
+workflow.md
+jest.config.js
+*.pdf
+package-lock.json

@@ -1,0 +1,10 @@
+{
+  "patch_type": "POSTCONDITION_UPDATE",
+  "target_step_id": "s1",
+  "changes": {
+    "update_postcondition": {
+      "url_pattern": "gitlab.com/[namespace]/[project]"
+    }
+  },
+  "rationale": "GitLab reorganized their sidebar navigation in March 2023, moving all CI/CD menu items into a new 'Build' category and renaming some items for clarity: 'Editor' became 'Pipeline editor' and 'Schedules' became 'Pipeline schedules'. The actual destinations and functionality remained identical - clicking 'Pipelines' still goes to the pipelines page, 'Pipeline editor' still opens the editor - but old tutorials that instructed users to look for items under the 'CI/CD' section or click on 'Editor' (not 'Pipeline editor') would fail verification because the sidebar category label and menu item names changed, even though the navigation targets are the same."
+}

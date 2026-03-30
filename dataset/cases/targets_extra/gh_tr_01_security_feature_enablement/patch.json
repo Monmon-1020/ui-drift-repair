@@ -1,0 +1,22 @@
+{
+  "patch_type": "TARGET_REPLACEMENT",
+  "target_step_id": "s1",
+  "changes": {
+    "replace_anchor": {
+      "role": "button",
+      "name": "Enable all",
+      "signature": {
+        "container_kind": "main",
+        "section_path": [
+          "Security coverage",
+          "Feature enablement"
+        ],
+        "context_text": [
+          "Enable security features for repositories",
+          "Organization-level security coverage"
+        ]
+      }
+    }
+  },
+  "rationale": "The 'Enable all' button in the organization-level security coverage page was removed on October 15, 2024. Users must now click 'Apply configuration' in the new Code Security Configurations interface to enable security features across repositories."
+}

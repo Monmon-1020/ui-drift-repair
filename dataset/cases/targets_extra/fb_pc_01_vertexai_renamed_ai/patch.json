@@ -1,0 +1,12 @@
+{
+  "patch_type": "POSTCONDITION_UPDATE",
+  "target_step_id": "s1",
+  "changes": {
+    "update_postcondition": {
+      "must_have_heading": [
+        "Firebase AI Logic"
+      ]
+    }
+  },
+  "rationale": "Firebase renamed 'Vertex AI in Firebase' to 'Firebase AI Logic' in May 2025, and updated SDK imports from 'firebase/vertexai' to 'firebase/ai', methods from 'getVertexAI()' to 'getAI()', and errors from 'VertexAIError' to 'AIError'. The navigation to access AI features in Firebase Console remained identical (same sidebar menu, same clicks), but all page headings, documentation references, and SDK terminology changed. Old tutorials checking for 'Vertex AI in Firebase' headings or showing 'firebase/vertexai' import paths would fail verification even though the navigation path and underlying functionality remained the same."
+}

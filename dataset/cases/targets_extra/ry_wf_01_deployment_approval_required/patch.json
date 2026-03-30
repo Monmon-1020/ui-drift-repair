@@ -1,0 +1,65 @@
+{
+  "patch_type": "INSERT_STEP",
+  "target_step_id": "s2",
+  "changes": {
+    "insert_after": "s2",
+    "new_steps": [
+      {
+        "step_id": "s3",
+        "action": {
+          "type": "click",
+          "target": "Approve Deployment"
+        },
+        "anchor": {
+          "role": "button",
+          "name": "Approve",
+          "signature": {
+            "container_kind": "main",
+            "section_path": [
+              "Deployments",
+              "Pending Approval"
+            ],
+            "context_text": [
+              "Review deployment",
+              "Changes from external user"
+            ]
+          }
+        },
+        "post": {
+          "must_have_text": [
+            "Deployment approved",
+            "Building"
+          ]
+        }
+      },
+      {
+        "step_id": "s4",
+        "action": {
+          "type": "wait"
+        },
+        "anchor": {
+          "role": "status",
+          "name": "Deployment Status",
+          "signature": {
+            "container_kind": "main",
+            "section_path": [
+              "Deployments"
+            ],
+            "context_text": [
+              "Building",
+              "Deploying",
+              "Active"
+            ]
+          }
+        },
+        "post": {
+          "must_have_text": [
+            "Deployment successful",
+            "Active"
+          ]
+        }
+      }
+    ]
+  },
+  "rationale": "Railway added a deployment approval step for security when deployments come from external contributors or when GitHub accounts are not properly linked. Previously, pushing code would trigger automatic deployment. The new workflow adds an approval step (s3) where a team member must manually approve the deployment before it proceeds, preventing unauthorized code from being deployed automatically."
+}

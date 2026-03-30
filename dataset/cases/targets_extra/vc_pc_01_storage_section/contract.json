@@ -1,0 +1,28 @@
+{
+  "tutorial_id": "vc_pc_01_storage_section",
+  "doc_url": "https://vercel.com/docs/storage",
+  "start_url": "https://vercel.com/dashboard",
+  "steps": [
+    {
+      "step_id": "s1",
+      "action": { "type": "click" },
+      "anchor": {
+        "role": "link",
+        "name": "Storage",
+        "signature": { "container_kind": "sidebar" }
+      },
+      "post": {
+        "must_have_heading": ["Storage"],
+        "url_pattern": "/stores",
+        "description": "URL changed from /storage to /stores in the new dashboard"
+      }
+    }
+  ],
+  "meta": {
+    "source": "https://vercel.com/changelog/new-dashboard-navigation-available",
+    "drift_type": "postcondition_update",
+    "patch_type": "POSTCONDITION_UPDATE",
+    "change_date": "2026-01-15",
+    "rationale": "Vercel dashboard redesign changed the Storage page URL pattern from /storage to /stores while keeping the same sidebar link name."
+  }
+}

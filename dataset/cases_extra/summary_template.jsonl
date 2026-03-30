@@ -1,0 +1,1 @@
+{"case_id":"source_slug_case_name","source":"Supabase","doc_url":"https://example.com/docs/...","drift_type":"feature_update|workflow_change|target_replacement|element_removed|selector_change","patch_type":"REPLACE_TARGET|UPDATE_POSTCONDITION|INSERT_STEP|UPDATE_TARGET_SIGNATURE","commit":"sha-or-null"}

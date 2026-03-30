@@ -1,0 +1,103 @@
+{
+  "tutorial_id": "fb_pc_01_vertexai_renamed_ai",
+  "doc_url": "https://firebase.google.com/docs/ai-logic/migrate-to-latest-sdk",
+  "steps": [
+    {
+      "step_id": "s1",
+      "action": {
+        "type": "navigate"
+      },
+      "anchor": {
+        "role": "link",
+        "name": "Firebase Console",
+        "signature": {
+          "container_kind": "main",
+          "section_path": [
+            "Getting Started"
+          ],
+          "context_text": [
+            "Access Firebase Console",
+            "Set up Vertex AI"
+          ]
+        }
+      },
+      "post": {
+        "url_pattern": "console.firebase.google.com"
+      }
+    },
+    {
+      "step_id": "s2",
+      "action": {
+        "type": "click"
+      },
+      "anchor": {
+        "role": "link",
+        "name": "Build with Gemini",
+        "signature": {
+          "container_kind": "sidebar",
+          "section_path": [
+            "Project",
+            "Build"
+          ],
+          "context_text": [
+            "AI features",
+            "Generative AI"
+          ]
+        }
+      },
+      "post": {
+        "must_have_heading": [
+          "Vertex AI in Firebase"
+        ],
+        "description": "Old tutorial expected to see 'Vertex AI in Firebase' heading before the May 2025 rename"
+      }
+    },
+    {
+      "step_id": "s3",
+      "action": {
+        "type": "observe"
+      },
+      "anchor": {
+        "role": "region",
+        "name": "Documentation link",
+        "signature": {
+          "container_kind": "main",
+          "section_path": [
+            "Getting Started",
+            "Documentation"
+          ],
+          "context_text": [
+            "View documentation",
+            "SDK setup"
+          ]
+        }
+      },
+      "post": {
+        "must_have_text": [
+          "firebase/vertexai",
+          "getVertexAI()"
+        ],
+        "description": "Old tutorial showed import path as 'firebase/vertexai' and method 'getVertexAI()'"
+      }
+    }
+  ],
+  "meta": {
+    "source": "https://firebase.google.com/docs/ai-logic/migrate-to-latest-sdk",
+    "drift_type": "postcondition_update",
+    "patch_type": "POSTCONDITION_UPDATE",
+    "commit": null,
+    "change_date": "2025-05-01",
+    "rationale": "Firebase renamed 'Vertex AI in Firebase' to 'Firebase AI Logic' in May 2025, and updated SDK imports from 'firebase/vertexai' to 'firebase/ai', methods from 'getVertexAI()' to 'getAI()', and errors from 'VertexAIError' to 'AIError'. The navigation to access AI features in Firebase Console remained identical (same sidebar menu, same clicks), but all page headings, documentation references, and SDK terminology changed. Old tutorials checking for 'Vertex AI in Firebase' headings or showing 'firebase/vertexai' import paths would fail verification even though the navigation path and underlying functionality remained the same.",
+    "postcondition_changes": {
+      "old_heading": "Vertex AI in Firebase",
+      "new_heading": "Firebase AI Logic",
+      "old_import": "firebase/vertexai",
+      "new_import": "firebase/ai",
+      "old_method": "getVertexAI()",
+      "new_method": "getAI()",
+      "navigation_unchanged": "Same sidebar navigation path to AI features",
+      "note": "Breaking change - old imports removed entirely in SDK v12.0.0 (July 2025)"
+    }
+  },
+  "start_url": "https://console.firebase.google.com/"
+}

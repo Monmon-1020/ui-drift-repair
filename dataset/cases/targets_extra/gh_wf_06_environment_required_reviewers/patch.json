@@ -1,0 +1,64 @@
+{
+  "patch_type": "INSERT_STEP",
+  "target_step_id": "s7",
+  "changes": {
+    "insert_after": "s7",
+    "new_steps": [
+      {
+        "step_id": "s8",
+        "action": {
+          "type": "click",
+          "target": "Review deployments"
+        },
+        "anchor": {
+          "role": "button",
+          "name": "Review deployments",
+          "signature": {
+            "container_kind": "main",
+            "section_path": [
+              "Actions",
+              "Workflow run"
+            ],
+            "context_text": [
+              "Waiting for review",
+              "production"
+            ]
+          }
+        },
+        "post": {
+          "must_have_heading": [
+            "Review pending deployments"
+          ]
+        }
+      },
+      {
+        "step_id": "s9",
+        "action": {
+          "type": "click",
+          "target": "Approve and deploy"
+        },
+        "anchor": {
+          "role": "button",
+          "name": "Approve and deploy",
+          "signature": {
+            "container_kind": "modal",
+            "section_path": [
+              "Review deployments"
+            ],
+            "context_text": [
+              "Review deployment to production",
+              "Leave a comment"
+            ]
+          }
+        },
+        "post": {
+          "must_have_text": [
+            "Deployment approved",
+            "Running"
+          ]
+        }
+      }
+    ]
+  },
+  "rationale": "GitHub Actions introduced environment protection rules with required reviewers. Previously, workflows would deploy directly to environments without manual approval. The new workflow adds multiple setup steps (s4-s6) to configure required reviewers and deployment approval steps (s8-s9) where designated reviewers must approve deployments before they proceed. This ensures critical deployments to production are reviewed by authorized team members."
+}

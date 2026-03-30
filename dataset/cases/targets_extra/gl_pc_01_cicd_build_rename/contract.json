@@ -1,0 +1,82 @@
+{
+  "tutorial_id": "gl_pc_01_cicd_build_rename",
+  "doc_url": "https://docs.gitlab.com/ci/pipelines/",
+  "steps": [
+    {
+      "step_id": "s1",
+      "action": {
+        "type": "navigate"
+      },
+      "anchor": {
+        "role": "link",
+        "name": "Project",
+        "signature": {
+          "container_kind": "main",
+          "section_path": ["GitLab", "Projects"],
+          "context_text": ["Access your project"]
+        }
+      },
+      "post": {
+        "url_pattern": "gitlab.com/[namespace]/[project]"
+      }
+    },
+    {
+      "step_id": "s2",
+      "action": {
+        "type": "click"
+      },
+      "anchor": {
+        "role": "link",
+        "name": "Pipelines",
+        "signature": {
+          "container_kind": "sidebar",
+          "section_path": ["Project", "CI/CD"],
+          "context_text": ["CI/CD section", "Build automation"]
+        }
+      },
+      "post": {
+        "must_have_heading": ["Pipelines"],
+        "url_pattern": "gitlab.com/[namespace]/[project]/pipelines",
+        "description": "Old tutorial expected Pipelines under 'CI/CD' section in sidebar"
+      }
+    },
+    {
+      "step_id": "s3",
+      "action": {
+        "type": "click"
+      },
+      "anchor": {
+        "role": "link",
+        "name": "Editor",
+        "signature": {
+          "container_kind": "sidebar",
+          "section_path": ["Project", "CI/CD"],
+          "context_text": ["Pipeline configuration", "Edit pipeline"]
+        }
+      },
+      "post": {
+        "must_have_heading": ["Editor"],
+        "url_pattern": "gitlab.com/[namespace]/[project]/-/ci/editor",
+        "description": "Old tutorial expected 'Editor' link under 'CI/CD' section"
+      }
+    }
+  ],
+  "meta": {
+    "source": "https://gitlab.com/gitlab-org/gitlab/-/merge_requests/116114",
+    "drift_type": "postcondition_update",
+    "patch_type": "POSTCONDITION_UPDATE",
+    "commit": null,
+    "change_date": "2023-03-01",
+    "rationale": "GitLab reorganized their sidebar navigation in March 2023, moving all CI/CD menu items into a new 'Build' category and renaming some items for clarity: 'Editor' became 'Pipeline editor' and 'Schedules' became 'Pipeline schedules'. The actual destinations and functionality remained identical - clicking 'Pipelines' still goes to the pipelines page, 'Pipeline editor' still opens the editor - but old tutorials that instructed users to look for items under the 'CI/CD' section or click on 'Editor' (not 'Pipeline editor') would fail verification because the sidebar category label and menu item names changed, even though the navigation targets are the same.",
+    "postcondition_changes": {
+      "old_category": "CI/CD",
+      "new_category": "Build",
+      "old_menu_items": {
+        "Editor": "Pipeline editor",
+        "Schedules": "Pipeline schedules"
+      },
+      "navigation_unchanged": "Same sidebar location, same destinations, only category and item labels changed",
+      "note": "Feature Flags, Environments, and Releases also moved from Operate to Build category"
+    }
+  }
+}

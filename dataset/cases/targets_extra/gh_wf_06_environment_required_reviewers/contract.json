@@ -1,0 +1,256 @@
+{
+  "tutorial_id": "gh_wf_06_environment_required_reviewers",
+  "doc_url": "https://docs.github.com/en/actions/deployment/targeting-different-environments/using-environments-for-deployment",
+  "steps": [
+    {
+      "step_id": "s1",
+      "action": {
+        "type": "click",
+        "target": "Settings"
+      },
+      "anchor": {
+        "role": "link",
+        "name": "Settings",
+        "signature": {
+          "container_kind": "main",
+          "section_path": [
+            "Repository Navigation"
+          ],
+          "context_text": [
+            "Code",
+            "Issues",
+            "Pull requests"
+          ]
+        }
+      },
+      "post": {
+        "must_have_heading": [
+          "Settings"
+        ]
+      }
+    },
+    {
+      "step_id": "s2",
+      "action": {
+        "type": "click",
+        "target": "Environments"
+      },
+      "anchor": {
+        "role": "link",
+        "name": "Environments",
+        "signature": {
+          "container_kind": "sidebar",
+          "section_path": [
+            "Settings",
+            "Code and automation"
+          ],
+          "context_text": [
+            "Secrets and variables",
+            "Actions"
+          ]
+        }
+      },
+      "post": {
+        "must_have_heading": [
+          "Environments"
+        ]
+      }
+    },
+    {
+      "step_id": "s3",
+      "action": {
+        "type": "click",
+        "target": "Configure environment"
+      },
+      "anchor": {
+        "role": "button",
+        "name": "New environment",
+        "signature": {
+          "container_kind": "main",
+          "section_path": [
+            "Environments",
+            "production"
+          ],
+          "context_text": [
+            "Environment name",
+            "Deployment branches"
+          ]
+        }
+      },
+      "post": {
+        "must_have_heading": [
+          "Environment protection rules"
+        ]
+      }
+    },
+    {
+      "step_id": "s4",
+      "action": {
+        "type": "checkbox",
+        "checked": true
+      },
+      "anchor": {
+        "role": "checkbox",
+        "name": "Required reviewers",
+        "signature": {
+          "container_kind": "main",
+          "section_path": [
+            "Protection rules"
+          ],
+          "context_text": [
+            "Deployment protection rules",
+            "Specify people or teams"
+          ]
+        }
+      },
+      "post": {
+        "must_have_text": [
+          "Add up to 6 reviewers"
+        ]
+      }
+    },
+    {
+      "step_id": "s5",
+      "action": {
+        "type": "input_text",
+        "value": "reviewer_username"
+      },
+      "anchor": {
+        "role": "textbox",
+        "name": "Search for people or teams",
+        "signature": {
+          "container_kind": "main",
+          "section_path": [
+            "Required reviewers"
+          ],
+          "context_text": [
+            "Type to search"
+          ]
+        }
+      },
+      "post": {
+        "must_have_text": [
+          "reviewer selected"
+        ]
+      }
+    },
+    {
+      "step_id": "s6",
+      "action": {
+        "type": "click",
+        "target": "Save protection rules"
+      },
+      "anchor": {
+        "role": "button",
+        "name": "Save protection rules",
+        "signature": {
+          "container_kind": "main",
+          "section_path": [
+            "Environment protection rules"
+          ],
+          "context_text": [
+            "Protection rules configured"
+          ]
+        }
+      },
+      "post": {
+        "must_have_text": [
+          "Protection rules saved"
+        ]
+      }
+    },
+    {
+      "step_id": "s7",
+      "action": {
+        "type": "git_push"
+      },
+      "anchor": {
+        "role": "command",
+        "name": "git push",
+        "signature": {
+          "container_kind": "terminal",
+          "section_path": [
+            "Git"
+          ],
+          "context_text": [
+            "Trigger workflow deployment"
+          ]
+        }
+      },
+      "post": {
+        "must_have_text": [
+          "Workflow run",
+          "deployment pending"
+        ]
+      }
+    },
+    {
+      "step_id": "s8",
+      "action": {
+        "type": "click",
+        "target": "Review deployments"
+      },
+      "anchor": {
+        "role": "button",
+        "name": "Review deployments",
+        "signature": {
+          "container_kind": "main",
+          "section_path": [
+            "Actions",
+            "Workflow run"
+          ],
+          "context_text": [
+            "Waiting for review",
+            "production"
+          ]
+        }
+      },
+      "post": {
+        "must_have_heading": [
+          "Review pending deployments"
+        ]
+      }
+    },
+    {
+      "step_id": "s9",
+      "action": {
+        "type": "click",
+        "target": "Approve and deploy"
+      },
+      "anchor": {
+        "role": "button",
+        "name": "Approve and deploy",
+        "signature": {
+          "container_kind": "modal",
+          "section_path": [
+            "Review deployments"
+          ],
+          "context_text": [
+            "Review deployment to production",
+            "Leave a comment"
+          ]
+        }
+      },
+      "post": {
+        "must_have_text": [
+          "Deployment approved",
+          "Running"
+        ]
+      }
+    }
+  ],
+  "meta": {
+    "source": "https://github.blog/changelog/2020-12-15-github-actions-environments-environment-protection-rules-and-environment-secrets-beta/",
+    "drift_type": "step_insertion",
+    "patch_type": "INSERT_STEP",
+    "commit": null,
+    "change_date": "2020-12-15",
+    "rationale": "GitHub Actions introduced environment protection rules with required reviewers. Previously, workflows would deploy directly to environments without manual approval. The new workflow adds multiple setup steps (s4-s6) to configure required reviewers and deployment approval steps (s8-s9) where designated reviewers must approve deployments before they proceed. This ensures critical deployments to production are reviewed by authorized team members.",
+    "insertion_details": {
+      "inserted_after_step": "s7",
+      "num_steps_added": 2,
+      "reason": "Manual approval required from designated reviewers before deployment proceeds"
+    }
+  },
+  "start_url": "https://github.com/Monmon-1020/Agent"
+}

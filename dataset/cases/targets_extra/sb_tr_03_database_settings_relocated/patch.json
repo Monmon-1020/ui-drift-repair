@@ -1,0 +1,20 @@
+{
+  "patch_type": "TARGET_REPLACEMENT",
+  "target_step_id": "s1",
+  "changes": {
+    "replace_anchor": {
+      "role": "link",
+      "name": "Database",
+      "signature": {
+        "container_kind": "sidebar",
+        "section_path": [
+          "Navigation"
+        ],
+        "context_text": [
+          "Project navigation sidebar"
+        ]
+      }
+    }
+  },
+  "rationale": "Supabase reorganized dashboard navigation in August 2025. The old 'Project Settings \u2192 Database' link was removed. Users must now click 'Database' in the main sidebar, then 'Configuration' to access database settings. This is a target_replacement because the elements clicked changed, not just the postcondition."
+}

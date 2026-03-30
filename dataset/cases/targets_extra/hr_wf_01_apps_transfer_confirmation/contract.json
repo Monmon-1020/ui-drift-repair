@@ -1,0 +1,57 @@
+{
+  "tutorial_id": "hr_wf_01_apps_transfer_confirmation",
+  "doc_url": "https://devcenter.heroku.com/articles/heroku-cli-commands#heroku-apps-transfer",
+  "steps": [
+    {
+      "step_id": "s1",
+      "action": {
+        "type": "cli_command",
+        "command": "heroku apps:transfer -a APP_NAME RECIPIENT_EMAIL"
+      },
+      "anchor": {
+        "role": "command",
+        "name": "heroku apps:transfer",
+        "signature": {
+          "container_kind": "terminal",
+          "section_path": ["Heroku CLI"],
+          "context_text": ["Transfer app ownership"]
+        }
+      },
+      "post": {
+        "must_have_text": ["All collaborators will be removed from this app"]
+      }
+    },
+    {
+      "step_id": "s2",
+      "action": {
+        "type": "input_text",
+        "value": "APP_NAME"
+      },
+      "anchor": {
+        "role": "prompt",
+        "name": "Type app name to confirm",
+        "signature": {
+          "container_kind": "terminal",
+          "section_path": ["Confirmation Prompt"],
+          "context_text": ["To proceed, type", "or re-run this command with --confirm"]
+        }
+      },
+      "post": {
+        "must_have_text": ["Transferring", "done"]
+      }
+    }
+  ],
+  "meta": {
+    "source": "https://devcenter.heroku.com/changelog-items/936",
+    "drift_type": "step_insertion",
+    "patch_type": "INSERT_STEP",
+    "commit": null,
+    "change_date": "2016-07-26",
+    "rationale": "Added confirmation requirement when transferring apps from Teams/Orgs to Personal Apps because the transferrer may lose access to the app post-transfer. The old workflow allowed direct transfer without confirmation, but the new workflow requires typing the app name to prevent accidental transfers that could result in loss of access.",
+    "insertion_details": {
+      "inserted_after_step": "s1",
+      "num_steps_added": 1,
+      "reason": "Security confirmation to prevent accidental transfers that result in loss of access"
+    }
+  }
+}

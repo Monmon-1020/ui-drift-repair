@@ -1,0 +1,34 @@
+{
+  "tutorial_id": "gh_tr_05_copilot_settings_moved",
+  "doc_url": "https://docs.github.com/en/copilot/managing-copilot/managing-copilot-as-an-individual-subscriber/managing-copilot-policies-as-an-individual-subscriber",
+  "start_url": "https://github.com/settings/copilot",
+  "steps": [
+    {
+      "step_id": "s1",
+      "action": { "type": "click" },
+      "anchor": {
+        "role": "link",
+        "name": "Copilot",
+        "signature": { "container_kind": "sidebar", "section_path": ["User settings"] }
+      },
+      "post": { "must_have_heading": ["Copilot"] }
+    },
+    {
+      "step_id": "s2",
+      "action": { "type": "click" },
+      "anchor": {
+        "role": "link",
+        "name": "Suggestions matching public code",
+        "signature": { "container_kind": "main" }
+      },
+      "post": {}
+    }
+  ],
+  "meta": {
+    "source": "https://github.blog/changelog/2024-10-29-github-copilot-code-referencing-now-available-in-copilot-individual/",
+    "drift_type": "target_replacement",
+    "patch_type": "REPLACE_TARGET",
+    "change_date": "2024-10-29",
+    "rationale": "GitHub reorganized Copilot settings. 'Suggestions matching public code' was renamed to 'Code referencing' and moved to a different section of the Copilot settings page."
+  }
+}

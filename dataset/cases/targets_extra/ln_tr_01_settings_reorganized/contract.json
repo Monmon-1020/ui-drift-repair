@@ -1,0 +1,98 @@
+{
+  "tutorial_id": "ln_tr_01_settings_reorganized",
+  "doc_url": "https://linear.app/settings",
+  "steps": [
+    {
+      "step_id": "s1",
+      "action": {
+        "type": "click"
+      },
+      "anchor": {
+        "role": "button",
+        "name": "Settings",
+        "signature": {
+          "container_kind": "sidebar",
+          "section_path": [
+            "Workspace navigation"
+          ],
+          "context_text": [
+            "Open workspace settings"
+          ]
+        }
+      },
+      "post": {
+        "must_have_heading": [
+          "Settings"
+        ]
+      }
+    },
+    {
+      "step_id": "s2",
+      "action": {
+        "type": "click"
+      },
+      "anchor": {
+        "role": "link",
+        "name": "Workspace",
+        "signature": {
+          "container_kind": "submenu",
+          "section_path": [
+            "Settings",
+            "Workspace Settings"
+          ],
+          "context_text": [
+            "Workspace-level configuration"
+          ]
+        }
+      },
+      "post": {
+        "must_have_heading": [
+          "Workspace Settings",
+          "General"
+        ]
+      }
+    },
+    {
+      "step_id": "s3",
+      "action": {
+        "type": "click"
+      },
+      "anchor": {
+        "role": "link",
+        "name": "Features",
+        "signature": {
+          "container_kind": "submenu",
+          "section_path": [
+            "Settings",
+            "Workspace",
+            "Features"
+          ],
+          "context_text": [
+            "Enable or disable workspace features"
+          ]
+        }
+      },
+      "post": {
+        "must_have_heading": [
+          "Feature Configuration"
+        ]
+      }
+    }
+  ],
+  "meta": {
+    "source": "https://linear.app/changelog/2024-12-18-personalized-sidebar",
+    "drift_type": "target_replacement",
+    "patch_type": "REPLACE_TARGET",
+    "commit": null,
+    "change_date": "2024-12-18",
+    "rationale": "Linear redesigned their settings pages from the ground up with a new hierarchical structure. The old flat settings structure was replaced with organized categories: Account (personal settings), Features (workspace-level features), Administration (workspace settings for admins), and Your teams (team membership). Users previously accessed 'Features' directly from settings; now they must navigate through the new hierarchy.",
+    "replacement_details": {
+      "old_element": "Features in flat settings menu",
+      "new_element": "Features under hierarchical categories",
+      "new_location": "Settings → Features (new top-level category)",
+      "old_path": "Settings → Features (direct access)",
+      "new_path": "Settings → Features category → Feature configuration"
+    }
+  },
+  "start_url": "https://linear.app/"
+}

@@ -1,0 +1,22 @@
+{
+  "patch_type": "TARGET_REPLACEMENT",
+  "target_step_id": "s1",
+  "changes": {
+    "replace_anchor": {
+      "role": "link",
+      "name": "Storage",
+      "signature": {
+        "container_kind": "submenu",
+        "section_path": [
+          "Project Settings",
+          "Settings navigation"
+        ],
+        "context_text": [
+          "Project Settings sidebar",
+          "Service configuration"
+        ]
+      }
+    }
+  },
+  "rationale": "The 'Storage' link in Project Settings was removed in August 2025 during the dashboard navigation reorganization. Users must now click the 'Storage' button in the main sidebar, then navigate to 'Settings' or 'Configuration' within the Storage section."
+}

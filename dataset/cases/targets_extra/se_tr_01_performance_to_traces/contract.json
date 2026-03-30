@@ -1,0 +1,24 @@
+{
+  "tutorial_id": "se_tr_01_performance_to_traces",
+  "doc_url": "https://docs.sentry.io/product/performance/",
+  "start_url": "https://sentry.io/",
+  "steps": [
+    {
+      "step_id": "s1",
+      "action": { "type": "click" },
+      "anchor": {
+        "role": "link",
+        "name": "Performance",
+        "signature": { "container_kind": "sidebar" }
+      },
+      "post": { "must_have_heading": ["Performance"] }
+    }
+  ],
+  "meta": {
+    "source": "https://sentry.io/changelog/",
+    "drift_type": "target_replacement",
+    "patch_type": "REPLACE_TARGET",
+    "change_date": "2024-09-01",
+    "rationale": "Sentry reorganized the Performance section. Some sub-pages moved under 'Traces' in the sidebar. Tutorials referencing the old 'Performance' sidebar navigation need updating."
+  }
+}

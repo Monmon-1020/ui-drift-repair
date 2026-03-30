@@ -1,0 +1,99 @@
+{
+  "tutorial_id": "gh_tr_03_security_coverage_moved",
+  "doc_url": "https://docs.github.com/en/organizations/keeping-your-organization-secure/managing-security-settings-for-your-organization/managing-security-and-analysis-settings-for-your-organization",
+  "steps": [
+    {
+      "step_id": "s1",
+      "action": {
+        "type": "click"
+      },
+      "anchor": {
+        "role": "link",
+        "name": "Settings",
+        "signature": {
+          "container_kind": "main",
+          "section_path": [
+            "Organization navigation"
+          ],
+          "context_text": [
+            "Organization settings"
+          ]
+        }
+      },
+      "post": {
+        "must_have_heading": [
+          "Organization settings"
+        ]
+      }
+    },
+    {
+      "step_id": "s2",
+      "action": {
+        "type": "click"
+      },
+      "anchor": {
+        "role": "link",
+        "name": "Security coverage",
+        "signature": {
+          "container_kind": "sidebar",
+          "section_path": [
+            "Settings",
+            "Security"
+          ],
+          "context_text": [
+            "View security coverage",
+            "Code scanning"
+          ]
+        }
+      },
+      "post": {
+        "must_have_heading": [
+          "Security coverage"
+        ]
+      }
+    },
+    {
+      "step_id": "s3",
+      "action": {
+        "type": "click"
+      },
+      "anchor": {
+        "role": "button",
+        "name": "Enable feature",
+        "signature": {
+          "container_kind": "main",
+          "section_path": [
+            "Security coverage",
+            "Feature enablement"
+          ],
+          "context_text": [
+            "Enable for repositories",
+            "Code scanning",
+            "Secret scanning"
+          ]
+        }
+      },
+      "post": {
+        "must_have_heading": [
+          "Enable security feature"
+        ]
+      }
+    }
+  ],
+  "meta": {
+    "source": "https://github.blog/changelog/2024-08-14-code-security-configurations-will-replace-feature-enablement-on-the-organization-level-security-coverage-page-on-october-15/",
+    "drift_type": "target_replacement",
+    "patch_type": "REPLACE_TARGET",
+    "commit": null,
+    "change_date": "2024-10-15",
+    "rationale": "As of October 15, 2024, GitHub removed the ability to enable or disable security features directly from the organization-level Security coverage page. This functionality was replaced with Code Security Configurations, which became the new way to manage security settings. Users must now navigate to Code Security Configurations to enable/disable features instead of using the direct enable buttons on the Security coverage page.",
+    "replacement_details": {
+      "old_element": "Enable feature button on Security coverage page",
+      "new_element": "Code Security Configurations",
+      "new_location": "Settings → Code security → Configurations",
+      "old_path": "Settings → Security coverage → Enable feature button",
+      "new_path": "Settings → Code security → Configurations → Create/Edit configuration"
+    }
+  },
+  "start_url": "https://github.com/Monmon-1020/Agent/settings"
+}

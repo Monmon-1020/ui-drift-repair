@@ -1,0 +1,45 @@
+{
+  "tutorial_id": "gh_tr_02_teams_navigation_moved",
+  "doc_url": "https://docs.github.com/en/organizations/organizing-members-into-teams/about-teams",
+  "steps": [
+    {
+      "step_id": "s1",
+      "action": {
+        "type": "click"
+      },
+      "anchor": {
+        "role": "link",
+        "name": "Teams",
+        "signature": {
+          "container_kind": "sidebar",
+          "section_path": [
+            "Organization navigation"
+          ],
+          "context_text": [
+            "Left-hand navigation menu",
+            "Organization sidebar"
+          ]
+        }
+      },
+      "post": {
+        "must_have_heading": [
+          "Teams"
+        ]
+      }
+    }
+  ],
+  "meta": {
+    "source": "https://github.blog/changelog/2025-12-18-teams-management-now-moved-to-settings/",
+    "drift_type": "insert_step",
+    "patch_type": "INSERT_STEP",
+    "commit": null,
+    "change_date": "2025-12-18",
+    "rationale": "The 'Teams' link was removed from the left-hand navigation menu in December 2025. To access team management, users must now click the 'Settings' button in the top navigation, then select 'Teams' from the settings menu.",
+    "insert_details": {
+      "old_steps": 1,
+      "new_steps": 2,
+      "change": "Teams (sidebar) → Settings (top nav) → Teams (settings submenu)"
+    }
+  },
+  "start_url": "https://github.com/Monmon-1020"
+}

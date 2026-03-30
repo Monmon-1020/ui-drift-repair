@@ -1,0 +1,149 @@
+{
+  "scoring_params": {
+    "min_age_days": 60,
+    "ui_keyword_weight": 5,
+    "line_change_weight": 1,
+    "age_penalty_divisor": 30
+  },
+  "commits": [
+    {
+      "hash": "cc09ee65f1905a5cf69f5976b2fe14075133a9db",
+      "date": "2025-09-02",
+      "message": "Hide `ruleset history` for Free, Team & Pro (#57357)",
+      "score": 447,
+      "ui_keyword_hits": 77,
+      "added_lines": 25,
+      "deleted_lines": 31,
+      "age_days": 125
+    },
+    {
+      "hash": "933b09b42262ccedd2e0d9b65eea30c81cc0d1e8",
+      "date": "2025-09-02",
+      "message": "[Improvement]: Correct Default Elasticsearch Worker Limits in GHES 3.13 Documentation (#57351)",
+      "score": 447,
+      "ui_keyword_hits": 77,
+      "added_lines": 25,
+      "deleted_lines": 31,
+      "age_days": 125
+    },
+    {
+      "hash": "27c1cc2a4578d8318ee8556532f040cab04febc2",
+      "date": "2025-09-01",
+      "message": "chore: updated using the audit log api for your enterprise file (#40103)",
+      "score": 447,
+      "ui_keyword_hits": 77,
+      "added_lines": 25,
+      "deleted_lines": 31,
+      "age_days": 126
+    },
+    {
+      "hash": "6c2bb1b946a3b0df41c21e4ebdf9d45f8250a314",
+      "date": "2025-09-01",
+      "message": "Delete orphaned files (2025-09-01-16-29) (#57348)",
+      "score": 447,
+      "ui_keyword_hits": 77,
+      "added_lines": 25,
+      "deleted_lines": 31,
+      "age_days": 126
+    },
+    {
+      "hash": "44254fe069412dfd98acd1336ecbb59b1fc77086",
+      "date": "2025-09-18",
+      "message": "[Copilot-assisted] Add change notices for upcoming $0 budget removal for Copilot premium requests (#57549)",
+      "score": 441,
+      "ui_keyword_hits": 76,
+      "added_lines": 23,
+      "deleted_lines": 31,
+      "age_days": 109
+    },
+    {
+      "hash": "a43b16c38dd821ba9ac5f56760deca53a7259964",
+      "date": "2025-09-29",
+      "message": "[2025-09-29] Docs updates for the GA of the Copilot Premium requests analytics page (#57704)",
+      "score": 240,
+      "ui_keyword_hits": 40,
+      "added_lines": 13,
+      "deleted_lines": 20,
+      "age_days": 98
+    },
+    {
+      "hash": "db998fbaf6ed5e38dbe21b0ed9c9ba80f3c882d8",
+      "date": "2025-09-30",
+      "message": "Update the Monitoring your Copilot usage article (#57727)",
+      "score": 114,
+      "ui_keyword_hits": 17,
+      "added_lines": 8,
+      "deleted_lines": 14,
+      "age_days": 97
+    },
+    {
+      "hash": "a4ef4954ffb47c55711ddaa5999c3db62bf7c31d",
+      "date": "2025-10-13",
+      "message": "Update usage report docs due to changes in premium request usage report generation (#57882)",
+      "score": 67,
+      "ui_keyword_hits": 10,
+      "added_lines": 5,
+      "deleted_lines": 4,
+      "age_days": 84
+    },
+    {
+      "hash": "990a8de1d08d4cbd8d829ea054790b753ae9b470",
+      "date": "2025-10-19",
+      "message": "Fix typo in JetBrains IDEs quota usage instruction (#40896)",
+      "score": 25,
+      "ui_keyword_hits": 2,
+      "added_lines": 4,
+      "deleted_lines": 3,
+      "age_days": 78
+    },
+    {
+      "hash": "894581083be8702d1fc963d4b99f423dfe38b651",
+      "date": "2025-10-31",
+      "message": "18584 billing enable premium request and feature level budgeting for ai tools ga (#58263)",
+      "score": 24,
+      "ui_keyword_hits": 2,
+      "added_lines": 2,
+      "deleted_lines": 4,
+      "age_days": 66
+    },
+    {
+      "hash": "164e19962b83dce2b27cbfed0c03fc2b6dbed893",
+      "date": "2025-10-29",
+      "message": "Discovery landing page (#58174)",
+      "score": 23,
+      "ui_keyword_hits": 2,
+      "added_lines": 2,
+      "deleted_lines": 3,
+      "age_days": 68
+    },
+    {
+      "hash": "79e21fded0487a816ba0346f85ba7fa4546bfaee",
+      "date": "2025-11-04",
+      "message": "Fix `incorrect-alt-text-length` linter warnings (#58274)",
+      "score": 12,
+      "ui_keyword_hits": 0,
+      "added_lines": 2,
+      "deleted_lines": 2,
+      "age_days": 62
+    },
+    {
+      "hash": "176da37a934b00af396216d4df850e8e83896bec",
+      "date": "2025-12-17",
+      "message": "Add note to docs explaining that org owners cannot view Premium Request analytics by User (#58908)",
+      "score": 0,
+      "ui_keyword_hits": 0,
+      "added_lines": 0,
+      "deleted_lines": 0,
+      "age_days": 19
+    }
+  ],
+  "top_k_commits": [
+    "cc09ee65f1905a5cf69f5976b2fe14075133a9db",
+    "933b09b42262ccedd2e0d9b65eea30c81cc0d1e8",
+    "27c1cc2a4578d8318ee8556532f040cab04febc2",
+    "6c2bb1b946a3b0df41c21e4ebdf9d45f8250a314",
+    "44254fe069412dfd98acd1336ecbb59b1fc77086",
+    "a43b16c38dd821ba9ac5f56760deca53a7259964"
+  ],
+  "selected_v1": "cc09ee65f1905a5cf69f5976b2fe14075133a9db"
+}

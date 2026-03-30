@@ -1,0 +1,149 @@
+{
+  "scoring_params": {
+    "min_age_days": 60,
+    "ui_keyword_weight": 5,
+    "line_change_weight": 1,
+    "age_penalty_divisor": 30
+  },
+  "commits": [
+    {
+      "hash": "cc09ee65f1905a5cf69f5976b2fe14075133a9db",
+      "date": "2025-09-02",
+      "message": "Hide `ruleset history` for Free, Team & Pro (#57357)",
+      "score": 354,
+      "ui_keyword_hits": 51,
+      "added_lines": 70,
+      "deleted_lines": 23,
+      "age_days": 125
+    },
+    {
+      "hash": "933b09b42262ccedd2e0d9b65eea30c81cc0d1e8",
+      "date": "2025-09-02",
+      "message": "[Improvement]: Correct Default Elasticsearch Worker Limits in GHES 3.13 Documentation (#57351)",
+      "score": 354,
+      "ui_keyword_hits": 51,
+      "added_lines": 70,
+      "deleted_lines": 23,
+      "age_days": 125
+    },
+    {
+      "hash": "27c1cc2a4578d8318ee8556532f040cab04febc2",
+      "date": "2025-09-01",
+      "message": "chore: updated using the audit log api for your enterprise file (#40103)",
+      "score": 354,
+      "ui_keyword_hits": 51,
+      "added_lines": 70,
+      "deleted_lines": 23,
+      "age_days": 126
+    },
+    {
+      "hash": "6c2bb1b946a3b0df41c21e4ebdf9d45f8250a314",
+      "date": "2025-09-01",
+      "message": "Delete orphaned files (2025-09-01-16-29) (#57348)",
+      "score": 354,
+      "ui_keyword_hits": 51,
+      "added_lines": 70,
+      "deleted_lines": 23,
+      "age_days": 126
+    },
+    {
+      "hash": "c0c45392e00104ad7d7e8cfd0cb9ac46b3e4a7bb",
+      "date": "2025-09-11",
+      "message": "Copilot auto model selection (#57410)",
+      "score": 307,
+      "ui_keyword_hits": 43,
+      "added_lines": 66,
+      "deleted_lines": 19,
+      "age_days": 116
+    },
+    {
+      "hash": "91b7744bb7b1bbcf7cfa1c446550d6d55f9fd7f6",
+      "date": "2025-09-11",
+      "message": "Using the AI Toolkit extension to add more models to Copilot Chat in VS Code (#57395)",
+      "score": 126,
+      "ui_keyword_hits": 16,
+      "added_lines": 20,
+      "deleted_lines": 19,
+      "age_days": 116
+    },
+    {
+      "hash": "02951af721fa28feed174a74fac9f3bbadc8011b",
+      "date": "2025-10-24",
+      "message": "Update CTAs for links part 1 (#58177)",
+      "score": 115,
+      "ui_keyword_hits": 14,
+      "added_lines": 19,
+      "deleted_lines": 18,
+      "age_days": 73
+    },
+    {
+      "hash": "164e19962b83dce2b27cbfed0c03fc2b6dbed893",
+      "date": "2025-10-29",
+      "message": "Discovery landing page (#58174)",
+      "score": 113,
+      "ui_keyword_hits": 14,
+      "added_lines": 17,
+      "deleted_lines": 18,
+      "age_days": 68
+    },
+    {
+      "hash": "8dbf0f9bf2dd97d77b416a61a6bf64a879cb5838",
+      "date": "2025-11-10",
+      "message": "[2025-11-10] Remove Copilot Extensions from the docs  (#58331)",
+      "score": 107,
+      "ui_keyword_hits": 15,
+      "added_lines": 17,
+      "deleted_lines": 16,
+      "age_days": 56
+    },
+    {
+      "hash": "e7978e706b2be889ece909761cfe531b195116f7",
+      "date": "2025-11-11",
+      "message": "Auto in Visual Studio (#58417)",
+      "score": 84,
+      "ui_keyword_hits": 14,
+      "added_lines": 9,
+      "deleted_lines": 6,
+      "age_days": 55
+    },
+    {
+      "hash": "cd2b59ce80b51d7f55e3a517d0bc8e755425e2d6",
+      "date": "2025-11-12",
+      "message": "Change \"code completion\" to \"inline suggestions\" throughout the docs (#57919)",
+      "score": 80,
+      "ui_keyword_hits": 14,
+      "added_lines": 7,
+      "deleted_lines": 4,
+      "age_days": 54
+    },
+    {
+      "hash": "2bd736cd06d43652c90b7d54b679beb4a3da7925",
+      "date": "2025-11-18",
+      "message": "[DO NOT MERGE] 🔥 Ignite 2025 megabranch (#58448)",
+      "score": 74,
+      "ui_keyword_hits": 14,
+      "added_lines": 1,
+      "deleted_lines": 4,
+      "age_days": 48
+    },
+    {
+      "hash": "b6a63ffb02ce6a904689d34765b8faad7eeed37c",
+      "date": "2025-11-19",
+      "message": "Removes references to assistive and immersive chat (#58506)",
+      "score": -1,
+      "ui_keyword_hits": 0,
+      "added_lines": 0,
+      "deleted_lines": 0,
+      "age_days": 47
+    }
+  ],
+  "top_k_commits": [
+    "cc09ee65f1905a5cf69f5976b2fe14075133a9db",
+    "933b09b42262ccedd2e0d9b65eea30c81cc0d1e8",
+    "27c1cc2a4578d8318ee8556532f040cab04febc2",
+    "6c2bb1b946a3b0df41c21e4ebdf9d45f8250a314",
+    "c0c45392e00104ad7d7e8cfd0cb9ac46b3e4a7bb",
+    "91b7744bb7b1bbcf7cfa1c446550d6d55f9fd7f6"
+  ],
+  "selected_v1": "cc09ee65f1905a5cf69f5976b2fe14075133a9db"
+}

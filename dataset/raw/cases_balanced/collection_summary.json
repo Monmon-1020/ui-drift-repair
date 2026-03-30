@@ -1,0 +1,128 @@
+{
+  "collected_at": "2026-01-05T11:26:46.847Z",
+  "total": 15,
+  "successful": 15,
+  "failed": 0,
+  "results": [
+    {
+      "target": {
+        "case_id": "gh_docs_copilot_how-tos_get-code-suggestions_get-ide-code-suggestions",
+        "doc_url": "https://docs.github.com/en/copilot/how-tos/get-code-suggestions/get-ide-code-suggestions"
+      },
+      "success": true,
+      "outputDir": "dataset/raw/cases_balanced/gh_docs_copilot_how-tos_get-code-suggestions_get-ide-code-suggestions"
+    },
+    {
+      "target": {
+        "case_id": "gh_docs_copilot_how-tos_configure-custom-instructions_add-repository-instructions",
+        "doc_url": "https://docs.github.com/en/copilot/how-tos/configure-custom-instructions/add-repository-instructions"
+      },
+      "success": true,
+      "outputDir": "dataset/raw/cases_balanced/gh_docs_copilot_how-tos_configure-custom-instructions_add-repository-instructions"
+    },
+    {
+      "target": {
+        "case_id": "gh_docs_copilot_tutorials_explore-a-codebase",
+        "doc_url": "https://docs.github.com/en/copilot/tutorials/explore-a-codebase"
+      },
+      "success": true,
+      "outputDir": "dataset/raw/cases_balanced/gh_docs_copilot_tutorials_explore-a-codebase"
+    },
+    {
+      "target": {
+        "case_id": "gh_docs_copilot_how-tos_use-ai-models_change-the-chat-model",
+        "doc_url": "https://docs.github.com/en/copilot/how-tos/use-ai-models/change-the-chat-model"
+      },
+      "success": true,
+      "outputDir": "dataset/raw/cases_balanced/gh_docs_copilot_how-tos_use-ai-models_change-the-chat-model"
+    },
+    {
+      "target": {
+        "case_id": "gh_docs_copilot_how-tos_manage-and-track-spending_monitor-premium-requests",
+        "doc_url": "https://docs.github.com/en/copilot/how-tos/manage-and-track-spending/monitor-premium-requests"
+      },
+      "success": true,
+      "outputDir": "dataset/raw/cases_balanced/gh_docs_copilot_how-tos_manage-and-track-spending_monitor-premium-requests"
+    },
+    {
+      "target": {
+        "case_id": "gh_docs_copilot_how-tos_use-copilot-agents_request-a-code-review_use-code-review",
+        "doc_url": "https://docs.github.com/en/copilot/how-tos/use-copilot-agents/request-a-code-review/use-code-review"
+      },
+      "success": true,
+      "outputDir": "dataset/raw/cases_balanced/gh_docs_copilot_how-tos_use-copilot-agents_request-a-code-review_use-code-review"
+    },
+    {
+      "target": {
+        "case_id": "gh_docs_copilot_get-started_quickstart",
+        "doc_url": "https://docs.github.com/en/copilot/get-started/quickstart"
+      },
+      "success": true,
+      "outputDir": "dataset/raw/cases_balanced/gh_docs_copilot_get-started_quickstart"
+    },
+    {
+      "target": {
+        "case_id": "gh_docs_copilot_how-tos_use-copilot-agents_coding-agent_track-copilot-sessions",
+        "doc_url": "https://docs.github.com/en/copilot/how-tos/use-copilot-agents/coding-agent/track-copilot-sessions"
+      },
+      "success": true,
+      "outputDir": "dataset/raw/cases_balanced/gh_docs_copilot_how-tos_use-copilot-agents_coding-agent_track-copilot-sessions"
+    },
+    {
+      "target": {
+        "case_id": "gh_docs_copilot_how-tos_set-up_install-copilot-extension",
+        "doc_url": "https://docs.github.com/en/copilot/how-tos/set-up/install-copilot-extension"
+      },
+      "success": true,
+      "outputDir": "dataset/raw/cases_balanced/gh_docs_copilot_how-tos_set-up_install-copilot-extension"
+    },
+    {
+      "target": {
+        "case_id": "gh_docs_copilot_tutorials_roll-out-at-scale_enable-developers_integrate-ai-agents",
+        "doc_url": "https://docs.github.com/en/copilot/tutorials/roll-out-at-scale/enable-developers/integrate-ai-agents"
+      },
+      "success": true,
+      "outputDir": "dataset/raw/cases_balanced/gh_docs_copilot_tutorials_roll-out-at-scale_enable-developers_integrate-ai-agents"
+    },
+    {
+      "target": {
+        "case_id": "gh_docs_billing_how-tos_set-up-payment_connect-azure-sub",
+        "doc_url": "https://docs.github.com/en/billing/how-tos/set-up-payment/connect-azure-sub"
+      },
+      "success": true,
+      "outputDir": "dataset/raw/cases_balanced/gh_docs_billing_how-tos_set-up-payment_connect-azure-sub"
+    },
+    {
+      "target": {
+        "case_id": "gh_docs_billing_tutorials_set-up-budgets",
+        "doc_url": "https://docs.github.com/en/billing/tutorials/set-up-budgets"
+      },
+      "success": true,
+      "outputDir": "dataset/raw/cases_balanced/gh_docs_billing_tutorials_set-up-budgets"
+    },
+    {
+      "target": {
+        "case_id": "gh_docs_issues_planning-and-tracking-with-projects_learning-about-projects_quickstart-for-projects",
+        "doc_url": "https://docs.github.com/en/issues/planning-and-tracking-with-projects/learning-about-projects/quickstart-for-projects"
+      },
+      "success": true,
+      "outputDir": "dataset/raw/cases_balanced/gh_docs_issues_planning-and-tracking-with-projects_learning-about-projects_quickstart-for-projects"
+    },
+    {
+      "target": {
+        "case_id": "gh_docs_billing_how-tos_products_view-productlicense-use",
+        "doc_url": "https://docs.github.com/en/billing/how-tos/products/view-productlicense-use"
+      },
+      "success": true,
+      "outputDir": "dataset/raw/cases_balanced/gh_docs_billing_how-tos_products_view-productlicense-use"
+    },
+    {
+      "target": {
+        "case_id": "gh_docs_code-security_securing-your-organization_enabling-security-features-in-your-organization_configuring-global-security-settings-for-your-organization",
+        "doc_url": "https://docs.github.com/en/code-security/securing-your-organization/enabling-security-features-in-your-organization/configuring-global-security-settings-for-your-organization"
+      },
+      "success": true,
+      "outputDir": "dataset/raw/cases_balanced/gh_docs_code-security_securing-your-organization_enabling-security-features-in-your-organization_configuring-global-security-settings-for-your-organization"
+    }
+  ]
+}

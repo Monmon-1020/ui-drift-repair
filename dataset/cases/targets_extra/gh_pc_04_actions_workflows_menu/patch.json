@@ -1,0 +1,12 @@
+{
+  "patch_type": "POSTCONDITION_UPDATE",
+  "target_step_id": "s1",
+  "changes": {
+    "update_postcondition": {
+      "must_have_heading": [
+        "Actions"
+      ]
+    }
+  },
+  "rationale": "GitHub renamed the repository tab from 'Workflows' to 'Actions' in October 2022 to better represent the full scope of the GitHub Actions ecosystem beyond just workflow management. The navigation location remained identical (same position in repository tabs), and clicking it still takes users to the same workflows page at the same URL pattern. However, old tutorials that instructed users to 'click the Workflows tab' or verified success by checking for the 'Workflows' tab name would fail, even though the functionality and destination are completely unchanged. The page heading also changed to reflect the broader 'Actions' scope rather than just 'Workflows'."
+}

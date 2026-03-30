@@ -1,0 +1,36 @@
+{
+  "patch_type": "INSERT_STEP",
+  "target_step_id": "s8",
+  "changes": {
+    "insert_after": "s8",
+    "new_steps": [
+      {
+        "step_id": "s9",
+        "action": {
+          "type": "wait_for_different_user"
+        },
+        "anchor": {
+          "role": "status",
+          "name": "Waiting for reviewer",
+          "signature": {
+            "container_kind": "main",
+            "section_path": [
+              "Actions",
+              "Workflow run"
+            ],
+            "context_text": [
+              "Waiting for review",
+              "Cannot self-approve"
+            ]
+          }
+        },
+        "post": {
+          "must_have_text": [
+            "Different reviewer required"
+          ]
+        }
+      }
+    ]
+  },
+  "rationale": "GitHub Actions added a 'Prevent self-review' option for environment deployments. Previously, users who triggered a workflow could also approve their own deployments if they were required reviewers. The new workflow adds a configuration step (s5) to enable self-review prevention and enforces a waiting step (s9) where the user who triggered the workflow cannot approve it - a different reviewer must approve the deployment. This ensures deployments are reviewed by at least two different people, improving security for critical environments."
+}

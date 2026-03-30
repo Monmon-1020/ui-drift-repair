@@ -1,0 +1,46 @@
+{
+  "tutorial_id": "gh_tr_01_security_feature_enablement",
+  "doc_url": "https://docs.github.com/en/organizations/keeping-your-organization-secure/managing-security-settings-for-your-organization/managing-security-and-analysis-settings-for-your-organization",
+  "steps": [
+    {
+      "step_id": "s1",
+      "action": {
+        "type": "click"
+      },
+      "anchor": {
+        "role": "button",
+        "name": "Enable all",
+        "signature": {
+          "container_kind": "main",
+          "section_path": [
+            "Security coverage",
+            "Feature enablement"
+          ],
+          "context_text": [
+            "Enable security features for repositories",
+            "Organization-level security coverage"
+          ]
+        }
+      },
+      "post": {
+        "must_have_heading": [
+          "Security features enabled"
+        ]
+      }
+    }
+  ],
+  "meta": {
+    "source": "https://github.blog/changelog/2024-08-14-code-security-configurations-will-replace-feature-enablement-on-the-organization-level-security-coverage-page-on-october-15/",
+    "drift_type": "target_replacement",
+    "patch_type": "REPLACE_TARGET",
+    "commit": null,
+    "change_date": "2024-10-15",
+    "rationale": "The 'Enable all' button in the organization-level security coverage page was removed on October 15, 2024. Users must now click 'Apply configuration' in the new Code Security Configurations interface to enable security features across repositories.",
+    "replacement_details": {
+      "old_element": "Enable all",
+      "new_element": "Apply configuration",
+      "new_location": "Code Security Configurations page under Organization Settings"
+    }
+  },
+  "start_url": "https://github.com/Monmon-1020/Agent/settings/security_analysis"
+}

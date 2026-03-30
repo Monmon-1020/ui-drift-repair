@@ -1,0 +1,44 @@
+{
+  "tutorial_id": "st_wf_02_radar_rule_group",
+  "doc_url": "https://docs.stripe.com/radar/rules",
+  "start_url": "https://dashboard.stripe.com/radar/rules",
+  "steps": [
+    {
+      "step_id": "s1",
+      "action": { "type": "click" },
+      "anchor": {
+        "role": "link",
+        "name": "Radar",
+        "signature": { "container_kind": "sidebar" }
+      },
+      "post": { "must_have_heading": ["Radar"] }
+    },
+    {
+      "step_id": "s2",
+      "action": { "type": "click" },
+      "anchor": {
+        "role": "link",
+        "name": "Rules",
+        "signature": { "container_kind": "sidebar", "section_path": ["Radar"] }
+      },
+      "post": { "must_have_heading": ["Rules"] }
+    },
+    {
+      "step_id": "s3",
+      "action": { "type": "click" },
+      "anchor": {
+        "role": "button",
+        "name": "Add rule",
+        "signature": { "container_kind": "main" }
+      },
+      "post": { "must_have_heading": ["Add rule"] }
+    }
+  ],
+  "meta": {
+    "source": "https://docs.stripe.com/changelog",
+    "drift_type": "insert_step",
+    "patch_type": "INSERT_STEP",
+    "change_date": "2024-03-01",
+    "rationale": "Stripe Radar rule creation now requires selecting a rule group (block, review, allow) before writing the rule. Old tutorials that went directly to the rule editor now see a group selection step."
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "case_id": "gh_docs_copilot_how-tos_use-ai-models_change-the-chat-model",
+  "doc_url": "https://docs.github.com/en/copilot/how-tos/use-ai-models/change-the-chat-model",
+  "repo": "github/docs",
+  "path": "content/copilot/how-tos/use-ai-models/change-the-chat-model.md",
+  "branch": "main",
+  "edit_url": "https://github.com/github/docs/blob/main/content/copilot/how-tos/use-ai-models/change-the-chat-model.md",
+  "extraction_method": "html",
+  "collected_at": "2026-01-05T11:26:21.008Z",
+  "total_commits": 13,
+  "top_k": 6,
+  "selected_commits": [
+    "cc09ee65f1905a5cf69f5976b2fe14075133a9db",
+    "933b09b42262ccedd2e0d9b65eea30c81cc0d1e8",
+    "27c1cc2a4578d8318ee8556532f040cab04febc2",
+    "6c2bb1b946a3b0df41c21e4ebdf9d45f8250a314",
+    "c0c45392e00104ad7d7e8cfd0cb9ac46b3e4a7bb",
+    "91b7744bb7b1bbcf7cfa1c446550d6d55f9fd7f6"
+  ]
+}

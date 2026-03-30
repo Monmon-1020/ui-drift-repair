@@ -1,0 +1,34 @@
+{
+  "tutorial_id": "gh_tr_04_branch_protection_to_rulesets",
+  "doc_url": "https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-rulesets/about-rulesets",
+  "start_url": "https://github.com/Monmon-1020/Agent/settings",
+  "steps": [
+    {
+      "step_id": "s1",
+      "action": { "type": "click" },
+      "anchor": {
+        "role": "link",
+        "name": "Branches",
+        "signature": { "container_kind": "sidebar", "section_path": ["Settings", "Code and automation"] }
+      },
+      "post": { "must_have_heading": ["Branch protection rules"] }
+    },
+    {
+      "step_id": "s2",
+      "action": { "type": "click" },
+      "anchor": {
+        "role": "button",
+        "name": "Add rule",
+        "signature": { "container_kind": "main" }
+      },
+      "post": { "must_have_heading": ["Branch protection rule"] }
+    }
+  ],
+  "meta": {
+    "source": "https://github.blog/changelog/2023-07-24-github-repository-rules-are-now-generally-available/",
+    "drift_type": "target_replacement",
+    "patch_type": "REPLACE_TARGET",
+    "change_date": "2023-07-24",
+    "rationale": "GitHub introduced Repository Rules (rulesets) as a replacement for branch protection rules. The 'Branches' settings page now promotes rulesets, and 'Add rule' button changed to 'Add branch ruleset'."
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "tutorial_id": "nl_wf_01_env_var_scope_required",
+  "doc_url": "https://docs.netlify.com/environment-variables/overview/",
+  "start_url": "https://app.netlify.com/",
+  "steps": [
+    {
+      "step_id": "s1",
+      "action": { "type": "click" },
+      "anchor": {
+        "role": "link",
+        "name": "Site configuration",
+        "signature": { "container_kind": "sidebar" }
+      },
+      "post": { "url_pattern": "/configuration" }
+    },
+    {
+      "step_id": "s2",
+      "action": { "type": "click" },
+      "anchor": {
+        "role": "link",
+        "name": "Environment variables",
+        "signature": { "container_kind": "sidebar" }
+      },
+      "post": { "must_have_heading": ["Environment variables"] }
+    },
+    {
+      "step_id": "s3",
+      "action": { "type": "click" },
+      "anchor": {
+        "role": "button",
+        "name": "Add a variable",
+        "signature": { "container_kind": "main" }
+      },
+      "post": {}
+    }
+  ],
+  "meta": {
+    "source": "https://www.netlify.com/changelog/",
+    "drift_type": "insert_step",
+    "patch_type": "INSERT_STEP",
+    "change_date": "2024-03-01",
+    "rationale": "Netlify added deploy context scoping when creating environment variables. Users must now select which contexts (production, deploy preview, branch deploy) the variable applies to."
+  }
+}

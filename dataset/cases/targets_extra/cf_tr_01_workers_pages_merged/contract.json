@@ -1,0 +1,34 @@
+{
+  "tutorial_id": "cf_tr_01_workers_pages_merged",
+  "doc_url": "https://developers.cloudflare.com/workers/",
+  "start_url": "https://dash.cloudflare.com/",
+  "steps": [
+    {
+      "step_id": "s1",
+      "action": { "type": "click" },
+      "anchor": {
+        "role": "link",
+        "name": "Workers",
+        "signature": { "container_kind": "sidebar", "section_path": ["Account navigation"] }
+      },
+      "post": { "must_have_heading": ["Workers"] }
+    },
+    {
+      "step_id": "s2",
+      "action": { "type": "click" },
+      "anchor": {
+        "role": "button",
+        "name": "Create a Worker",
+        "signature": { "container_kind": "main" }
+      },
+      "post": { "must_have_heading": ["Create"] }
+    }
+  ],
+  "meta": {
+    "source": "https://blog.cloudflare.com/pages-and-workers-are-converging-into-one-experience/",
+    "drift_type": "target_replacement",
+    "patch_type": "REPLACE_TARGET",
+    "change_date": "2024-04-01",
+    "rationale": "Cloudflare merged Workers and Pages into a unified 'Workers & Pages' sidebar item. Old tutorials referencing 'Workers' as a standalone sidebar link need to target 'Workers & Pages' instead."
+  }
+}

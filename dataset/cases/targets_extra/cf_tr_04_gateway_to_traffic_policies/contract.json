@@ -1,0 +1,34 @@
+{
+  "tutorial_id": "cf_tr_04_gateway_to_traffic_policies",
+  "doc_url": "https://developers.cloudflare.com/cloudflare-one/traffic-policies/",
+  "start_url": "https://one.dash.cloudflare.com/",
+  "steps": [
+    {
+      "step_id": "s1",
+      "action": { "type": "click" },
+      "anchor": {
+        "role": "link",
+        "name": "Gateway",
+        "signature": { "container_kind": "sidebar", "section_path": ["Zero Trust navigation"] }
+      },
+      "post": { "must_have_heading": ["Gateway"] }
+    },
+    {
+      "step_id": "s2",
+      "action": { "type": "click" },
+      "anchor": {
+        "role": "link",
+        "name": "Firewall Policies",
+        "signature": { "container_kind": "sidebar", "section_path": ["Gateway"] }
+      },
+      "post": { "must_have_heading": ["Firewall Policies"] }
+    }
+  ],
+  "meta": {
+    "source": "https://developers.cloudflare.com/cloudflare-one/traffic-policies/",
+    "drift_type": "target_replacement",
+    "patch_type": "REPLACE_TARGET",
+    "change_date": "2025-06-01",
+    "rationale": "Cloudflare renamed 'Gateway' policies to 'Traffic policies' in the Zero Trust dashboard. 'Firewall Policies' became 'HTTP policies' under the new Traffic policies section."
+  }
+}

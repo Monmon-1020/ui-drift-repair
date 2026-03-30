@@ -1,0 +1,20 @@
+{
+  "case_id": "gh_docs_copilot_how-tos_configure-custom-instructions_add-repository-instructions",
+  "doc_url": "https://docs.github.com/en/copilot/how-tos/configure-custom-instructions/add-repository-instructions",
+  "repo": "github/awesome-copilot",
+  "path": "docs/README.prompts.md",
+  "branch": "main",
+  "edit_url": "https://github.com/github/awesome-copilot/blob/main/docs/README.prompts.md",
+  "extraction_method": "html",
+  "collected_at": "2026-01-05T11:26:15.323Z",
+  "total_commits": 50,
+  "top_k": 6,
+  "selected_commits": [
+    "5bd9125f57d0e2140123072e3cb03dab977a4638",
+    "22cf26501999d8b1f58ce0e8e5433573d698f299",
+    "56d7ce73a051066f38012f57117e09a9850636e4",
+    "9a050b1506ee5a004270c12c9dddea3aa4cea060",
+    "ca37fc8d6d237f6569b44cf76ab0e3b84dc0c9b3",
+    "f4b82c8714f8b28a523d3d596299d698dfbdbfff"
+  ]
+}

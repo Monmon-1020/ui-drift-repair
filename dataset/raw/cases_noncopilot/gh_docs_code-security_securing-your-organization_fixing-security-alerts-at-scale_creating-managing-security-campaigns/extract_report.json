@@ -1,0 +1,89 @@
+{
+  "scoring_params": {
+    "min_age_days": 60,
+    "ui_keyword_weight": 5,
+    "line_change_weight": 1,
+    "age_penalty_divisor": 30
+  },
+  "commits": [
+    {
+      "hash": "933b09b42262ccedd2e0d9b65eea30c81cc0d1e8",
+      "date": "2025-09-02",
+      "message": "[Improvement]: Correct Default Elasticsearch Worker Limits in GHES 3.13 Documentation (#57351)",
+      "score": 221,
+      "ui_keyword_hits": 30,
+      "added_lines": 51,
+      "deleted_lines": 14,
+      "age_days": 125
+    },
+    {
+      "hash": "27c1cc2a4578d8318ee8556532f040cab04febc2",
+      "date": "2025-09-01",
+      "message": "chore: updated using the audit log api for your enterprise file (#40103)",
+      "score": 221,
+      "ui_keyword_hits": 30,
+      "added_lines": 51,
+      "deleted_lines": 14,
+      "age_days": 126
+    },
+    {
+      "hash": "6c2bb1b946a3b0df41c21e4ebdf9d45f8250a314",
+      "date": "2025-09-01",
+      "message": "Delete orphaned files (2025-09-01-16-29) (#57348)",
+      "score": 221,
+      "ui_keyword_hits": 30,
+      "added_lines": 51,
+      "deleted_lines": 14,
+      "age_days": 126
+    },
+    {
+      "hash": "cc09ee65f1905a5cf69f5976b2fe14075133a9db",
+      "date": "2025-09-02",
+      "message": "Hide `ruleset history` for Free, Team & Pro (#57357)",
+      "score": 219,
+      "ui_keyword_hits": 30,
+      "added_lines": 50,
+      "deleted_lines": 13,
+      "age_days": 125
+    },
+    {
+      "hash": "50a2f7a2daf6a9185358102c306279fec1e642fe",
+      "date": "2025-09-02",
+      "message": "Improve notifications for developers involved in security campaigns #18872 (#57344)",
+      "score": 219,
+      "ui_keyword_hits": 30,
+      "added_lines": 50,
+      "deleted_lines": 13,
+      "age_days": 125
+    },
+    {
+      "hash": "84d8eeb49ee2d1247e0132ace17f694034ac55eb",
+      "date": "2025-09-23",
+      "message": "[3 releases] Security campaigns for secret scanning alerts, and code/secret alert assignees (#57592)",
+      "score": 9,
+      "ui_keyword_hits": 0,
+      "added_lines": 1,
+      "deleted_lines": 1,
+      "age_days": 104
+    },
+    {
+      "hash": "12b1c7aec0569b8d0942e1b8a3cddb2796c0f7a2",
+      "date": "2025-12-18",
+      "message": "[Improvement]: Create \"Reference\" category for code scanning for CodeQL queries #20670 (#58874)",
+      "score": 0,
+      "ui_keyword_hits": 0,
+      "added_lines": 0,
+      "deleted_lines": 0,
+      "age_days": 18
+    }
+  ],
+  "top_k_commits": [
+    "933b09b42262ccedd2e0d9b65eea30c81cc0d1e8",
+    "27c1cc2a4578d8318ee8556532f040cab04febc2",
+    "6c2bb1b946a3b0df41c21e4ebdf9d45f8250a314",
+    "cc09ee65f1905a5cf69f5976b2fe14075133a9db",
+    "50a2f7a2daf6a9185358102c306279fec1e642fe",
+    "84d8eeb49ee2d1247e0132ace17f694034ac55eb"
+  ],
+  "selected_v1": "933b09b42262ccedd2e0d9b65eea30c81cc0d1e8"
+}

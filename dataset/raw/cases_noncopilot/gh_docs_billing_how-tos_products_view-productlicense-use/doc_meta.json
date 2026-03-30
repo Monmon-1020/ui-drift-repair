@@ -1,0 +1,20 @@
+{
+  "case_id": "gh_docs_billing_how-tos_products_view-productlicense-use",
+  "doc_url": "https://docs.github.com/en/billing/how-tos/products/view-productlicense-use",
+  "repo": "github/docs",
+  "path": "content/billing/how-tos/products/view-productlicense-use.md",
+  "branch": "main",
+  "edit_url": "https://github.com/github/docs/blob/main/content/billing/how-tos/products/view-productlicense-use.md",
+  "extraction_method": "html",
+  "collected_at": "2026-01-05T11:20:45.035Z",
+  "total_commits": 7,
+  "top_k": 6,
+  "selected_commits": [
+    "cc09ee65f1905a5cf69f5976b2fe14075133a9db",
+    "933b09b42262ccedd2e0d9b65eea30c81cc0d1e8",
+    "27c1cc2a4578d8318ee8556532f040cab04febc2",
+    "6c2bb1b946a3b0df41c21e4ebdf9d45f8250a314",
+    "a43b16c38dd821ba9ac5f56760deca53a7259964",
+    "a4ef4954ffb47c55711ddaa5999c3db62bf7c31d"
+  ]
+}

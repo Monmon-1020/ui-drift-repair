@@ -1,0 +1,89 @@
+{
+  "scoring_params": {
+    "min_age_days": 60,
+    "ui_keyword_weight": 5,
+    "line_change_weight": 1,
+    "age_penalty_divisor": 30
+  },
+  "commits": [
+    {
+      "hash": "cc09ee65f1905a5cf69f5976b2fe14075133a9db",
+      "date": "2025-09-02",
+      "message": "Hide `ruleset history` for Free, Team & Pro (#57357)",
+      "score": 136,
+      "ui_keyword_hits": 15,
+      "added_lines": 39,
+      "deleted_lines": 16,
+      "age_days": 125
+    },
+    {
+      "hash": "933b09b42262ccedd2e0d9b65eea30c81cc0d1e8",
+      "date": "2025-09-02",
+      "message": "[Improvement]: Correct Default Elasticsearch Worker Limits in GHES 3.13 Documentation (#57351)",
+      "score": 136,
+      "ui_keyword_hits": 15,
+      "added_lines": 39,
+      "deleted_lines": 16,
+      "age_days": 125
+    },
+    {
+      "hash": "27c1cc2a4578d8318ee8556532f040cab04febc2",
+      "date": "2025-09-01",
+      "message": "chore: updated using the audit log api for your enterprise file (#40103)",
+      "score": 136,
+      "ui_keyword_hits": 15,
+      "added_lines": 39,
+      "deleted_lines": 16,
+      "age_days": 126
+    },
+    {
+      "hash": "6c2bb1b946a3b0df41c21e4ebdf9d45f8250a314",
+      "date": "2025-09-01",
+      "message": "Delete orphaned files (2025-09-01-16-29) (#57348)",
+      "score": 136,
+      "ui_keyword_hits": 15,
+      "added_lines": 39,
+      "deleted_lines": 16,
+      "age_days": 126
+    },
+    {
+      "hash": "5829d2e936092eaac27e62c805a48029b7123890",
+      "date": "2025-11-03",
+      "message": "Remove deprecated autofix for third-party tools from documentation (#58287)",
+      "score": 115,
+      "ui_keyword_hits": 12,
+      "added_lines": 39,
+      "deleted_lines": 8,
+      "age_days": 63
+    },
+    {
+      "hash": "899413f3ae0d0b7a1f7785332a35cf11f4e3b954",
+      "date": "2025-11-06",
+      "message": "[Bug fix] - fix code scanning section for GHES 3.17 (#58319)",
+      "score": 103,
+      "ui_keyword_hits": 12,
+      "added_lines": 32,
+      "deleted_lines": 3,
+      "age_days": 60
+    },
+    {
+      "hash": "6a0e49cab0978814ef9802b087f324af2f8e2de2",
+      "date": "2025-11-25",
+      "message": "Document custom runner settings for Dependabot self-hosted runners (#58429)",
+      "score": -1,
+      "ui_keyword_hits": 0,
+      "added_lines": 0,
+      "deleted_lines": 0,
+      "age_days": 41
+    }
+  ],
+  "top_k_commits": [
+    "cc09ee65f1905a5cf69f5976b2fe14075133a9db",
+    "933b09b42262ccedd2e0d9b65eea30c81cc0d1e8",
+    "27c1cc2a4578d8318ee8556532f040cab04febc2",
+    "6c2bb1b946a3b0df41c21e4ebdf9d45f8250a314",
+    "5829d2e936092eaac27e62c805a48029b7123890",
+    "899413f3ae0d0b7a1f7785332a35cf11f4e3b954"
+  ],
+  "selected_v1": "cc09ee65f1905a5cf69f5976b2fe14075133a9db"
+}

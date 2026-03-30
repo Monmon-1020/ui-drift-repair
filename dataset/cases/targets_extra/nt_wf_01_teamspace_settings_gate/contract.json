@@ -1,0 +1,34 @@
+{
+  "tutorial_id": "nt_wf_01_teamspace_settings_gate",
+  "doc_url": "https://www.notion.so/help/teamspaces",
+  "start_url": "https://www.notion.so/",
+  "steps": [
+    {
+      "step_id": "s1",
+      "action": { "type": "click" },
+      "anchor": {
+        "role": "link",
+        "name": "Settings & members",
+        "signature": { "container_kind": "sidebar" }
+      },
+      "post": { "must_have_heading": ["Settings"] }
+    },
+    {
+      "step_id": "s2",
+      "action": { "type": "click" },
+      "anchor": {
+        "role": "link",
+        "name": "Teamspaces",
+        "signature": { "container_kind": "sidebar" }
+      },
+      "post": { "must_have_heading": ["Teamspaces"] }
+    }
+  ],
+  "meta": {
+    "source": "https://www.notion.so/releases/2024-01-01",
+    "drift_type": "insert_step",
+    "patch_type": "INSERT_STEP",
+    "change_date": "2024-01-01",
+    "rationale": "Notion added a plan upgrade gate for Teamspace settings. Free plan users must first upgrade before accessing Teamspace configuration."
+  }
+}

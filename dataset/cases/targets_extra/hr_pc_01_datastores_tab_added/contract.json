@@ -1,0 +1,127 @@
+{
+  "tutorial_id": "hr_pc_01_datastores_tab_added",
+  "doc_url": "https://devcenter.heroku.com/articles/heroku-postgres",
+  "steps": [
+    {
+      "step_id": "s1",
+      "action": {
+        "type": "navigate"
+      },
+      "anchor": {
+        "role": "link",
+        "name": "Heroku Dashboard",
+        "signature": {
+          "container_kind": "main",
+          "section_path": [
+            "Heroku",
+            "Dashboard"
+          ],
+          "context_text": [
+            "Access your apps"
+          ]
+        }
+      },
+      "post": {
+        "url_pattern": "dashboard.heroku.com"
+      }
+    },
+    {
+      "step_id": "s2",
+      "action": {
+        "type": "click"
+      },
+      "anchor": {
+        "role": "link",
+        "name": "App name",
+        "signature": {
+          "container_kind": "main",
+          "section_path": [
+            "Dashboard",
+            "Apps"
+          ],
+          "context_text": [
+            "Your applications",
+            "Select app"
+          ]
+        }
+      },
+      "post": {
+        "url_pattern": "dashboard.heroku.com/apps/[app-name]"
+      }
+    },
+    {
+      "step_id": "s3",
+      "action": {
+        "type": "click"
+      },
+      "anchor": {
+        "role": "tab",
+        "name": "Resources",
+        "signature": {
+          "container_kind": "main",
+          "section_path": [
+            "App",
+            "Tabs"
+          ],
+          "context_text": [
+            "App navigation",
+            "Overview",
+            "Deploy"
+          ]
+        }
+      },
+      "post": {
+        "must_have_heading": [
+          "Installed add-ons"
+        ],
+        "url_pattern": "dashboard.heroku.com/apps/[app-name]/resources",
+        "description": "Old tutorial expected to find datastores only in Resources tab, before November 2025 when Datastores tab was added"
+      }
+    },
+    {
+      "step_id": "s4",
+      "action": {
+        "type": "observe"
+      },
+      "anchor": {
+        "role": "region",
+        "name": "Add-ons section",
+        "signature": {
+          "container_kind": "main",
+          "section_path": [
+            "Resources",
+            "Add-ons"
+          ],
+          "context_text": [
+            "Installed add-ons",
+            "Heroku Postgres",
+            "Heroku Redis"
+          ]
+        }
+      },
+      "post": {
+        "must_have_text": [
+          "Heroku Postgres"
+        ],
+        "description": "Datastores like Postgres were visible only in Resources tab's add-ons section"
+      }
+    }
+  ],
+  "meta": {
+    "source": "https://devcenter.heroku.com/changelog-items/3477",
+    "drift_type": "postcondition_update",
+    "patch_type": "POSTCONDITION_UPDATE",
+    "commit": null,
+    "change_date": "2025-11-05",
+    "rationale": "Heroku added a new 'Datastores' tab to the Dashboard on November 5, 2025, where datastores belonging to personal or team accounts now appear. Old tutorials that instructed users to view their Postgres databases solely through the 'Resources' tab would still work (databases still appear there too), but the postcondition changed - users now see a new 'Datastores' tab that didn't exist before, and tutorials checking for the absence of such a tab or verifying the Resources tab as the only location would fail. The navigation to Resources remained identical, but the dashboard gained additional navigation options and organizational structure for the same underlying resources.",
+    "postcondition_changes": {
+      "old_structure": "Datastores only visible in Resources tab under add-ons",
+      "new_structure": "Datastores visible in both Resources tab AND new dedicated Datastores tab",
+      "old_url": "Only dashboard.heroku.com/apps/[app]/resources",
+      "new_url": "Also data.heroku.com/datastores (until Jan 12, 2026 when removed)",
+      "navigation_unchanged": "Resources tab navigation unchanged, but new Datastores tab added",
+      "note": "New tab provides dedicated view for Heroku Postgres, Key-Value Store, and Kafka datastores"
+    }
+  },
+  "start_url": "https://dashboard.heroku.com/"
+}

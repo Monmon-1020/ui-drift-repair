@@ -1,0 +1,34 @@
+{
+  "tutorial_id": "gh_wf_08_code_scanning_default_setup",
+  "doc_url": "https://docs.github.com/en/code-security/code-scanning/enabling-code-scanning/configuring-default-setup-for-code-scanning",
+  "start_url": "https://github.com/Monmon-1020/Agent/settings/security_analysis",
+  "steps": [
+    {
+      "step_id": "s1",
+      "action": { "type": "click" },
+      "anchor": {
+        "role": "button",
+        "name": "Set up",
+        "signature": { "container_kind": "main", "section_path": ["Code scanning"] }
+      },
+      "post": {}
+    },
+    {
+      "step_id": "s2",
+      "action": { "type": "click" },
+      "anchor": {
+        "role": "button",
+        "name": "Default",
+        "signature": { "container_kind": "dialog" }
+      },
+      "post": {}
+    }
+  ],
+  "meta": {
+    "source": "https://github.blog/changelog/2023-01-09-code-scanning-default-setup-is-available-for-all-repositories/",
+    "drift_type": "insert_step",
+    "patch_type": "INSERT_STEP",
+    "change_date": "2023-01-09",
+    "rationale": "GitHub added a setup type selection dialog (Default vs Advanced) when enabling code scanning. Previously it went directly to workflow editor."
+  }
+}

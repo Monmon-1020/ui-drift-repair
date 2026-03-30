@@ -1,0 +1,109 @@
+{
+  "scoring_params": {
+    "min_age_days": 60,
+    "ui_keyword_weight": 5,
+    "line_change_weight": 1,
+    "age_penalty_divisor": 30
+  },
+  "commits": [
+    {
+      "hash": "cc09ee65f1905a5cf69f5976b2fe14075133a9db",
+      "date": "2025-09-02",
+      "message": "Hide `ruleset history` for Free, Team & Pro (#57357)",
+      "score": 73,
+      "ui_keyword_hits": 8,
+      "added_lines": 16,
+      "deleted_lines": 11,
+      "age_days": 125
+    },
+    {
+      "hash": "933b09b42262ccedd2e0d9b65eea30c81cc0d1e8",
+      "date": "2025-09-02",
+      "message": "[Improvement]: Correct Default Elasticsearch Worker Limits in GHES 3.13 Documentation (#57351)",
+      "score": 73,
+      "ui_keyword_hits": 8,
+      "added_lines": 16,
+      "deleted_lines": 11,
+      "age_days": 125
+    },
+    {
+      "hash": "27c1cc2a4578d8318ee8556532f040cab04febc2",
+      "date": "2025-09-01",
+      "message": "chore: updated using the audit log api for your enterprise file (#40103)",
+      "score": 73,
+      "ui_keyword_hits": 8,
+      "added_lines": 16,
+      "deleted_lines": 11,
+      "age_days": 126
+    },
+    {
+      "hash": "6c2bb1b946a3b0df41c21e4ebdf9d45f8250a314",
+      "date": "2025-09-01",
+      "message": "Delete orphaned files (2025-09-01-16-29) (#57348)",
+      "score": 73,
+      "ui_keyword_hits": 8,
+      "added_lines": 16,
+      "deleted_lines": 11,
+      "age_days": 126
+    },
+    {
+      "hash": "2c0f4891b8e7953f43c4d0954e93d0275d57931e",
+      "date": "2025-09-23",
+      "message": "Update install-copilot-extension.md for neovim on Windows (#40476)",
+      "score": 66,
+      "ui_keyword_hits": 8,
+      "added_lines": 12,
+      "deleted_lines": 7,
+      "age_days": 104
+    },
+    {
+      "hash": "c55c4ec1ce73faba77c4d3c8190aa1a2ac57ebc9",
+      "date": "2025-10-07",
+      "message": "Add XCode to Copilot Quickstart article (#57809)",
+      "score": 60,
+      "ui_keyword_hits": 7,
+      "added_lines": 11,
+      "deleted_lines": 7,
+      "age_days": 90
+    },
+    {
+      "hash": "02951af721fa28feed174a74fac9f3bbadc8011b",
+      "date": "2025-10-24",
+      "message": "Update CTAs for links part 1 (#58177)",
+      "score": 19,
+      "ui_keyword_hits": 1,
+      "added_lines": 5,
+      "deleted_lines": 1,
+      "age_days": 73
+    },
+    {
+      "hash": "164e19962b83dce2b27cbfed0c03fc2b6dbed893",
+      "date": "2025-10-29",
+      "message": "Discovery landing page (#58174)",
+      "score": 17,
+      "ui_keyword_hits": 1,
+      "added_lines": 3,
+      "deleted_lines": 1,
+      "age_days": 68
+    },
+    {
+      "hash": "e1ead9edeed9194a5bf1dac9817670bd20297656",
+      "date": "2025-10-31",
+      "message": "Fix typo in Visual Studio docs for Copilot (#58222)",
+      "score": 8,
+      "ui_keyword_hits": 0,
+      "added_lines": 0,
+      "deleted_lines": 0,
+      "age_days": 66
+    }
+  ],
+  "top_k_commits": [
+    "cc09ee65f1905a5cf69f5976b2fe14075133a9db",
+    "933b09b42262ccedd2e0d9b65eea30c81cc0d1e8",
+    "27c1cc2a4578d8318ee8556532f040cab04febc2",
+    "6c2bb1b946a3b0df41c21e4ebdf9d45f8250a314",
+    "2c0f4891b8e7953f43c4d0954e93d0275d57931e",
+    "c55c4ec1ce73faba77c4d3c8190aa1a2ac57ebc9"
+  ],
+  "selected_v1": "cc09ee65f1905a5cf69f5976b2fe14075133a9db"
+}

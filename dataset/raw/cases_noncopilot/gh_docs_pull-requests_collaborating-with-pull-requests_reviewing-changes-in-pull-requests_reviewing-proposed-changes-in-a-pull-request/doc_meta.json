@@ -1,0 +1,20 @@
+{
+  "case_id": "gh_docs_pull-requests_collaborating-with-pull-requests_reviewing-changes-in-pull-requests_reviewing-proposed-changes-in-a-pull-request",
+  "doc_url": "https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/reviewing-changes-in-pull-requests/reviewing-proposed-changes-in-a-pull-request",
+  "repo": "github/docs",
+  "path": "content/pull-requests/collaborating-with-pull-requests/reviewing-changes-in-pull-requests/reviewing-proposed-changes-in-a-pull-request.md",
+  "branch": "main",
+  "edit_url": "https://github.com/github/docs/blob/main/content/pull-requests/collaborating-with-pull-requests/reviewing-changes-in-pull-requests/reviewing-proposed-changes-in-a-pull-request.md",
+  "extraction_method": "html",
+  "collected_at": "2026-01-05T11:20:58.024Z",
+  "total_commits": 6,
+  "top_k": 6,
+  "selected_commits": [
+    "cc09ee65f1905a5cf69f5976b2fe14075133a9db",
+    "933b09b42262ccedd2e0d9b65eea30c81cc0d1e8",
+    "27c1cc2a4578d8318ee8556532f040cab04febc2",
+    "6c2bb1b946a3b0df41c21e4ebdf9d45f8250a314",
+    "1c5acee6589920f768b9d368bd485d352037e31c",
+    "b6a63ffb02ce6a904689d34765b8faad7eeed37c"
+  ]
+}

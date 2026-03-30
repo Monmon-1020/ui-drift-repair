@@ -1,0 +1,89 @@
+{
+  "scoring_params": {
+    "min_age_days": 60,
+    "ui_keyword_weight": 5,
+    "line_change_weight": 1,
+    "age_penalty_divisor": 30
+  },
+  "commits": [
+    {
+      "hash": "56f74eba4a9fd94621d8bb140f8fecd21cb88568",
+      "date": "2025-10-23",
+      "message": "Set up tutorial landing page and enable Journey and Bespoke landing pages (#58072)",
+      "score": 283,
+      "ui_keyword_hits": 46,
+      "added_lines": 21,
+      "deleted_lines": 24,
+      "age_days": 74
+    },
+    {
+      "hash": "cc09ee65f1905a5cf69f5976b2fe14075133a9db",
+      "date": "2025-09-02",
+      "message": "Hide `ruleset history` for Free, Team & Pro (#57357)",
+      "score": 283,
+      "ui_keyword_hits": 46,
+      "added_lines": 23,
+      "deleted_lines": 24,
+      "age_days": 125
+    },
+    {
+      "hash": "933b09b42262ccedd2e0d9b65eea30c81cc0d1e8",
+      "date": "2025-09-02",
+      "message": "[Improvement]: Correct Default Elasticsearch Worker Limits in GHES 3.13 Documentation (#57351)",
+      "score": 283,
+      "ui_keyword_hits": 46,
+      "added_lines": 23,
+      "deleted_lines": 24,
+      "age_days": 125
+    },
+    {
+      "hash": "27c1cc2a4578d8318ee8556532f040cab04febc2",
+      "date": "2025-09-01",
+      "message": "chore: updated using the audit log api for your enterprise file (#40103)",
+      "score": 283,
+      "ui_keyword_hits": 46,
+      "added_lines": 23,
+      "deleted_lines": 24,
+      "age_days": 126
+    },
+    {
+      "hash": "6c2bb1b946a3b0df41c21e4ebdf9d45f8250a314",
+      "date": "2025-09-01",
+      "message": "Delete orphaned files (2025-09-01-16-29) (#57348)",
+      "score": 283,
+      "ui_keyword_hits": 46,
+      "added_lines": 23,
+      "deleted_lines": 24,
+      "age_days": 126
+    },
+    {
+      "hash": "164e19962b83dce2b27cbfed0c03fc2b6dbed893",
+      "date": "2025-10-29",
+      "message": "Discovery landing page (#58174)",
+      "score": 282,
+      "ui_keyword_hits": 46,
+      "added_lines": 20,
+      "deleted_lines": 24,
+      "age_days": 68
+    },
+    {
+      "hash": "b6a63ffb02ce6a904689d34765b8faad7eeed37c",
+      "date": "2025-11-19",
+      "message": "Removes references to assistive and immersive chat (#58506)",
+      "score": -1,
+      "ui_keyword_hits": 0,
+      "added_lines": 0,
+      "deleted_lines": 0,
+      "age_days": 47
+    }
+  ],
+  "top_k_commits": [
+    "56f74eba4a9fd94621d8bb140f8fecd21cb88568",
+    "cc09ee65f1905a5cf69f5976b2fe14075133a9db",
+    "933b09b42262ccedd2e0d9b65eea30c81cc0d1e8",
+    "27c1cc2a4578d8318ee8556532f040cab04febc2",
+    "6c2bb1b946a3b0df41c21e4ebdf9d45f8250a314",
+    "164e19962b83dce2b27cbfed0c03fc2b6dbed893"
+  ],
+  "selected_v1": "56f74eba4a9fd94621d8bb140f8fecd21cb88568"
+}

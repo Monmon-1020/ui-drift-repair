@@ -1,0 +1,10 @@
+{
+  "patch_type": "POSTCONDITION_UPDATE",
+  "target_step_id": "s1",
+  "changes": {
+    "update_postcondition": {
+      "url_pattern": "github.com/[owner]/[repo]"
+    }
+  },
+  "rationale": "GitHub Copilot renamed 'chat modes' to 'agents' in November 2025. The functionality remained identical, and the process to create custom behaviors is the same (add file in repository), but the file path changed from '.github/copilot-instructions.md' to '.github/agents/*.agent.md' and all documentation changed from 'chat modes' terminology to 'agents'. Old tutorials showing the copilot-instructions.md file path or referring to 'chat modes' would fail verification, even though users can still create custom Copilot behaviors using the exact same navigation steps (just with different file names and terminology)."
+}

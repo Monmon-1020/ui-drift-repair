@@ -1,0 +1,34 @@
+{
+  "tutorial_id": "gl_tr_01_pipeline_editor_moved",
+  "doc_url": "https://docs.gitlab.com/ci/pipeline_editor/",
+  "start_url": "https://docs.gitlab.com/ci/pipeline_editor/",
+  "steps": [
+    {
+      "step_id": "s1",
+      "action": { "type": "click" },
+      "anchor": {
+        "role": "link",
+        "name": "CI/CD",
+        "signature": { "container_kind": "sidebar", "section_path": ["Project navigation"] }
+      },
+      "post": { "must_have_heading": ["CI/CD"] }
+    },
+    {
+      "step_id": "s2",
+      "action": { "type": "click" },
+      "anchor": {
+        "role": "link",
+        "name": "Editor",
+        "signature": { "container_kind": "sidebar", "section_path": ["CI/CD"] }
+      },
+      "post": { "must_have_heading": ["Pipeline editor"] }
+    }
+  ],
+  "meta": {
+    "source": "https://gitlab.com/gitlab-org/gitlab/-/issues/391331",
+    "drift_type": "target_replacement",
+    "patch_type": "REPLACE_TARGET",
+    "change_date": "2023-09-01",
+    "rationale": "GitLab moved the Pipeline Editor from CI/CD > Editor to Build > Pipeline editor as part of the CI/CD navigation reorganization."
+  }
+}

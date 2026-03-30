@@ -1,0 +1,139 @@
+{
+  "scoring_params": {
+    "min_age_days": 60,
+    "ui_keyword_weight": 5,
+    "line_change_weight": 1,
+    "age_penalty_divisor": 30
+  },
+  "commits": [
+    {
+      "hash": "cc09ee65f1905a5cf69f5976b2fe14075133a9db",
+      "date": "2025-09-02",
+      "message": "Hide `ruleset history` for Free, Team & Pro (#57357)",
+      "score": 1379,
+      "ui_keyword_hits": 151,
+      "added_lines": 618,
+      "deleted_lines": 0,
+      "age_days": 125
+    },
+    {
+      "hash": "933b09b42262ccedd2e0d9b65eea30c81cc0d1e8",
+      "date": "2025-09-02",
+      "message": "[Improvement]: Correct Default Elasticsearch Worker Limits in GHES 3.13 Documentation (#57351)",
+      "score": 1379,
+      "ui_keyword_hits": 151,
+      "added_lines": 618,
+      "deleted_lines": 0,
+      "age_days": 125
+    },
+    {
+      "hash": "27c1cc2a4578d8318ee8556532f040cab04febc2",
+      "date": "2025-09-01",
+      "message": "chore: updated using the audit log api for your enterprise file (#40103)",
+      "score": 1379,
+      "ui_keyword_hits": 151,
+      "added_lines": 618,
+      "deleted_lines": 0,
+      "age_days": 126
+    },
+    {
+      "hash": "6c2bb1b946a3b0df41c21e4ebdf9d45f8250a314",
+      "date": "2025-09-01",
+      "message": "Delete orphaned files (2025-09-01-16-29) (#57348)",
+      "score": 1379,
+      "ui_keyword_hits": 151,
+      "added_lines": 618,
+      "deleted_lines": 0,
+      "age_days": 126
+    },
+    {
+      "hash": "ee363a1764332db85ee6ca671097d655566fce34",
+      "date": "2025-10-10",
+      "message": "Fix CTAs with script (#57843)",
+      "score": 321,
+      "ui_keyword_hits": 50,
+      "added_lines": 45,
+      "deleted_lines": 18,
+      "age_days": 87
+    },
+    {
+      "hash": "7c87474c0c8db20b61d4262829b55b3cb1f6ea6b",
+      "date": "2025-09-12",
+      "message": "Copilot IA reorg (#57484)",
+      "score": 320,
+      "ui_keyword_hits": 50,
+      "added_lines": 45,
+      "deleted_lines": 18,
+      "age_days": 115
+    },
+    {
+      "hash": "164e19962b83dce2b27cbfed0c03fc2b6dbed893",
+      "date": "2025-10-29",
+      "message": "Discovery landing page (#58174)",
+      "score": 288,
+      "ui_keyword_hits": 45,
+      "added_lines": 40,
+      "deleted_lines": 15,
+      "age_days": 68
+    },
+    {
+      "hash": "02951af721fa28feed174a74fac9f3bbadc8011b",
+      "date": "2025-10-24",
+      "message": "Update CTAs for links part 1 (#58177)",
+      "score": 288,
+      "ui_keyword_hits": 45,
+      "added_lines": 41,
+      "deleted_lines": 14,
+      "age_days": 73
+    },
+    {
+      "hash": "cd2b59ce80b51d7f55e3a517d0bc8e755425e2d6",
+      "date": "2025-11-12",
+      "message": "Change \"code completion\" to \"inline suggestions\" throughout the docs (#57919)",
+      "score": 259,
+      "ui_keyword_hits": 43,
+      "added_lines": 35,
+      "deleted_lines": 10,
+      "age_days": 54
+    },
+    {
+      "hash": "2bd736cd06d43652c90b7d54b679beb4a3da7925",
+      "date": "2025-11-18",
+      "message": "[DO NOT MERGE] 🔥 Ignite 2025 megabranch (#58448)",
+      "score": 177,
+      "ui_keyword_hits": 31,
+      "added_lines": 14,
+      "deleted_lines": 9,
+      "age_days": 48
+    },
+    {
+      "hash": "35b5b0f383d640b2b97a20a9962a54d865889f4a",
+      "date": "2025-11-19",
+      "message": "Visual studio settings (#58327)",
+      "score": 11,
+      "ui_keyword_hits": 2,
+      "added_lines": 1,
+      "deleted_lines": 1,
+      "age_days": 47
+    },
+    {
+      "hash": "be5bd33e10f09a03e742038686c6d8a9922e0d05",
+      "date": "2025-11-21",
+      "message": "Remove Ignite UTMs (#58588)",
+      "score": -1,
+      "ui_keyword_hits": 0,
+      "added_lines": 0,
+      "deleted_lines": 0,
+      "age_days": 45
+    }
+  ],
+  "top_k_commits": [
+    "cc09ee65f1905a5cf69f5976b2fe14075133a9db",
+    "933b09b42262ccedd2e0d9b65eea30c81cc0d1e8",
+    "27c1cc2a4578d8318ee8556532f040cab04febc2",
+    "6c2bb1b946a3b0df41c21e4ebdf9d45f8250a314",
+    "ee363a1764332db85ee6ca671097d655566fce34",
+    "7c87474c0c8db20b61d4262829b55b3cb1f6ea6b"
+  ],
+  "selected_v1": "cc09ee65f1905a5cf69f5976b2fe14075133a9db"
+}

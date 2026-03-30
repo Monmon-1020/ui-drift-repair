@@ -1,0 +1,46 @@
+{
+  "tutorial_id": "sb_tr_01_database_settings_shortcut",
+  "doc_url": "https://supabase.com/docs/guides/database/postgres/configuration",
+  "steps": [
+    {
+      "step_id": "s1",
+      "action": {
+        "type": "click"
+      },
+      "anchor": {
+        "role": "link",
+        "name": "Database",
+        "signature": {
+          "container_kind": "submenu",
+          "section_path": [
+            "Project Settings",
+            "Settings navigation"
+          ],
+          "context_text": [
+            "Project Settings sidebar",
+            "Configuration options"
+          ]
+        }
+      },
+      "post": {
+        "must_have_heading": [
+          "Database Settings"
+        ]
+      }
+    }
+  ],
+  "meta": {
+    "source": "https://github.com/orgs/supabase/discussions/37655",
+    "drift_type": "target_replacement",
+    "patch_type": "REPLACE_TARGET",
+    "commit": null,
+    "change_date": "2025-08-04",
+    "rationale": "The 'Database' link in Project Settings was removed in August 2025 as part of a dashboard reorganization. Users must now click the 'Database' button in the main sidebar, then select 'Configuration' to access database settings.",
+    "replacement_details": {
+      "old_element": "Database (in Project Settings)",
+      "new_element": "Database (in main sidebar) → Configuration",
+      "new_location": "Main sidebar under Database section"
+    }
+  },
+  "start_url": "https://supabase.com/dashboard/project/jwaffyksmxomslupkoxg/database/tables"
+}

@@ -1,0 +1,44 @@
+{
+  "tutorial_id": "vc_wf_01_deployment_protection",
+  "doc_url": "https://vercel.com/docs/security/deployment-protection",
+  "start_url": "https://vercel.com/dashboard",
+  "steps": [
+    {
+      "step_id": "s1",
+      "action": { "type": "click" },
+      "anchor": {
+        "role": "link",
+        "name": "Settings",
+        "signature": { "container_kind": "nav" }
+      },
+      "post": { "url_pattern": "/settings" }
+    },
+    {
+      "step_id": "s2",
+      "action": { "type": "click" },
+      "anchor": {
+        "role": "link",
+        "name": "Deployment Protection",
+        "signature": { "container_kind": "sidebar" }
+      },
+      "post": { "must_have_heading": ["Deployment Protection"] }
+    },
+    {
+      "step_id": "s3",
+      "action": { "type": "click" },
+      "anchor": {
+        "role": "button",
+        "name": "Save",
+        "signature": { "container_kind": "main" }
+      },
+      "post": {}
+    }
+  ],
+  "meta": {
+    "source": "https://vercel.com/changelog/deployment-protection-standard",
+    "drift_type": "insert_step",
+    "patch_type": "INSERT_STEP",
+    "change_date": "2024-01-01",
+    "rationale": "Vercel added Deployment Protection as a required configuration step for new projects. Users must configure protection settings before deploying publicly."
+  }
+}

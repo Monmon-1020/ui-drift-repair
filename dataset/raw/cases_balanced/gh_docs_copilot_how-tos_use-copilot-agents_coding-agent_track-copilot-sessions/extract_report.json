@@ -1,0 +1,179 @@
+{
+  "scoring_params": {
+    "min_age_days": 60,
+    "ui_keyword_weight": 5,
+    "line_change_weight": 1,
+    "age_penalty_divisor": 30
+  },
+  "commits": [
+    {
+      "hash": "f1a2cb591f30b71a6fcd02f05e6d6f931da855e0",
+      "date": "2025-09-24",
+      "message": "Refer to the agents page and agents panel with a lower-case `a` (#57649)",
+      "score": 507,
+      "ui_keyword_hits": 80,
+      "added_lines": 85,
+      "deleted_lines": 15,
+      "age_days": 103
+    },
+    {
+      "hash": "cc09ee65f1905a5cf69f5976b2fe14075133a9db",
+      "date": "2025-09-02",
+      "message": "Hide `ruleset history` for Free, Team & Pro (#57357)",
+      "score": 506,
+      "ui_keyword_hits": 80,
+      "added_lines": 85,
+      "deleted_lines": 15,
+      "age_days": 125
+    },
+    {
+      "hash": "933b09b42262ccedd2e0d9b65eea30c81cc0d1e8",
+      "date": "2025-09-02",
+      "message": "[Improvement]: Correct Default Elasticsearch Worker Limits in GHES 3.13 Documentation (#57351)",
+      "score": 506,
+      "ui_keyword_hits": 80,
+      "added_lines": 85,
+      "deleted_lines": 15,
+      "age_days": 125
+    },
+    {
+      "hash": "27c1cc2a4578d8318ee8556532f040cab04febc2",
+      "date": "2025-09-01",
+      "message": "chore: updated using the audit log api for your enterprise file (#40103)",
+      "score": 506,
+      "ui_keyword_hits": 80,
+      "added_lines": 85,
+      "deleted_lines": 15,
+      "age_days": 126
+    },
+    {
+      "hash": "6c2bb1b946a3b0df41c21e4ebdf9d45f8250a314",
+      "date": "2025-09-01",
+      "message": "Delete orphaned files (2025-09-01-16-29) (#57348)",
+      "score": 506,
+      "ui_keyword_hits": 80,
+      "added_lines": 85,
+      "deleted_lines": 15,
+      "age_days": 126
+    },
+    {
+      "hash": "1942ee965da158f980107cf8da1b6944ee09a7c1",
+      "date": "2025-09-25",
+      "message": "[2025-09-25] Document `gh agent-task` in the Copilot coding agent docs (#57677)",
+      "score": 475,
+      "ui_keyword_hits": 75,
+      "added_lines": 75,
+      "deleted_lines": 18,
+      "age_days": 102
+    },
+    {
+      "hash": "68358bb0a4f4aa9b996b318fdd209e733bf237a7",
+      "date": "2025-09-25",
+      "message": "[2025-09-27] Copilot coding agent - general availability (#57625)",
+      "score": 467,
+      "ui_keyword_hits": 74,
+      "added_lines": 75,
+      "deleted_lines": 15,
+      "age_days": 102
+    },
+    {
+      "hash": "02951af721fa28feed174a74fac9f3bbadc8011b",
+      "date": "2025-10-24",
+      "message": "Update CTAs for links part 1 (#58177)",
+      "score": 429,
+      "ui_keyword_hits": 69,
+      "added_lines": 61,
+      "deleted_lines": 15,
+      "age_days": 73
+    },
+    {
+      "hash": "ee363a1764332db85ee6ca671097d655566fce34",
+      "date": "2025-10-10",
+      "message": "Fix CTAs with script (#57843)",
+      "score": 429,
+      "ui_keyword_hits": 69,
+      "added_lines": 61,
+      "deleted_lines": 15,
+      "age_days": 87
+    },
+    {
+      "hash": "ace142a64a84746ecfee9b1252dcce40f303b02e",
+      "date": "2025-09-26",
+      "message": "Document agents experience on GitHub Mobile (#57629)",
+      "score": 428,
+      "ui_keyword_hits": 69,
+      "added_lines": 61,
+      "deleted_lines": 15,
+      "age_days": 101
+    },
+    {
+      "hash": "c1ca049106639bc87381aa16e40e35f743928246",
+      "date": "2025-10-28",
+      "message": "October 28-29: GitHub Universe 2025 docs-internal megabranch (#57869)",
+      "score": 119,
+      "ui_keyword_hits": 18,
+      "added_lines": 18,
+      "deleted_lines": 3,
+      "age_days": 69
+    },
+    {
+      "hash": "f6abdd8299a039a7f24dacf9f8cfa630463b0aa8",
+      "date": "2025-10-29",
+      "message": "[Merge Oct. 28, 5:00PM PST] Update UTMs for post-Universe (#58240)",
+      "score": 117,
+      "ui_keyword_hits": 18,
+      "added_lines": 16,
+      "deleted_lines": 3,
+      "age_days": 68
+    },
+    {
+      "hash": "164e19962b83dce2b27cbfed0c03fc2b6dbed893",
+      "date": "2025-10-29",
+      "message": "Discovery landing page (#58174)",
+      "score": 117,
+      "ui_keyword_hits": 18,
+      "added_lines": 16,
+      "deleted_lines": 3,
+      "age_days": 68
+    },
+    {
+      "hash": "2bd736cd06d43652c90b7d54b679beb4a3da7925",
+      "date": "2025-11-18",
+      "message": "[DO NOT MERGE] 🔥 Ignite 2025 megabranch (#58448)",
+      "score": 43,
+      "ui_keyword_hits": 8,
+      "added_lines": 2,
+      "deleted_lines": 2,
+      "age_days": 48
+    },
+    {
+      "hash": "310704cf0b978baa7330bb1409877edd6150662e",
+      "date": "2025-11-19",
+      "message": "Remove Universe UTMs (#58560)",
+      "score": 31,
+      "ui_keyword_hits": 6,
+      "added_lines": 1,
+      "deleted_lines": 1,
+      "age_days": 47
+    },
+    {
+      "hash": "be5bd33e10f09a03e742038686c6d8a9922e0d05",
+      "date": "2025-11-21",
+      "message": "Remove Ignite UTMs (#58588)",
+      "score": -1,
+      "ui_keyword_hits": 0,
+      "added_lines": 0,
+      "deleted_lines": 0,
+      "age_days": 45
+    }
+  ],
+  "top_k_commits": [
+    "f1a2cb591f30b71a6fcd02f05e6d6f931da855e0",
+    "cc09ee65f1905a5cf69f5976b2fe14075133a9db",
+    "933b09b42262ccedd2e0d9b65eea30c81cc0d1e8",
+    "27c1cc2a4578d8318ee8556532f040cab04febc2",
+    "6c2bb1b946a3b0df41c21e4ebdf9d45f8250a314",
+    "1942ee965da158f980107cf8da1b6944ee09a7c1"
+  ],
+  "selected_v1": "f1a2cb591f30b71a6fcd02f05e6d6f931da855e0"
+}

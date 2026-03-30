@@ -1,0 +1,74 @@
+{
+  "tutorial_id": "hr_tr_01_datastores_tab_moved",
+  "doc_url": "https://data.heroku.com/datastores",
+  "steps": [
+    {
+      "step_id": "s1",
+      "action": {
+        "type": "click"
+      },
+      "anchor": {
+        "role": "link",
+        "name": "data.heroku.com",
+        "signature": {
+          "container_kind": "navigation",
+          "section_path": [
+            "Data Management"
+          ],
+          "context_text": [
+            "Access your datastores"
+          ]
+        }
+      },
+      "post": {
+        "must_have_heading": [
+          "Datastores"
+        ]
+      }
+    },
+    {
+      "step_id": "s2",
+      "action": {
+        "type": "click"
+      },
+      "anchor": {
+        "role": "tab",
+        "name": "Datastores",
+        "signature": {
+          "container_kind": "main",
+          "section_path": [
+            "Data Management",
+            "Datastores Tab"
+          ],
+          "context_text": [
+            "Default landing tab",
+            "List of all datastores"
+          ]
+        }
+      },
+      "post": {
+        "must_have_heading": [
+          "Your Datastores",
+          "Postgres",
+          "Redis"
+        ]
+      }
+    }
+  ],
+  "meta": {
+    "source": "https://devcenter.heroku.com/changelog-items/3477",
+    "drift_type": "target_replacement",
+    "patch_type": "REPLACE_TARGET",
+    "commit": null,
+    "change_date": "2025-11-05",
+    "rationale": "The Datastores tab was the default landing page on data.heroku.com. After November 5, 2025, the Dataclips tab became the default landing page instead. A new Datastores tab was added to the main Heroku Dashboard, making it the primary location to access datastores for personal/team accounts. On January 12, 2026, the Datastores tab was completely removed from data.heroku.com.",
+    "replacement_details": {
+      "old_element": "Datastores tab on data.heroku.com",
+      "new_element": "Datastores tab on Heroku Dashboard",
+      "new_location": "Main Heroku Dashboard sidebar",
+      "old_path": "data.heroku.com → Datastores tab (default)",
+      "new_path": "Heroku Dashboard → Datastores tab"
+    }
+  },
+  "start_url": "https://dashboard.heroku.com/"
+}

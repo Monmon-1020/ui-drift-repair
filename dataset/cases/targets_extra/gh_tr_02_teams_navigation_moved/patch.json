@@ -1,0 +1,21 @@
+{
+  "patch_type": "TARGET_REPLACEMENT",
+  "target_step_id": "s1",
+  "changes": {
+    "replace_anchor": {
+      "role": "link",
+      "name": "Teams",
+      "signature": {
+        "container_kind": "sidebar",
+        "section_path": [
+          "Organization navigation"
+        ],
+        "context_text": [
+          "Left-hand navigation menu",
+          "Organization sidebar"
+        ]
+      }
+    }
+  },
+  "rationale": "The 'Teams' link was removed from the left-hand navigation menu in December 2025. To access team management, users must now click the 'Settings' button in the top navigation, then select 'Teams' from the settings menu."
+}

@@ -1,0 +1,20 @@
+{
+  "patch_type": "TARGET_REPLACEMENT",
+  "target_step_id": "s1",
+  "changes": {
+    "replace_anchor": {
+      "role": "link",
+      "name": "Settings",
+      "signature": {
+        "container_kind": "main",
+        "section_path": [
+          "Organization navigation"
+        ],
+        "context_text": [
+          "Organization settings"
+        ]
+      }
+    }
+  },
+  "rationale": "As of October 15, 2024, GitHub removed the ability to enable or disable security features directly from the organization-level Security coverage page. This functionality was replaced with Code Security Configurations, which became the new way to manage security settings. Users must now navigate to Code Security Configurations to enable/disable features instead of using the direct enable buttons on the Security coverage page."
+}

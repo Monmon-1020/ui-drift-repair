@@ -1,0 +1,34 @@
+{
+  "tutorial_id": "se_wf_01_alert_wizard_gate",
+  "doc_url": "https://docs.sentry.io/product/alerts/",
+  "start_url": "https://sentry.io/",
+  "steps": [
+    {
+      "step_id": "s1",
+      "action": { "type": "click" },
+      "anchor": {
+        "role": "link",
+        "name": "Alerts",
+        "signature": { "container_kind": "sidebar" }
+      },
+      "post": { "must_have_heading": ["Alerts"] }
+    },
+    {
+      "step_id": "s2",
+      "action": { "type": "click" },
+      "anchor": {
+        "role": "button",
+        "name": "Create Alert",
+        "signature": { "container_kind": "main" }
+      },
+      "post": { "must_have_heading": ["Create Alert Rule"] }
+    }
+  ],
+  "meta": {
+    "source": "https://sentry.io/changelog/",
+    "drift_type": "insert_step",
+    "patch_type": "INSERT_STEP",
+    "change_date": "2024-03-01",
+    "rationale": "Sentry added an alert type selection wizard (Issue, Metric, Crash Rate, etc.) before the rule builder. Old tutorials that went directly to the rule editor now hit this selection gate."
+  }
+}

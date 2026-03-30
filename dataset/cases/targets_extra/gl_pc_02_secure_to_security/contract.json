@@ -1,0 +1,27 @@
+{
+  "tutorial_id": "gl_pc_02_secure_to_security",
+  "doc_url": "https://docs.gitlab.com/user/application_security/",
+  "start_url": "https://docs.gitlab.com/user/application_security/",
+  "steps": [
+    {
+      "step_id": "s1",
+      "action": { "type": "click" },
+      "anchor": {
+        "role": "link",
+        "name": "Secure",
+        "signature": { "container_kind": "sidebar" }
+      },
+      "post": {
+        "must_have_heading": ["Security Dashboard"],
+        "description": "Heading changed from 'Security Dashboard' to 'Vulnerability Report'"
+      }
+    }
+  ],
+  "meta": {
+    "source": "https://gitlab.com/gitlab-org/gitlab/-/issues/393570",
+    "drift_type": "postcondition_update",
+    "patch_type": "POSTCONDITION_UPDATE",
+    "change_date": "2023-06-01",
+    "rationale": "GitLab renamed 'Secure' to 'Security' in the sidebar and changed 'Security Dashboard' heading to 'Vulnerability Report'."
+  }
+}

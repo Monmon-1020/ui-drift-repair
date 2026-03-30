@@ -1,0 +1,65 @@
+{
+  "tutorial_id": "se_pc_02_stats_page_terminology",
+  "doc_url": "https://docs.sentry.io/pricing/quotas/",
+  "steps": [
+    {
+      "step_id": "s1",
+      "action": {
+        "type": "click"
+      },
+      "anchor": {
+        "role": "link",
+        "name": "Stats",
+        "signature": {
+          "container_kind": "sidebar",
+          "section_path": [
+            "Organization",
+            "Navigation"
+          ],
+          "context_text": [
+            "Organization settings sidebar"
+          ]
+        }
+      },
+      "post": {
+        "url_pattern": "[org-slug].sentry.io/stats"
+      }
+    },
+    {
+      "step_id": "s2",
+      "action": {
+        "type": "observe"
+      },
+      "anchor": {
+        "role": "region",
+        "name": "Event statistics",
+        "signature": {
+          "container_kind": "main",
+          "section_path": [
+            "Stats",
+            "Usage"
+          ],
+          "context_text": [
+            "Usage statistics",
+            "Event categories"
+          ]
+        }
+      },
+      "post": {
+        "must_have_text": [
+          "Dropped"
+        ],
+        "description": "Old terminology showed 'Dropped' for events that exceeded rate limits"
+      }
+    }
+  ],
+  "meta": {
+    "source": "https://sentry.io/changelog/clearer-insights-into-your-sentry-data-with-our-updated-stats-page/",
+    "drift_type": "postcondition_update",
+    "patch_type": "POSTCONDITION_UPDATE",
+    "commit": null,
+    "change_date": "2024-07-01",
+    "rationale": "Sentry updated their Stats page in July 2024, renaming 'Dropped' to 'Rate Limited' to avoid confusion with 'Client Discard'. The navigation to the Stats page still works and the page shows the same usage information, but old tutorials that instructed users to look for 'Dropped' events would fail because the label changed to 'Rate Limited'. The functionality and data remained the same, only the terminology in the UI changed."
+  },
+  "start_url": "https://sentry.io/stats/"
+}

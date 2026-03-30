@@ -1,0 +1,12 @@
+{
+  "patch_type": "POSTCONDITION_UPDATE",
+  "target_step_id": "s1",
+  "changes": {
+    "update_postcondition": {
+      "must_have_heading": [
+        "Actions secrets and variables"
+      ]
+    }
+  },
+  "rationale": "GitHub added support for configuration variables in GitHub Actions on January 10, 2023. The navigation to access secrets remained the same (Settings \u2192 Security \u2192 Secrets and variables \u2192 Actions), but the page heading changed from 'Actions secrets' to 'Actions secrets and variables'. Old tutorials that verified success by checking for the 'Actions secrets' heading would fail, even though the same navigation still works and users can still manage secrets in exactly the same location. The functionality is identical, only the page heading text changed to reflect that both secrets and variables are now managed on this page."
+}

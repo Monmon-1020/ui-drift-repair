@@ -1,0 +1,124 @@
+{
+  "tutorial_id": "gh_pc_03_copilot_modes_agents",
+  "doc_url": "https://docs.github.com/en/copilot/using-github-copilot/creating-copilot-extensions",
+  "steps": [
+    {
+      "step_id": "s1",
+      "action": {
+        "type": "navigate"
+      },
+      "anchor": {
+        "role": "link",
+        "name": "Repository",
+        "signature": {
+          "container_kind": "main",
+          "section_path": [
+            "GitHub",
+            "Your repositories"
+          ],
+          "context_text": [
+            "Access repository settings"
+          ]
+        }
+      },
+      "post": {
+        "url_pattern": "github.com/Monmon-1020/Agent"
+      }
+    },
+    {
+      "step_id": "s2",
+      "action": {
+        "type": "click"
+      },
+      "anchor": {
+        "role": "button",
+        "name": "Add file",
+        "signature": {
+          "container_kind": "main",
+          "section_path": [
+            "Repository",
+            "Code"
+          ],
+          "context_text": [
+            "Create new file",
+            "Upload files"
+          ]
+        }
+      },
+      "post": {
+        "must_have_text": [
+          "Create new file"
+        ]
+      }
+    },
+    {
+      "step_id": "s3",
+      "action": {
+        "type": "input"
+      },
+      "anchor": {
+        "role": "textbox",
+        "name": "File path",
+        "signature": {
+          "container_kind": "main",
+          "section_path": [
+            "Create file",
+            "Name"
+          ],
+          "context_text": [
+            "Name your file",
+            "File location"
+          ]
+        }
+      },
+      "post": {
+        "description": "Old tutorial instructed to create file at .github/copilot-instructions.md for custom chat modes"
+      }
+    },
+    {
+      "step_id": "s4",
+      "action": {
+        "type": "observe"
+      },
+      "anchor": {
+        "role": "region",
+        "name": "Documentation reference",
+        "signature": {
+          "container_kind": "main",
+          "section_path": [
+            "Help",
+            "Copilot"
+          ],
+          "context_text": [
+            "Custom instructions",
+            "Chat modes"
+          ]
+        }
+      },
+      "post": {
+        "must_have_text": [
+          "chat modes",
+          ".github/copilot-instructions.md"
+        ],
+        "description": "Old documentation referred to 'chat modes' and stored in copilot-instructions.md"
+      }
+    }
+  ],
+  "meta": {
+    "source": "https://dev.to/anchildress1/github-copilot-chat-modes-explained-with-personality-2f4c",
+    "drift_type": "postcondition_update",
+    "patch_type": "POSTCONDITION_UPDATE",
+    "commit": null,
+    "change_date": "2025-11-01",
+    "rationale": "GitHub Copilot renamed 'chat modes' to 'agents' in November 2025. The functionality remained identical, and the process to create custom behaviors is the same (add file in repository), but the file path changed from '.github/copilot-instructions.md' to '.github/agents/*.agent.md' and all documentation changed from 'chat modes' terminology to 'agents'. Old tutorials showing the copilot-instructions.md file path or referring to 'chat modes' would fail verification, even though users can still create custom Copilot behaviors using the exact same navigation steps (just with different file names and terminology).",
+    "postcondition_changes": {
+      "old_terminology": "chat modes",
+      "new_terminology": "agents",
+      "old_file_path": ".github/copilot-instructions.md",
+      "new_file_path": ".github/agents/*.agent.md",
+      "navigation_unchanged": "Same process: navigate to repo → add file → create configuration",
+      "note": "Only file path and terminology changed, functionality and navigation steps identical"
+    }
+  },
+  "start_url": "https://github.com/Monmon-1020/Agent"
+}

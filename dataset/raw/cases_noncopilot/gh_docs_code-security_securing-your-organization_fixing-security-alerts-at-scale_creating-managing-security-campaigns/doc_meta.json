@@ -1,0 +1,20 @@
+{
+  "case_id": "gh_docs_code-security_securing-your-organization_fixing-security-alerts-at-scale_creating-managing-security-campaigns",
+  "doc_url": "https://docs.github.com/en/code-security/securing-your-organization/fixing-security-alerts-at-scale/creating-managing-security-campaigns",
+  "repo": "github/docs",
+  "path": "content/code-security/securing-your-organization/fixing-security-alerts-at-scale/creating-managing-security-campaigns.md",
+  "branch": "main",
+  "edit_url": "https://github.com/github/docs/blob/main/content/code-security/securing-your-organization/fixing-security-alerts-at-scale/creating-managing-security-campaigns.md",
+  "extraction_method": "html",
+  "collected_at": "2026-01-05T11:20:48.852Z",
+  "total_commits": 7,
+  "top_k": 6,
+  "selected_commits": [
+    "933b09b42262ccedd2e0d9b65eea30c81cc0d1e8",
+    "27c1cc2a4578d8318ee8556532f040cab04febc2",
+    "6c2bb1b946a3b0df41c21e4ebdf9d45f8250a314",
+    "cc09ee65f1905a5cf69f5976b2fe14075133a9db",
+    "50a2f7a2daf6a9185358102c306279fec1e642fe",
+    "84d8eeb49ee2d1247e0132ace17f694034ac55eb"
+  ]
+}

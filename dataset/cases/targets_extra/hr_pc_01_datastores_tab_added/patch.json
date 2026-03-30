@@ -1,0 +1,10 @@
+{
+  "patch_type": "POSTCONDITION_UPDATE",
+  "target_step_id": "s1",
+  "changes": {
+    "update_postcondition": {
+      "url_pattern": "Also data.heroku.com/datastores (until Jan 12, 2026 when removed)"
+    }
+  },
+  "rationale": "Heroku added a new 'Datastores' tab to the Dashboard on November 5, 2025, where datastores belonging to personal or team accounts now appear. Old tutorials that instructed users to view their Postgres databases solely through the 'Resources' tab would still work (databases still appear there too), but the postcondition changed - users now see a new 'Datastores' tab that didn't exist before, and tutorials checking for the absence of such a tab or verifying the Resources tab as the only location would fail. The navigation to Resources remained identical, but the dashboard gained additional navigation options and organizational structure for the same underlying resources."
+}

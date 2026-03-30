@@ -1,0 +1,24 @@
+{
+  "tutorial_id": "cf_tr_03_interconnects_moved",
+  "doc_url": "https://developers.cloudflare.com/network-interconnect/",
+  "start_url": "https://dash.cloudflare.com/",
+  "steps": [
+    {
+      "step_id": "s1",
+      "action": { "type": "click" },
+      "anchor": {
+        "role": "link",
+        "name": "Interconnects",
+        "signature": { "container_kind": "sidebar", "section_path": ["Account navigation"] }
+      },
+      "post": { "must_have_heading": ["Interconnects"] }
+    }
+  ],
+  "meta": {
+    "source": "https://developers.cloudflare.com/changelog/post/2026-03-24-interconnects-navigation-update/",
+    "drift_type": "target_replacement",
+    "patch_type": "REPLACE_TARGET",
+    "change_date": "2026-03-24",
+    "rationale": "The top-level Interconnects page in the Cloudflare dashboard was removed. Interconnects are now located under Connectors > Interconnects."
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "patch_type": "POSTCONDITION_UPDATE",
+  "target_step_id": "s1",
+  "changes": {
+    "update_postcondition": {
+      "url_pattern": "github.com/[owner]/[repo]/projects"
+    }
+  },
+  "rationale": "GitHub renamed its original Projects feature to 'Projects (classic)' and introduced a new Projects experience in 2024. Old tutorials that navigated to create a project would still work, but the heading changed from 'Create a new project' to 'Create a new project (classic)' or similar wording, and the UI presented different options (new Projects vs. classic). Projects (classic) was sunset on August 23, 2024, but the navigation path remained valid with redirects to the new experience."
+}

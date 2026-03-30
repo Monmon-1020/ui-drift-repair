@@ -1,0 +1,10 @@
+{
+  "patch_type": "POSTCONDITION_UPDATE",
+  "target_step_id": "s1",
+  "changes": {
+    "update_postcondition": {
+      "url_pattern": "sentry.io/organizations/[org-slug]/settings"
+    }
+  },
+  "rationale": "Sentry changed front-end URLs from the old format 'sentry.io/organizations/[org-slug]' to the new subdomain format '[org-slug].sentry.io'. The navigation to organization settings still works (with automatic redirects), but the URL pattern in the postcondition changed from the organizations path to a subdomain-based URL. Old tutorials checking for the specific URL pattern would fail even though the navigation succeeds."
+}

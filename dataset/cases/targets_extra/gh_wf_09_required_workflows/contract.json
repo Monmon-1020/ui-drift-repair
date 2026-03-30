@@ -1,0 +1,34 @@
+{
+  "tutorial_id": "gh_wf_09_required_workflows",
+  "doc_url": "https://docs.github.com/en/actions/using-workflows/required-workflows",
+  "start_url": "https://github.com/Monmon-1020/Agent/settings",
+  "steps": [
+    {
+      "step_id": "s1",
+      "action": { "type": "click" },
+      "anchor": {
+        "role": "link",
+        "name": "Actions",
+        "signature": { "container_kind": "sidebar", "section_path": ["Settings", "Code and automation"] }
+      },
+      "post": { "url_pattern": "/settings/actions" }
+    },
+    {
+      "step_id": "s2",
+      "action": { "type": "click" },
+      "anchor": {
+        "role": "link",
+        "name": "General",
+        "signature": { "container_kind": "sidebar" }
+      },
+      "post": { "must_have_heading": ["Actions permissions"] }
+    }
+  ],
+  "meta": {
+    "source": "https://github.blog/changelog/2023-01-10-github-actions-support-for-organization-wide-required-workflows-public-beta/",
+    "drift_type": "insert_step",
+    "patch_type": "INSERT_STEP",
+    "change_date": "2023-01-10",
+    "rationale": "GitHub added required workflows at the organization level. Configuring Actions permissions now requires navigating through an additional 'General' sub-page that was previously the default view."
+  }
+}

@@ -1,0 +1,519 @@
+{
+  "scoring_params": {
+    "min_age_days": 60,
+    "ui_keyword_weight": 5,
+    "line_change_weight": 1,
+    "age_penalty_divisor": 30
+  },
+  "commits": [
+    {
+      "hash": "5bd9125f57d0e2140123072e3cb03dab977a4638",
+      "date": "2025-10-29",
+      "message": "Fixing deep links",
+      "score": 540,
+      "ui_keyword_hits": 59,
+      "added_lines": 126,
+      "deleted_lines": 111,
+      "age_days": 68
+    },
+    {
+      "hash": "22cf26501999d8b1f58ce0e8e5433573d698f299",
+      "date": "2025-10-29",
+      "message": "Awesome Copilot collection (#360)",
+      "score": 540,
+      "ui_keyword_hits": 59,
+      "added_lines": 126,
+      "deleted_lines": 111,
+      "age_days": 68
+    },
+    {
+      "hash": "56d7ce73a051066f38012f57117e09a9850636e4",
+      "date": "2025-10-29",
+      "message": "Partners (#354)",
+      "score": 539,
+      "ui_keyword_hits": 59,
+      "added_lines": 126,
+      "deleted_lines": 110,
+      "age_days": 68
+    },
+    {
+      "hash": "9a050b1506ee5a004270c12c9dddea3aa4cea060",
+      "date": "2025-10-23",
+      "message": "Move conventional-commit.prompt.md from instructions to prompts folder (#345)",
+      "score": 315,
+      "ui_keyword_hits": 33,
+      "added_lines": 142,
+      "deleted_lines": 0,
+      "age_days": 74
+    },
+    {
+      "hash": "ca37fc8d6d237f6569b44cf76ab0e3b84dc0c9b3",
+      "date": "2025-10-19",
+      "message": "Upload a new java refactoring, remove parameter (#335)",
+      "score": 315,
+      "ui_keyword_hits": 33,
+      "added_lines": 142,
+      "deleted_lines": 0,
+      "age_days": 78
+    },
+    {
+      "hash": "f4b82c8714f8b28a523d3d596299d698dfbdbfff",
+      "date": "2025-10-19",
+      "message": "Add PHP MCP Server Development collection with attribute-based discovery (#332)",
+      "score": 315,
+      "ui_keyword_hits": 33,
+      "added_lines": 142,
+      "deleted_lines": 0,
+      "age_days": 78
+    },
+    {
+      "hash": "33cab830b69b92686dbe8375513aa3d1c4059ee1",
+      "date": "2025-10-16",
+      "message": "Add Rust MCP Server Development collection (#331)",
+      "score": 315,
+      "ui_keyword_hits": 33,
+      "added_lines": 142,
+      "deleted_lines": 0,
+      "age_days": 81
+    },
+    {
+      "hash": "51b18a7577ec6e9d8b4e27cdc8fede2359183c7b",
+      "date": "2025-10-16",
+      "message": "Add Ruby MCP Server Development collection (#330)",
+      "score": 315,
+      "ui_keyword_hits": 33,
+      "added_lines": 142,
+      "deleted_lines": 0,
+      "age_days": 81
+    },
+    {
+      "hash": "eec72209d0c7135e4ecaaca52cbaa15009e26925",
+      "date": "2025-10-16",
+      "message": "Add Java MCP Server Development collection (#329)",
+      "score": 315,
+      "ui_keyword_hits": 33,
+      "added_lines": 142,
+      "deleted_lines": 0,
+      "age_days": 81
+    },
+    {
+      "hash": "616d8f14a7d3f8ef06ed62f75f7d96451c44ae9a",
+      "date": "2025-10-16",
+      "message": "Add Swift MCP Server Development collection (#328)",
+      "score": 315,
+      "ui_keyword_hits": 33,
+      "added_lines": 142,
+      "deleted_lines": 0,
+      "age_days": 81
+    },
+    {
+      "hash": "f10bc70ce51be683d3fc17b7683aafe9c07a2185",
+      "date": "2025-10-16",
+      "message": "Add Kotlin MCP Server Development collection (#327)",
+      "score": 315,
+      "ui_keyword_hits": 33,
+      "added_lines": 142,
+      "deleted_lines": 0,
+      "age_days": 81
+    },
+    {
+      "hash": "db6c15802081f337455b4da287169948e9378622",
+      "date": "2025-10-16",
+      "message": "Add Go MCP Server Development collection (#326)",
+      "score": 315,
+      "ui_keyword_hits": 33,
+      "added_lines": 142,
+      "deleted_lines": 0,
+      "age_days": 81
+    },
+    {
+      "hash": "4c6f3a55673761a1fbe71b5809ad0bb4d974152f",
+      "date": "2025-10-16",
+      "message": "Add Python MCP Server Development collection (#325)",
+      "score": 315,
+      "ui_keyword_hits": 33,
+      "added_lines": 142,
+      "deleted_lines": 0,
+      "age_days": 81
+    },
+    {
+      "hash": "fc5530604551d3eeb7a0797994c94c66a189ba74",
+      "date": "2025-10-16",
+      "message": "Add TypeScript MCP Server Development Collection (#324)",
+      "score": 315,
+      "ui_keyword_hits": 33,
+      "added_lines": 142,
+      "deleted_lines": 0,
+      "age_days": 81
+    },
+    {
+      "hash": "f6acdfcacb1d9ed05fdc69cb8fc4ff04dc3912a9",
+      "date": "2025-10-16",
+      "message": "Add C# MCP Server Development collection (#323)",
+      "score": 315,
+      "ui_keyword_hits": 33,
+      "added_lines": 142,
+      "deleted_lines": 0,
+      "age_days": 81
+    },
+    {
+      "hash": "38969f7cc2f910c54e5ec5c1a8cfafb4c9fa2943",
+      "date": "2025-10-15",
+      "message": "Add Power BI resources (#298)",
+      "score": 315,
+      "ui_keyword_hits": 33,
+      "added_lines": 142,
+      "deleted_lines": 0,
+      "age_days": 82
+    },
+    {
+      "hash": "17018479a7f6c6089348e1d83037f6efb58207e3",
+      "date": "2025-10-16",
+      "message": "Add MongoDB chat mode instructions  (#300)",
+      "score": 315,
+      "ui_keyword_hits": 33,
+      "added_lines": 142,
+      "deleted_lines": 0,
+      "age_days": 81
+    },
+    {
+      "hash": "abddc8cd9527f370e44a911c1202b60d31dcf65d",
+      "date": "2025-10-14",
+      "message": "Prompt for psuedo recursive self-improvement (#316)",
+      "score": 315,
+      "ui_keyword_hits": 33,
+      "added_lines": 142,
+      "deleted_lines": 0,
+      "age_days": 83
+    },
+    {
+      "hash": "e9d8cabb3a3fcbd8a1f025852b80d78673801efc",
+      "date": "2025-10-14",
+      "message": "Prompt to shuffle JSON (#315)",
+      "score": 315,
+      "ui_keyword_hits": 33,
+      "added_lines": 142,
+      "deleted_lines": 0,
+      "age_days": 83
+    },
+    {
+      "hash": "ff9ce27edf987e5231f038646aa958c8d4f87de4",
+      "date": "2025-10-10",
+      "message": "Prompt to add educational comments to file (#307)",
+      "score": 315,
+      "ui_keyword_hits": 33,
+      "added_lines": 142,
+      "deleted_lines": 0,
+      "age_days": 87
+    },
+    {
+      "hash": "7bd1620b13c7fd2298b1a34eb89fa4109d2cbb0e",
+      "date": "2025-10-10",
+      "message": "Update-memory-prompts (#304)",
+      "score": 315,
+      "ui_keyword_hits": 33,
+      "added_lines": 142,
+      "deleted_lines": 0,
+      "age_days": 87
+    },
+    {
+      "hash": "230c081d18dcd98d4cbcca83507855d05f4ec6af",
+      "date": "2025-10-09",
+      "message": "Create java-refactoring-extract-method.prompt.md (#284)",
+      "score": 315,
+      "ui_keyword_hits": 33,
+      "added_lines": 142,
+      "deleted_lines": 0,
+      "age_days": 88
+    },
+    {
+      "hash": "aa38e38a95ec16f7904b1316c2af70510fe08241",
+      "date": "2025-10-09",
+      "message": "Add Power Platform Connector MCP Protocol Development Collection (#297)",
+      "score": 315,
+      "ui_keyword_hits": 33,
+      "added_lines": 142,
+      "deleted_lines": 0,
+      "age_days": 88
+    },
+    {
+      "hash": "976d5e18e8140de46bc92b8390271f06502d1e02",
+      "date": "2025-10-01",
+      "message": "Fixing how the files are ordered - now based on title not file name (#274)",
+      "score": 314,
+      "ui_keyword_hits": 33,
+      "added_lines": 142,
+      "deleted_lines": 0,
+      "age_days": 96
+    },
+    {
+      "hash": "03199028c2a28afee54f7b81ded976097a0d1e74",
+      "date": "2025-10-01",
+      "message": "Update Clojure Interactive Programming resources (#272)",
+      "score": 314,
+      "ui_keyword_hits": 33,
+      "added_lines": 142,
+      "deleted_lines": 0,
+      "age_days": 96
+    },
+    {
+      "hash": "e20b67fe24b0d94d5a21776cc24d406bbd64b26c",
+      "date": "2025-10-01",
+      "message": "Enhance Go development instructions with additional best practices an… (#271)",
+      "score": 314,
+      "ui_keyword_hits": 33,
+      "added_lines": 142,
+      "deleted_lines": 0,
+      "age_days": 96
+    },
+    {
+      "hash": "a09e74243f1d42b270eda0de512e63ef05e76577",
+      "date": "2025-09-30",
+      "message": "GitHub Copilot starter prompt to setup a new project (#268)",
+      "score": 314,
+      "ui_keyword_hits": 33,
+      "added_lines": 142,
+      "deleted_lines": 0,
+      "age_days": 97
+    },
+    {
+      "hash": "0f1a48e48286cba3f20b3ff6563c5e2ba161bc8a",
+      "date": "2025-09-25",
+      "message": "Add Power Apps Code Apps Development Toolkit (#264)",
+      "score": 314,
+      "ui_keyword_hits": 33,
+      "added_lines": 142,
+      "deleted_lines": 0,
+      "age_days": 102
+    },
+    {
+      "hash": "ef07af67cf833b1fccb528d6da0fb0bba07be8c9",
+      "date": "2025-09-22",
+      "message": "CHANGE: Update prompts and add new suggestions (#255)",
+      "score": 314,
+      "ui_keyword_hits": 33,
+      "added_lines": 142,
+      "deleted_lines": 0,
+      "age_days": 105
+    },
+    {
+      "hash": "0eb2058824327b7d67ac9a3b514218034d63f21e",
+      "date": "2025-09-18",
+      "message": "Create Cosmos DB DataModeling prompt.md (#253)",
+      "score": 314,
+      "ui_keyword_hits": 33,
+      "added_lines": 142,
+      "deleted_lines": 0,
+      "age_days": 109
+    },
+    {
+      "hash": "931d8a0a952dde5e3c49c9356edb87f76d1e0b18",
+      "date": "2025-09-17",
+      "message": "Add Technical Spike collection and related resources (#251)",
+      "score": 314,
+      "ui_keyword_hits": 33,
+      "added_lines": 142,
+      "deleted_lines": 0,
+      "age_days": 110
+    },
+    {
+      "hash": "4c5b47498d02d423a26f2f1005ad6f4ad8d38996",
+      "date": "2025-09-15",
+      "message": "Update create-spring-boot-java-project input variable (#244)",
+      "score": 314,
+      "ui_keyword_hits": 33,
+      "added_lines": 142,
+      "deleted_lines": 0,
+      "age_days": 112
+    },
+    {
+      "hash": "ec3db46b77d30ff47e655d93a7c8cc945c8bf5ca",
+      "date": "2025-09-12",
+      "message": "Add `/remember` prompt (#242)",
+      "score": 314,
+      "ui_keyword_hits": 33,
+      "added_lines": 142,
+      "deleted_lines": 0,
+      "age_days": 115
+    },
+    {
+      "hash": "b4657d54c2c2aa3158099a70a5f7a41f06dca6e4",
+      "date": "2025-09-11",
+      "message": "Declarative Agents (#239)",
+      "score": 314,
+      "ui_keyword_hits": 33,
+      "added_lines": 142,
+      "deleted_lines": 0,
+      "age_days": 116
+    },
+    {
+      "hash": "0dac62b1633ec731d2de71e925eedf04e492db76",
+      "date": "2025-09-01",
+      "message": "Add agents.md creation prompt (#218)",
+      "score": 313,
+      "ui_keyword_hits": 33,
+      "added_lines": 142,
+      "deleted_lines": 0,
+      "age_days": 126
+    },
+    {
+      "hash": "bdc61009b9566249b5d870acfe000ce3b011be3b",
+      "date": "2025-08-28",
+      "message": "Update redirect URLs for installation links (#216)",
+      "score": 313,
+      "ui_keyword_hits": 33,
+      "added_lines": 142,
+      "deleted_lines": 0,
+      "age_days": 130
+    },
+    {
+      "hash": "8c155a61ef51367cd34b55fe22647c5be1d4a885",
+      "date": "2025-08-28",
+      "message": "Add nudge prompt for keeping the agent in repl using mode (#215)",
+      "score": 313,
+      "ui_keyword_hits": 33,
+      "added_lines": 142,
+      "deleted_lines": 0,
+      "age_days": 130
+    },
+    {
+      "hash": "4df6f8567e1c1de3e1ab7ead09befa47bbf06e60",
+      "date": "2025-08-27",
+      "message": "Add clojure memory instructions and prompt (#213)",
+      "score": 313,
+      "ui_keyword_hits": 33,
+      "added_lines": 142,
+      "deleted_lines": 0,
+      "age_days": 131
+    },
+    {
+      "hash": "3cedc53b0e4f08d845b89164650b8d48f6d3e33b",
+      "date": "2025-08-26",
+      "message": "New readme structure (#209)",
+      "score": 313,
+      "ui_keyword_hits": 33,
+      "added_lines": 142,
+      "deleted_lines": 0,
+      "age_days": 132
+    },
+    {
+      "hash": "41566f327fd3bc589c06bd0bc692f7fcb077c4cc",
+      "date": "2025-10-29",
+      "message": "Fixing install links",
+      "score": 28,
+      "ui_keyword_hits": 1,
+      "added_lines": 15,
+      "deleted_lines": 0,
+      "age_days": 68
+    },
+    {
+      "hash": "635facc486fa89ecda5c0d3726b1f59d80c3c992",
+      "date": "2025-11-03",
+      "message": "Add model-recommendation prompt to suggest optimal Copilot models for chatmodes/prompts (#356)",
+      "score": 27,
+      "ui_keyword_hits": 1,
+      "added_lines": 14,
+      "deleted_lines": 0,
+      "age_days": 63
+    },
+    {
+      "hash": "c6b3a646454c7209af5056c4f9d97154b5233dc1",
+      "date": "2025-11-05",
+      "message": "Rename dotnet-upgrade.prompts.md to dotnet-upgrade.prompt.md (#373)",
+      "score": 26,
+      "ui_keyword_hits": 1,
+      "added_lines": 13,
+      "deleted_lines": 0,
+      "age_days": 61
+    },
+    {
+      "hash": "238f2001a0991df43ab9fd5ceeca0692a7b9cb98",
+      "date": "2025-11-09",
+      "message": "add write-coding-standards-from-file.prompt (#386)",
+      "score": 16,
+      "ui_keyword_hits": 1,
+      "added_lines": 12,
+      "deleted_lines": 0,
+      "age_days": 57
+    },
+    {
+      "hash": "dd4f18d66a83b0de78ee7d010b61db1dc53ea3a2",
+      "date": "2025-11-15",
+      "message": "Add pytest coverage prompt (#396)",
+      "score": 15,
+      "ui_keyword_hits": 1,
+      "added_lines": 11,
+      "deleted_lines": 0,
+      "age_days": 51
+    },
+    {
+      "hash": "adbecbabc6b2c3de27a20c85b8987f613dc1743d",
+      "date": "2025-12-02",
+      "message": "add create-tldr-page prompt (#445)",
+      "score": 9,
+      "ui_keyword_hits": 0,
+      "added_lines": 10,
+      "deleted_lines": 0,
+      "age_days": 34
+    },
+    {
+      "hash": "cdbe21347b5a015c818961d695ec84113a86f8b2",
+      "date": "2025-12-02",
+      "message": "add tldr-prompt prompt (#446)",
+      "score": 8,
+      "ui_keyword_hits": 0,
+      "added_lines": 9,
+      "deleted_lines": 0,
+      "age_days": 34
+    },
+    {
+      "hash": "71ed2740aaf857b4f41b09a0e30088918a47374e",
+      "date": "2025-12-04",
+      "message": "add convert-plaintext-to-md prompt (#455)",
+      "score": 7,
+      "ui_keyword_hits": 0,
+      "added_lines": 8,
+      "deleted_lines": 0,
+      "age_days": 32
+    },
+    {
+      "hash": "a89019fb3b0b90ee74de845914a1046bf9fe9c8b",
+      "date": "2025-12-04",
+      "message": "Add Dataverse SDK for Python Collection (#458)",
+      "score": 3,
+      "ui_keyword_hits": 0,
+      "added_lines": 4,
+      "deleted_lines": 0,
+      "age_days": 32
+    },
+    {
+      "hash": "dfb9d33cfe7c345a0b4ef7594b0b604017d788d4",
+      "date": "2025-12-08",
+      "message": "Structured Autonomy Workflow (#469)",
+      "score": 1,
+      "ui_keyword_hits": 0,
+      "added_lines": 1,
+      "deleted_lines": 0,
+      "age_days": 28
+    },
+    {
+      "hash": "14285a28baa7d412bcb60159d9e43aea119d40dc",
+      "date": "2025-12-10",
+      "message": "Add GraalVM Native Image support for Java applications (#475)",
+      "score": 0,
+      "ui_keyword_hits": 0,
+      "added_lines": 0,
+      "deleted_lines": 0,
+      "age_days": 26
+    }
+  ],
+  "top_k_commits": [
+    "5bd9125f57d0e2140123072e3cb03dab977a4638",
+    "22cf26501999d8b1f58ce0e8e5433573d698f299",
+    "56d7ce73a051066f38012f57117e09a9850636e4",
+    "9a050b1506ee5a004270c12c9dddea3aa4cea060",
+    "ca37fc8d6d237f6569b44cf76ab0e3b84dc0c9b3",
+    "f4b82c8714f8b28a523d3d596299d698dfbdbfff"
+  ],
+  "selected_v1": "5bd9125f57d0e2140123072e3cb03dab977a4638"
+}

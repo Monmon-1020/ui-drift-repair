@@ -1,0 +1,10 @@
+{
+  "patch_type": "POSTCONDITION_UPDATE",
+  "target_step_id": "s1",
+  "changes": {
+    "update_postcondition": {
+      "url_pattern": "[org-slug].sentry.io/stats"
+    }
+  },
+  "rationale": "Sentry updated their Stats page in July 2024, renaming 'Dropped' to 'Rate Limited' to avoid confusion with 'Client Discard'. The navigation to the Stats page still works and the page shows the same usage information, but old tutorials that instructed users to look for 'Dropped' events would fail because the label changed to 'Rate Limited'. The functionality and data remained the same, only the terminology in the UI changed."
+}

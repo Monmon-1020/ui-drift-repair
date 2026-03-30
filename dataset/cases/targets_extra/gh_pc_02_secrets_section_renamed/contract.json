@@ -1,0 +1,104 @@
+{
+  "tutorial_id": "gh_pc_02_secrets_section_renamed",
+  "doc_url": "https://docs.github.com/en/actions/security-guides/using-secrets-in-github-actions",
+  "steps": [
+    {
+      "step_id": "s1",
+      "action": {
+        "type": "click"
+      },
+      "anchor": {
+        "role": "link",
+        "name": "Settings",
+        "signature": {
+          "container_kind": "main",
+          "section_path": [
+            "Repository",
+            "Navigation"
+          ],
+          "context_text": [
+            "Repository tabs",
+            "Code",
+            "Issues",
+            "Pull requests"
+          ]
+        }
+      },
+      "post": {
+        "url_pattern": "github.com/Monmon-1020/Agent/settings"
+      }
+    },
+    {
+      "step_id": "s2",
+      "action": {
+        "type": "click"
+      },
+      "anchor": {
+        "role": "button",
+        "name": "Secrets and variables",
+        "signature": {
+          "container_kind": "sidebar",
+          "section_path": [
+            "Settings",
+            "Security"
+          ],
+          "context_text": [
+            "Security section",
+            "Code security"
+          ]
+        }
+      },
+      "post": {
+        "must_have_heading": [
+          "Actions secrets"
+        ],
+        "url_pattern": "github.com/Monmon-1020/Agent/settings/secrets",
+        "description": "Old tutorial expected to see 'Actions secrets' heading, but it changed to 'Actions secrets and variables'"
+      }
+    },
+    {
+      "step_id": "s3",
+      "action": {
+        "type": "click"
+      },
+      "anchor": {
+        "role": "link",
+        "name": "Actions",
+        "signature": {
+          "container_kind": "main",
+          "section_path": [
+            "Secrets and variables",
+            "Options"
+          ],
+          "context_text": [
+            "Choose Actions",
+            "Codespaces",
+            "Dependabot"
+          ]
+        }
+      },
+      "post": {
+        "must_have_heading": [
+          "Actions secrets"
+        ],
+        "url_pattern": "github.com/Monmon-1020/Agent/settings/secrets/actions",
+        "description": "Old tutorial expected page heading to be 'Actions secrets' only"
+      }
+    }
+  ],
+  "meta": {
+    "source": "https://github.blog/changelog/2023-01-10-github-actions-support-for-configuration-variables-in-workflows/",
+    "drift_type": "postcondition_update",
+    "patch_type": "POSTCONDITION_UPDATE",
+    "commit": null,
+    "change_date": "2023-01-10",
+    "rationale": "GitHub added support for configuration variables in GitHub Actions on January 10, 2023. The navigation to access secrets remained the same (Settings → Security → Secrets and variables → Actions), but the page heading changed from 'Actions secrets' to 'Actions secrets and variables'. Old tutorials that verified success by checking for the 'Actions secrets' heading would fail, even though the same navigation still works and users can still manage secrets in exactly the same location. The functionality is identical, only the page heading text changed to reflect that both secrets and variables are now managed on this page.",
+    "postcondition_changes": {
+      "old_heading": "Actions secrets",
+      "new_heading": "Actions secrets and variables",
+      "navigation_unchanged": "Settings → Security → Secrets and variables → Actions",
+      "note": "Same navigation path, same functionality, only the page heading text changed"
+    }
+  },
+  "start_url": "https://github.com/Monmon-1020/Agent"
+}

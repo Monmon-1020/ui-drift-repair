@@ -1,0 +1,129 @@
+{
+  "scoring_params": {
+    "min_age_days": 60,
+    "ui_keyword_weight": 5,
+    "line_change_weight": 1,
+    "age_penalty_divisor": 30
+  },
+  "commits": [
+    {
+      "hash": "cc09ee65f1905a5cf69f5976b2fe14075133a9db",
+      "date": "2025-09-02",
+      "message": "Hide `ruleset history` for Free, Team & Pro (#57357)",
+      "score": 266,
+      "ui_keyword_hits": 40,
+      "added_lines": 40,
+      "deleted_lines": 20,
+      "age_days": 125
+    },
+    {
+      "hash": "933b09b42262ccedd2e0d9b65eea30c81cc0d1e8",
+      "date": "2025-09-02",
+      "message": "[Improvement]: Correct Default Elasticsearch Worker Limits in GHES 3.13 Documentation (#57351)",
+      "score": 266,
+      "ui_keyword_hits": 40,
+      "added_lines": 40,
+      "deleted_lines": 20,
+      "age_days": 125
+    },
+    {
+      "hash": "27c1cc2a4578d8318ee8556532f040cab04febc2",
+      "date": "2025-09-01",
+      "message": "chore: updated using the audit log api for your enterprise file (#40103)",
+      "score": 266,
+      "ui_keyword_hits": 40,
+      "added_lines": 40,
+      "deleted_lines": 20,
+      "age_days": 126
+    },
+    {
+      "hash": "6c2bb1b946a3b0df41c21e4ebdf9d45f8250a314",
+      "date": "2025-09-01",
+      "message": "Delete orphaned files (2025-09-01-16-29) (#57348)",
+      "score": 266,
+      "ui_keyword_hits": 40,
+      "added_lines": 40,
+      "deleted_lines": 20,
+      "age_days": 126
+    },
+    {
+      "hash": "2f93ca4c8f7aaa4b90b3627d710d322203e5c9ef",
+      "date": "2025-09-04",
+      "message": "Remove docs for Copilot coding guidelines (now being fully deprecated) (#57361)",
+      "score": 226,
+      "ui_keyword_hits": 34,
+      "added_lines": 39,
+      "deleted_lines": 11,
+      "age_days": 123
+    },
+    {
+      "hash": "2287088d3d86e82c7c5c5a614b8967878d8b7285",
+      "date": "2025-10-08",
+      "message": "Update articles with more detail for custom instructions support in VS Code (#57835)",
+      "score": 128,
+      "ui_keyword_hits": 19,
+      "added_lines": 11,
+      "deleted_lines": 14,
+      "age_days": 89
+    },
+    {
+      "hash": "588fbca04c5fd8302cbc105eb314f4e4ffc73a70",
+      "date": "2025-09-23",
+      "message": "[Already shipped] CCR support in JetBrains IDEs #19853 (#57652)",
+      "score": 124,
+      "ui_keyword_hits": 19,
+      "added_lines": 11,
+      "deleted_lines": 11,
+      "age_days": 104
+    },
+    {
+      "hash": "164e19962b83dce2b27cbfed0c03fc2b6dbed893",
+      "date": "2025-10-29",
+      "message": "Discovery landing page (#58174)",
+      "score": 108,
+      "ui_keyword_hits": 16,
+      "added_lines": 5,
+      "deleted_lines": 15,
+      "age_days": 68
+    },
+    {
+      "hash": "c1ca049106639bc87381aa16e40e35f743928246",
+      "date": "2025-10-28",
+      "message": "October 28-29: GitHub Universe 2025 docs-internal megabranch (#57869)",
+      "score": 108,
+      "ui_keyword_hits": 16,
+      "added_lines": 6,
+      "deleted_lines": 14,
+      "age_days": 69
+    },
+    {
+      "hash": "d41f89412db1d90e008c8bdd381813062dab59e8",
+      "date": "2025-11-12",
+      "message": "Correct and clarify information about code review in VS Code (#58273)",
+      "score": 16,
+      "ui_keyword_hits": 3,
+      "added_lines": 2,
+      "deleted_lines": 0,
+      "age_days": 54
+    },
+    {
+      "hash": "99ee4c2b56f69f126d08be6996a13eb04ab66027",
+      "date": "2025-12-17",
+      "message": "[2025-12-15] Direct organization billing of PRUs for Copilot Code Review [GA] (#58292)",
+      "score": 0,
+      "ui_keyword_hits": 0,
+      "added_lines": 0,
+      "deleted_lines": 0,
+      "age_days": 19
+    }
+  ],
+  "top_k_commits": [
+    "cc09ee65f1905a5cf69f5976b2fe14075133a9db",
+    "933b09b42262ccedd2e0d9b65eea30c81cc0d1e8",
+    "27c1cc2a4578d8318ee8556532f040cab04febc2",
+    "6c2bb1b946a3b0df41c21e4ebdf9d45f8250a314",
+    "2f93ca4c8f7aaa4b90b3627d710d322203e5c9ef",
+    "2287088d3d86e82c7c5c5a614b8967878d8b7285"
+  ],
+  "selected_v1": "cc09ee65f1905a5cf69f5976b2fe14075133a9db"
+}

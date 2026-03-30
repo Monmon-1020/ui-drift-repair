@@ -1,0 +1,24 @@
+{
+  "tutorial_id": "nt_tr_01_sidebar_reorganized",
+  "doc_url": "https://www.notion.so/help/intro-to-notion",
+  "start_url": "https://www.notion.so/",
+  "steps": [
+    {
+      "step_id": "s1",
+      "action": { "type": "click" },
+      "anchor": {
+        "role": "link",
+        "name": "Settings & members",
+        "signature": { "container_kind": "sidebar" }
+      },
+      "post": { "must_have_heading": ["Settings"] }
+    }
+  ],
+  "meta": {
+    "source": "https://www.notion.so/releases/2024-08-22",
+    "drift_type": "target_replacement",
+    "patch_type": "REPLACE_TARGET",
+    "change_date": "2024-08-22",
+    "rationale": "Notion renamed 'Settings & members' to 'Settings' in the sidebar. Old tutorials referencing the old name need to be updated."
+  }
+}

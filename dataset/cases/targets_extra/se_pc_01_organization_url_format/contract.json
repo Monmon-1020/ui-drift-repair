@@ -1,0 +1,37 @@
+{
+  "tutorial_id": "se_pc_01_organization_url_format",
+  "doc_url": "https://docs.sentry.io/product/accounts/getting-started/",
+  "steps": [
+    {
+      "step_id": "s1",
+      "action": {
+        "type": "navigate"
+      },
+      "anchor": {
+        "role": "navigation",
+        "name": "Organization Settings",
+        "signature": {
+          "container_kind": "main",
+          "section_path": [
+            "Settings"
+          ],
+          "context_text": [
+            "Access organization settings"
+          ]
+        }
+      },
+      "post": {
+        "url_pattern": "sentry.io/organizations/[org-slug]/settings"
+      }
+    }
+  ],
+  "meta": {
+    "source": "https://sentry.zendesk.com/hc/en-us/articles/24872645861531-Sentry-URL-and-Org-Slug-Changes",
+    "drift_type": "postcondition_update",
+    "patch_type": "POSTCONDITION_UPDATE",
+    "commit": null,
+    "change_date": "2025-05-26",
+    "rationale": "Sentry changed front-end URLs from the old format 'sentry.io/organizations/[org-slug]' to the new subdomain format '[org-slug].sentry.io'. The navigation to organization settings still works (with automatic redirects), but the URL pattern in the postcondition changed from the organizations path to a subdomain-based URL. Old tutorials checking for the specific URL pattern would fail even though the navigation succeeds."
+  },
+  "start_url": "https://sentry.io/settings/"
+}

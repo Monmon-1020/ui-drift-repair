@@ -1,0 +1,22 @@
+{
+  "patch_type": "TARGET_REPLACEMENT",
+  "target_step_id": "s1",
+  "changes": {
+    "replace_anchor": {
+      "role": "button",
+      "name": "Frame tool",
+      "signature": {
+        "container_kind": "toolbar",
+        "section_path": [
+          "Top toolbar",
+          "Design tools"
+        ],
+        "context_text": [
+          "Create a frame",
+          "Drawing tools"
+        ]
+      }
+    }
+  },
+  "rationale": "Figma UI3, launched at Config 2024, moved the entire toolbar from the top of the editor to the bottom. This was done to free up additional working space on the canvas and standardize muscle memory across all Figma products. All design tools (Frame, Shape, Pen, Text, etc.) that were previously at the top are now accessed from the bottom toolbar."
+}

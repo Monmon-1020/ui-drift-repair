@@ -1,0 +1,279 @@
+{
+  "tutorial_id": "gh_wf_07_prevent_self_review_deployments",
+  "doc_url": "https://docs.github.com/en/actions/managing-workflow-runs/reviewing-deployments",
+  "steps": [
+    {
+      "step_id": "s1",
+      "action": {
+        "type": "click",
+        "target": "Settings"
+      },
+      "anchor": {
+        "role": "link",
+        "name": "Settings",
+        "signature": {
+          "container_kind": "main",
+          "section_path": [
+            "Repository Navigation"
+          ],
+          "context_text": [
+            "Code",
+            "Issues",
+            "Pull requests"
+          ]
+        }
+      },
+      "post": {
+        "must_have_heading": [
+          "Settings"
+        ]
+      }
+    },
+    {
+      "step_id": "s2",
+      "action": {
+        "type": "click",
+        "target": "Environments"
+      },
+      "anchor": {
+        "role": "link",
+        "name": "Environments",
+        "signature": {
+          "container_kind": "sidebar",
+          "section_path": [
+            "Settings",
+            "Code and automation"
+          ],
+          "context_text": [
+            "Secrets and variables",
+            "Actions"
+          ]
+        }
+      },
+      "post": {
+        "must_have_heading": [
+          "Environments"
+        ]
+      }
+    },
+    {
+      "step_id": "s3",
+      "action": {
+        "type": "click",
+        "target": "Configure environment"
+      },
+      "anchor": {
+        "role": "button",
+        "name": "New environment",
+        "signature": {
+          "container_kind": "main",
+          "section_path": [
+            "Environments",
+            "production"
+          ],
+          "context_text": [
+            "Environment name",
+            "Deployment branches"
+          ]
+        }
+      },
+      "post": {
+        "must_have_heading": [
+          "Environment protection rules"
+        ]
+      }
+    },
+    {
+      "step_id": "s4",
+      "action": {
+        "type": "checkbox",
+        "checked": true
+      },
+      "anchor": {
+        "role": "checkbox",
+        "name": "Required reviewers",
+        "signature": {
+          "container_kind": "main",
+          "section_path": [
+            "Protection rules"
+          ],
+          "context_text": [
+            "Deployment protection rules"
+          ]
+        }
+      },
+      "post": {
+        "must_have_text": [
+          "Add up to 6 reviewers"
+        ]
+      }
+    },
+    {
+      "step_id": "s5",
+      "action": {
+        "type": "checkbox",
+        "checked": true
+      },
+      "anchor": {
+        "role": "checkbox",
+        "name": "Prevent self-review",
+        "signature": {
+          "container_kind": "main",
+          "section_path": [
+            "Required reviewers"
+          ],
+          "context_text": [
+            "Ensure deployments are reviewed by someone other than the person who triggered the workflow run"
+          ]
+        }
+      },
+      "post": {
+        "must_have_text": [
+          "self-review prevented"
+        ]
+      }
+    },
+    {
+      "step_id": "s6",
+      "action": {
+        "type": "input_text",
+        "value": "reviewer_username"
+      },
+      "anchor": {
+        "role": "textbox",
+        "name": "Search for people or teams",
+        "signature": {
+          "container_kind": "main",
+          "section_path": [
+            "Required reviewers"
+          ],
+          "context_text": [
+            "Type to search"
+          ]
+        }
+      },
+      "post": {
+        "must_have_text": [
+          "reviewer selected"
+        ]
+      }
+    },
+    {
+      "step_id": "s7",
+      "action": {
+        "type": "click",
+        "target": "Save protection rules"
+      },
+      "anchor": {
+        "role": "button",
+        "name": "Save protection rules",
+        "signature": {
+          "container_kind": "main",
+          "section_path": [
+            "Environment protection rules"
+          ],
+          "context_text": [
+            "Protection rules configured"
+          ]
+        }
+      },
+      "post": {
+        "must_have_text": [
+          "Protection rules saved"
+        ]
+      }
+    },
+    {
+      "step_id": "s8",
+      "action": {
+        "type": "git_push"
+      },
+      "anchor": {
+        "role": "command",
+        "name": "git push",
+        "signature": {
+          "container_kind": "terminal",
+          "section_path": [
+            "Git"
+          ],
+          "context_text": [
+            "Trigger workflow deployment"
+          ]
+        }
+      },
+      "post": {
+        "must_have_text": [
+          "Workflow run",
+          "deployment pending"
+        ]
+      }
+    },
+    {
+      "step_id": "s9",
+      "action": {
+        "type": "wait_for_different_user"
+      },
+      "anchor": {
+        "role": "status",
+        "name": "Waiting for reviewer",
+        "signature": {
+          "container_kind": "main",
+          "section_path": [
+            "Actions",
+            "Workflow run"
+          ],
+          "context_text": [
+            "Waiting for review",
+            "Cannot self-approve"
+          ]
+        }
+      },
+      "post": {
+        "must_have_text": [
+          "Different reviewer required"
+        ]
+      }
+    },
+    {
+      "step_id": "s10",
+      "action": {
+        "type": "click",
+        "target": "Approve and deploy"
+      },
+      "anchor": {
+        "role": "button",
+        "name": "Approve and deploy",
+        "signature": {
+          "container_kind": "modal",
+          "section_path": [
+            "Review deployments"
+          ],
+          "context_text": [
+            "Review deployment to production",
+            "Different user than workflow trigger"
+          ]
+        }
+      },
+      "post": {
+        "must_have_text": [
+          "Deployment approved",
+          "Running"
+        ]
+      }
+    }
+  ],
+  "meta": {
+    "source": "https://github.blog/changelog/2023-10-16-actions-prevent-self-reviews-for-secure-deployments-across-actions-environments/",
+    "drift_type": "step_insertion",
+    "patch_type": "INSERT_STEP",
+    "commit": null,
+    "change_date": "2023-10-16",
+    "rationale": "GitHub Actions added a 'Prevent self-review' option for environment deployments. Previously, users who triggered a workflow could also approve their own deployments if they were required reviewers. The new workflow adds a configuration step (s5) to enable self-review prevention and enforces a waiting step (s9) where the user who triggered the workflow cannot approve it - a different reviewer must approve the deployment. This ensures deployments are reviewed by at least two different people, improving security for critical environments.",
+    "insertion_details": {
+      "inserted_after_step": "s8",
+      "num_steps_added": 2,
+      "reason": "Prevent self-review security feature requires different user to approve deployment"
+    }
+  },
+  "start_url": "https://github.com/Monmon-1020/Agent"
+}

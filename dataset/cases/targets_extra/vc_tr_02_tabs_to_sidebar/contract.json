@@ -1,0 +1,24 @@
+{
+  "tutorial_id": "vc_tr_02_tabs_to_sidebar",
+  "doc_url": "https://vercel.com/docs/dashboard",
+  "start_url": "https://vercel.com/dashboard",
+  "steps": [
+    {
+      "step_id": "s1",
+      "action": { "type": "click" },
+      "anchor": {
+        "role": "tab",
+        "name": "Deployments",
+        "signature": { "container_kind": "nav", "section_path": ["Project tabs"] }
+      },
+      "post": { "must_have_heading": ["Deployments"] }
+    }
+  ],
+  "meta": {
+    "source": "https://vercel.com/changelog/dashboard-navigation-redesign-rollout",
+    "drift_type": "target_replacement",
+    "patch_type": "REPLACE_TARGET",
+    "change_date": "2026-02-26",
+    "rationale": "Vercel moved dashboard navigation from horizontal tabs to a sidebar. 'Deployments' was a horizontal tab but is now a sidebar link."
+  }
+}

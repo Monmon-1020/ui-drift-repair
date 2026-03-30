@@ -1,0 +1,20 @@
+{
+  "patch_type": "TARGET_REPLACEMENT",
+  "target_step_id": "s1",
+  "changes": {
+    "replace_anchor": {
+      "role": "link",
+      "name": "Storage",
+      "signature": {
+        "container_kind": "sidebar",
+        "section_path": [
+          "Navigation"
+        ],
+        "context_text": [
+          "Project navigation sidebar"
+        ]
+      }
+    }
+  },
+  "rationale": "Supabase reorganized dashboard navigation in August 2025. The old 'Project Settings \u2192 Storage' link was removed. Users must now click 'Storage' in the main sidebar, then 'Settings' to access storage settings. This is a target_replacement because the elements clicked changed, not just the postcondition."
+}

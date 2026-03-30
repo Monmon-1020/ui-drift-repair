@@ -1,0 +1,43 @@
+{
+  "name": "create-tuto-1",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Day1 PoC demo app and evidence capture scripts",
+  "scripts": {
+    "dev": "cd apps/demo-ui && npm run dev",
+    "capture:evidence": "node scripts/captureEvidence.js",
+    "diagnose:offline:v1": "ts-node scripts/diagnoseOffline.ts --version v1",
+    "diagnose:online:v1": "ts-node scripts/diagnoseOnline.ts --version v1 --base http://localhost:5173",
+    "repair:element:v2": "ts-node scripts/repairElement.ts --version v2 --base http://localhost:5173",
+    "postinstall": "cd apps/demo-ui && npm install",
+    "agent:run": "tsx src/runner/index.ts",
+    "agent:build": "tsc",
+    "agent:test": "node --experimental-vm-modules node_modules/jest/bin/jest.js",
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/jest": "^30.0.0",
+    "@types/node": "^22.10.2",
+    "jest": "^30.2.0",
+    "playwright": "^1.49.1",
+    "ts-jest": "^29.4.6",
+    "ts-node": "^10.9.2",
+    "tsx": "^4.21.0",
+    "typescript": "^5.7.2"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.71.2",
+    "@types/uuid": "^10.0.0",
+    "cheerio": "^1.1.2",
+    "dotenv": "^17.2.3",
+    "js-yaml": "^4.1.1",
+    "jsonrepair": "^3.13.1",
+    "openai": "^6.16.0",
+    "p-limit": "^7.2.0",
+    "uuid": "^13.0.0",
+    "zod": "^4.2.1"
+  }
+}

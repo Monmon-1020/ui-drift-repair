@@ -1,0 +1,37 @@
+{
+  "patch_type": "INSERT_STEP",
+  "target_step_id": "s1",
+  "changes": {
+    "insert_after": "s1",
+    "new_steps": [
+      {
+        "step_id": "s2",
+        "action": {
+          "type": "input_text",
+          "value": "APP_NAME"
+        },
+        "anchor": {
+          "role": "prompt",
+          "name": "Type app name to confirm",
+          "signature": {
+            "container_kind": "terminal",
+            "section_path": [
+              "Confirmation Prompt"
+            ],
+            "context_text": [
+              "To proceed, type",
+              "or re-run this command with --confirm"
+            ]
+          }
+        },
+        "post": {
+          "must_have_text": [
+            "Transferring",
+            "done"
+          ]
+        }
+      }
+    ]
+  },
+  "rationale": "Added confirmation requirement when transferring apps from Teams/Orgs to Personal Apps because the transferrer may lose access to the app post-transfer. The old workflow allowed direct transfer without confirmation, but the new workflow requires typing the app name to prevent accidental transfers that could result in loss of access."
+}

@@ -1,0 +1,89 @@
+{
+  "patch_type": "INSERT_STEP",
+  "target_step_id": "s1",
+  "changes": {
+    "insert_after": "s1",
+    "new_steps": [
+      {
+        "step_id": "s2",
+        "action": {
+          "type": "click",
+          "target": "Two-Factor Authentication"
+        },
+        "anchor": {
+          "role": "button",
+          "name": "Enable Two-Factor Authentication",
+          "signature": {
+            "container_kind": "main",
+            "section_path": [
+              "Security",
+              "Two-Factor Authentication"
+            ],
+            "context_text": [
+              "Require 2FA for publishing"
+            ]
+          }
+        },
+        "post": {
+          "must_have_text": [
+            "2FA enabled",
+            "WebAuthn"
+          ]
+        }
+      },
+      {
+        "step_id": "s3",
+        "action": {
+          "type": "cli_command",
+          "command": "npm publish"
+        },
+        "anchor": {
+          "role": "command",
+          "name": "npm publish",
+          "signature": {
+            "container_kind": "terminal",
+            "section_path": [
+              "npm CLI"
+            ],
+            "context_text": [
+              "Publish package to registry"
+            ]
+          }
+        },
+        "post": {
+          "must_have_text": [
+            "Enter OTP",
+            "two-factor"
+          ]
+        }
+      },
+      {
+        "step_id": "s4",
+        "action": {
+          "type": "input_text",
+          "value": "OTP_CODE"
+        },
+        "anchor": {
+          "role": "prompt",
+          "name": "Enter one-time password",
+          "signature": {
+            "container_kind": "terminal",
+            "section_path": [
+              "2FA Verification"
+            ],
+            "context_text": [
+              "Enter OTP from authenticator"
+            ]
+          }
+        },
+        "post": {
+          "must_have_text": [
+            "published",
+            "success"
+          ]
+        }
+      }
+    ]
+  },
+  "rationale": "npm security changes now require two-factor authentication (2FA) for all package publishing operations. Previously, users could publish packages directly with just their credentials. The new workflow requires enabling 2FA (steps s2) and entering an OTP code during publish (step s4), adding two new steps to the publishing process. This prevents unauthorized package publishes and protects against account compromise."
+}

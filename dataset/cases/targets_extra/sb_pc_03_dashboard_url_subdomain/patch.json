@@ -1,0 +1,10 @@
+{
+  "patch_type": "POSTCONDITION_UPDATE",
+  "target_step_id": "s1",
+  "changes": {
+    "update_postcondition": {
+      "url_pattern": "[custom-subdomain].supabase.co/dashboard or custom.domain.com/dashboard"
+    }
+  },
+  "rationale": "Supabase introduced vanity subdomains and enhanced custom domain features in 2024, allowing organizations to use custom subdomain formats (e.g., my-org.supabase.co) instead of the default randomly-assigned project reference format. While the old path-based URL format (supabase.com/dashboard/project/[ref]) still works with automatic redirects, tutorials that check for the specific URL pattern would fail when users have configured custom subdomains. The navigation to access the project dashboard remains identical, but the resulting URL format in the address bar may differ."
+}

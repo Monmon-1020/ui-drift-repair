@@ -1,0 +1,20 @@
+{
+  "case_id": "gh_docs_copilot_how-tos_get-code-suggestions_get-ide-code-suggestions",
+  "doc_url": "https://docs.github.com/en/copilot/how-tos/get-code-suggestions/get-ide-code-suggestions",
+  "repo": "github/docs",
+  "path": "content/copilot/how-tos/get-code-suggestions/get-ide-code-suggestions.md",
+  "branch": "main",
+  "edit_url": "https://github.com/github/docs/blob/main/content/copilot/how-tos/get-code-suggestions/get-ide-code-suggestions.md",
+  "extraction_method": "html",
+  "collected_at": "2026-01-05T11:26:08.222Z",
+  "total_commits": 12,
+  "top_k": 6,
+  "selected_commits": [
+    "cc09ee65f1905a5cf69f5976b2fe14075133a9db",
+    "933b09b42262ccedd2e0d9b65eea30c81cc0d1e8",
+    "27c1cc2a4578d8318ee8556532f040cab04febc2",
+    "6c2bb1b946a3b0df41c21e4ebdf9d45f8250a314",
+    "ee363a1764332db85ee6ca671097d655566fce34",
+    "7c87474c0c8db20b61d4262829b55b3cb1f6ea6b"
+  ]
+}

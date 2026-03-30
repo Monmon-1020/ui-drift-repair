@@ -1,0 +1,128 @@
+{
+  "collected_at": "2026-01-05T11:23:55.721Z",
+  "total": 15,
+  "successful": 14,
+  "failed": 1,
+  "results": [
+    {
+      "target": {
+        "case_id": "gh_docs_billing_how-tos_set-up-payment_connect-azure-sub",
+        "doc_url": "https://docs.github.com/en/billing/how-tos/set-up-payment/connect-azure-sub"
+      },
+      "success": true,
+      "outputDir": "dataset/raw/cases_noncopilot/gh_docs_billing_how-tos_set-up-payment_connect-azure-sub"
+    },
+    {
+      "target": {
+        "case_id": "gh_docs_billing_tutorials_set-up-budgets",
+        "doc_url": "https://docs.github.com/en/billing/tutorials/set-up-budgets"
+      },
+      "success": true,
+      "outputDir": "dataset/raw/cases_noncopilot/gh_docs_billing_tutorials_set-up-budgets"
+    },
+    {
+      "target": {
+        "case_id": "gh_docs_issues_planning-and-tracking-with-projects_learning-about-projects_quickstart-for-projects",
+        "doc_url": "https://docs.github.com/en/issues/planning-and-tracking-with-projects/learning-about-projects/quickstart-for-projects"
+      },
+      "success": true,
+      "outputDir": "dataset/raw/cases_noncopilot/gh_docs_issues_planning-and-tracking-with-projects_learning-about-projects_quickstart-for-projects"
+    },
+    {
+      "target": {
+        "case_id": "gh_docs_billing_how-tos_products_view-productlicense-use",
+        "doc_url": "https://docs.github.com/en/billing/how-tos/products/view-productlicense-use"
+      },
+      "success": true,
+      "outputDir": "dataset/raw/cases_noncopilot/gh_docs_billing_how-tos_products_view-productlicense-use"
+    },
+    {
+      "target": {
+        "case_id": "gh_docs_code-security_securing-your-organization_enabling-security-features-in-your-organization_configuring-global-security-settings-for-your-organization",
+        "doc_url": "https://docs.github.com/en/code-security/securing-your-organization/enabling-security-features-in-your-organization/configuring-global-security-settings-for-your-organization"
+      },
+      "success": true,
+      "outputDir": "dataset/raw/cases_noncopilot/gh_docs_code-security_securing-your-organization_enabling-security-features-in-your-organization_configuring-global-security-settings-for-your-organization"
+    },
+    {
+      "target": {
+        "case_id": "gh_docs_code-security_securing-your-organization_fixing-security-alerts-at-scale_creating-managing-security-campaigns",
+        "doc_url": "https://docs.github.com/en/code-security/securing-your-organization/fixing-security-alerts-at-scale/creating-managing-security-campaigns"
+      },
+      "success": true,
+      "outputDir": "dataset/raw/cases_noncopilot/gh_docs_code-security_securing-your-organization_fixing-security-alerts-at-scale_creating-managing-security-campaigns"
+    },
+    {
+      "target": {
+        "case_id": "gh_docs_billing_how-tos_products_buy-advanced-security",
+        "doc_url": "https://docs.github.com/en/billing/how-tos/products/buy-advanced-security"
+      },
+      "success": true,
+      "outputDir": "dataset/raw/cases_noncopilot/gh_docs_billing_how-tos_products_buy-advanced-security"
+    },
+    {
+      "target": {
+        "case_id": "gh_docs_code-security_code-scanning_managing-code-scanning-alerts_disabling-autofix-for-code-scanning",
+        "doc_url": "https://docs.github.com/en/code-security/code-scanning/managing-code-scanning-alerts/disabling-autofix-for-code-scanning"
+      },
+      "success": true,
+      "outputDir": "dataset/raw/cases_noncopilot/gh_docs_code-security_code-scanning_managing-code-scanning-alerts_disabling-autofix-for-code-scanning"
+    },
+    {
+      "target": {
+        "case_id": "gh_docs_billing_how-tos_products_manage-ghas-licenses",
+        "doc_url": "https://docs.github.com/en/billing/how-tos/products/manage-ghas-licenses"
+      },
+      "success": true,
+      "outputDir": "dataset/raw/cases_noncopilot/gh_docs_billing_how-tos_products_manage-ghas-licenses"
+    },
+    {
+      "target": {
+        "case_id": "gh_docs_admin_backing-up-and-restoring-your-instance_backup-service-for-github-enterprise-server_configuring-the-backup-service",
+        "doc_url": "https://docs.github.com/en/admin/backing-up-and-restoring-your-instance/backup-service-for-github-enterprise-server/configuring-the-backup-service"
+      },
+      "success": true,
+      "outputDir": "dataset/raw/cases_noncopilot/gh_docs_admin_backing-up-and-restoring-your-instance_backup-service-for-github-enterprise-server_configuring-the-backup-service"
+    },
+    {
+      "target": {
+        "case_id": "gh_docs_pull-requests_collaborating-with-pull-requests_reviewing-changes-in-pull-requests_reviewing-proposed-changes-in-a-pull-request",
+        "doc_url": "https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/reviewing-changes-in-pull-requests/reviewing-proposed-changes-in-a-pull-request"
+      },
+      "success": true,
+      "outputDir": "dataset/raw/cases_noncopilot/gh_docs_pull-requests_collaborating-with-pull-requests_reviewing-changes-in-pull-requests_reviewing-proposed-changes-in-a-pull-request"
+    },
+    {
+      "target": {
+        "case_id": "gh_docs_code-security_code-scanning_managing-code-scanning-alerts_resolving-code-scanning-alerts",
+        "doc_url": "https://docs.github.com/en/code-security/code-scanning/managing-code-scanning-alerts/resolving-code-scanning-alerts"
+      },
+      "success": false,
+      "error": "Command failed: npx tsx tools/collect_tutorial_history.ts --out dataset/raw/cases_noncopilot/gh_docs_code-security_code-scanning_managing-code-scanning-alerts_resolving-code-scanning-alerts --k 6 --url https://docs.github.com/en/code-security/code-scanning/managing-code-scanning-alerts/resolving-code-scanning-alerts"
+    },
+    {
+      "target": {
+        "case_id": "gh_docs_issues_planning-and-tracking-with-projects_managing-your-project_adding-your-project-to-a-repository",
+        "doc_url": "https://docs.github.com/en/issues/planning-and-tracking-with-projects/managing-your-project/adding-your-project-to-a-repository"
+      },
+      "success": true,
+      "outputDir": "dataset/raw/cases_noncopilot/gh_docs_issues_planning-and-tracking-with-projects_managing-your-project_adding-your-project-to-a-repository"
+    },
+    {
+      "target": {
+        "case_id": "gh_docs_billing_how-tos_manage-plan-and-licenses_manage-user-licenses",
+        "doc_url": "https://docs.github.com/en/billing/how-tos/manage-plan-and-licenses/manage-user-licenses"
+      },
+      "success": true,
+      "outputDir": "dataset/raw/cases_noncopilot/gh_docs_billing_how-tos_manage-plan-and-licenses_manage-user-licenses"
+    },
+    {
+      "target": {
+        "case_id": "gh_docs_billing_how-tos_products_download-license-use",
+        "doc_url": "https://docs.github.com/en/billing/how-tos/products/download-license-use"
+      },
+      "success": true,
+      "outputDir": "dataset/raw/cases_noncopilot/gh_docs_billing_how-tos_products_download-license-use"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "case_id": "gh_docs_copilot_how-tos_manage-and-track-spending_monitor-premium-requests",
+  "doc_url": "https://docs.github.com/en/copilot/how-tos/manage-and-track-spending/monitor-premium-requests",
+  "repo": "github/docs",
+  "path": "content/copilot/how-tos/manage-and-track-spending/monitor-premium-requests.md",
+  "branch": "main",
+  "edit_url": "https://github.com/github/docs/blob/main/content/copilot/how-tos/manage-and-track-spending/monitor-premium-requests.md",
+  "extraction_method": "html",
+  "collected_at": "2026-01-05T11:26:24.701Z",
+  "total_commits": 13,
+  "top_k": 6,
+  "selected_commits": [
+    "cc09ee65f1905a5cf69f5976b2fe14075133a9db",
+    "933b09b42262ccedd2e0d9b65eea30c81cc0d1e8",
+    "27c1cc2a4578d8318ee8556532f040cab04febc2",
+    "6c2bb1b946a3b0df41c21e4ebdf9d45f8250a314",
+    "44254fe069412dfd98acd1336ecbb59b1fc77086",
+    "a43b16c38dd821ba9ac5f56760deca53a7259964"
+  ]
+}

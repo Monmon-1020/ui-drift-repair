@@ -1,0 +1,22 @@
+{
+  "patch_type": "TARGET_REPLACEMENT",
+  "target_step_id": "s1",
+  "changes": {
+    "replace_anchor": {
+      "role": "link",
+      "name": "Database",
+      "signature": {
+        "container_kind": "submenu",
+        "section_path": [
+          "Project Settings",
+          "Settings navigation"
+        ],
+        "context_text": [
+          "Project Settings sidebar",
+          "Configuration options"
+        ]
+      }
+    }
+  },
+  "rationale": "The 'Database' link in Project Settings was removed in August 2025 as part of a dashboard reorganization. Users must now click the 'Database' button in the main sidebar, then select 'Configuration' to access database settings."
+}

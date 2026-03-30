@@ -1,0 +1,69 @@
+{
+  "tutorial_id": "sb_tr_03_database_settings_relocated",
+  "doc_url": "https://supabase.com/docs/guides/database/custom-postgres-config",
+  "steps": [
+    {
+      "step_id": "s1",
+      "action": {
+        "type": "click"
+      },
+      "anchor": {
+        "role": "link",
+        "name": "Database",
+        "signature": {
+          "container_kind": "sidebar",
+          "section_path": [
+            "Navigation"
+          ],
+          "context_text": [
+            "Project navigation sidebar"
+          ]
+        }
+      },
+      "post": {
+        "url_pattern": "/project/[project-id]/database"
+      }
+    },
+    {
+      "step_id": "s2",
+      "action": {
+        "type": "click"
+      },
+      "anchor": {
+        "role": "link",
+        "name": "Settings",
+        "signature": {
+          "container_kind": "submenu",
+          "section_path": [
+            "Database",
+            "Navigation"
+          ],
+          "context_text": [
+            "Database settings",
+            "Postgres configuration"
+          ]
+        }
+      },
+      "post": {
+        "must_have_heading": [
+          "Database Settings"
+        ],
+        "url_pattern": "/project/[project-id]/settings/database"
+      }
+    }
+  ],
+  "meta": {
+    "source": "https://github.com/orgs/supabase/discussions/37655",
+    "drift_type": "target_replacement",
+    "patch_type": "REPLACE_TARGET",
+    "commit": null,
+    "change_date": "2025-08-01",
+    "rationale": "Supabase reorganized dashboard navigation in August 2025. The old 'Project Settings → Database' link was removed. Users must now click 'Database' in the main sidebar, then 'Configuration' to access database settings. This is a target_replacement because the elements clicked changed, not just the postcondition.",
+    "replacement_details": {
+      "old_element": "Database (in Project Settings submenu)",
+      "new_element": "Database (in main sidebar) → Configuration (in Database submenu)",
+      "new_location": "Main sidebar under Database section"
+    }
+  },
+  "start_url": "https://supabase.com/dashboard/project/jwaffyksmxomslupkoxg/database/tables"
+}

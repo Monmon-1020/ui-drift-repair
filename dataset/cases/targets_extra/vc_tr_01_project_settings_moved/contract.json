@@ -1,0 +1,34 @@
+{
+  "tutorial_id": "vc_tr_01_project_settings_moved",
+  "doc_url": "https://vercel.com/docs/projects/project-configuration",
+  "start_url": "https://vercel.com/dashboard",
+  "steps": [
+    {
+      "step_id": "s1",
+      "action": { "type": "click" },
+      "anchor": {
+        "role": "link",
+        "name": "Settings",
+        "signature": { "container_kind": "nav", "section_path": ["Project tabs"] }
+      },
+      "post": { "url_pattern": "/settings" }
+    },
+    {
+      "step_id": "s2",
+      "action": { "type": "click" },
+      "anchor": {
+        "role": "link",
+        "name": "Environment Variables",
+        "signature": { "container_kind": "sidebar", "section_path": ["Project Settings"] }
+      },
+      "post": { "must_have_heading": ["Environment Variables"] }
+    }
+  ],
+  "meta": {
+    "source": "https://vercel.com/changelog",
+    "drift_type": "target_replacement",
+    "patch_type": "REPLACE_TARGET",
+    "change_date": "2024-09-01",
+    "rationale": "Vercel reorganized project settings navigation. Some sidebar items were renamed or moved to different sections."
+  }
+}

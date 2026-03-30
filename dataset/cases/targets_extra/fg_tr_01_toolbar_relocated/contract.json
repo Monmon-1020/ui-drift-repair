@@ -1,0 +1,95 @@
+{
+  "tutorial_id": "fg_tr_01_toolbar_relocated",
+  "doc_url": "https://help.figma.com/hc/en-us/articles/figma-toolbar-tools",
+  "steps": [
+    {
+      "step_id": "s1",
+      "action": {
+        "type": "click"
+      },
+      "anchor": {
+        "role": "button",
+        "name": "Frame tool",
+        "signature": {
+          "container_kind": "toolbar",
+          "section_path": [
+            "Top toolbar",
+            "Design tools"
+          ],
+          "context_text": [
+            "Create a frame",
+            "Drawing tools"
+          ]
+        }
+      },
+      "post": {
+        "must_have_heading": []
+      }
+    },
+    {
+      "step_id": "s2",
+      "action": {
+        "type": "click"
+      },
+      "anchor": {
+        "role": "button",
+        "name": "Shape tools",
+        "signature": {
+          "container_kind": "toolbar",
+          "section_path": [
+            "Top toolbar",
+            "Design tools"
+          ],
+          "context_text": [
+            "Rectangle",
+            "Ellipse",
+            "Polygon"
+          ]
+        }
+      },
+      "post": {
+        "must_have_heading": []
+      }
+    },
+    {
+      "step_id": "s3",
+      "action": {
+        "type": "click"
+      },
+      "anchor": {
+        "role": "button",
+        "name": "Pen tool",
+        "signature": {
+          "container_kind": "toolbar",
+          "section_path": [
+            "Top toolbar",
+            "Design tools"
+          ],
+          "context_text": [
+            "Draw with pen",
+            "Create paths"
+          ]
+        }
+      },
+      "post": {
+        "must_have_heading": []
+      }
+    }
+  ],
+  "meta": {
+    "source": "https://www.figma.com/blog/making-the-move-to-ui3-a-guide-to-figmas-next-chapter/",
+    "drift_type": "target_replacement",
+    "patch_type": "REPLACE_TARGET",
+    "commit": null,
+    "change_date": "2024-10-02",
+    "rationale": "Figma UI3, launched at Config 2024, moved the entire toolbar from the top of the editor to the bottom. This was done to free up additional working space on the canvas and standardize muscle memory across all Figma products. All design tools (Frame, Shape, Pen, Text, etc.) that were previously at the top are now accessed from the bottom toolbar.",
+    "replacement_details": {
+      "old_element": "Toolbar at top of editor",
+      "new_element": "Toolbar at bottom of editor",
+      "new_location": "Bottom of canvas/editor",
+      "old_path": "Top of screen → Toolbar → Design tools",
+      "new_path": "Bottom of screen → Toolbar → Design tools"
+    }
+  },
+  "start_url": "https://www.figma.com/"
+}

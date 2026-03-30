@@ -1,0 +1,46 @@
+{
+  "tutorial_id": "sb_tr_02_storage_settings_shortcut",
+  "doc_url": "https://supabase.com/docs/guides/storage/configuration",
+  "steps": [
+    {
+      "step_id": "s1",
+      "action": {
+        "type": "click"
+      },
+      "anchor": {
+        "role": "link",
+        "name": "Storage",
+        "signature": {
+          "container_kind": "submenu",
+          "section_path": [
+            "Project Settings",
+            "Settings navigation"
+          ],
+          "context_text": [
+            "Project Settings sidebar",
+            "Service configuration"
+          ]
+        }
+      },
+      "post": {
+        "must_have_heading": [
+          "Storage Settings"
+        ]
+      }
+    }
+  ],
+  "meta": {
+    "source": "https://github.com/orgs/supabase/discussions/37655",
+    "drift_type": "target_replacement",
+    "patch_type": "REPLACE_TARGET",
+    "commit": null,
+    "change_date": "2025-08-04",
+    "rationale": "The 'Storage' link in Project Settings was removed in August 2025 during the dashboard navigation reorganization. Users must now click the 'Storage' button in the main sidebar, then navigate to 'Settings' or 'Configuration' within the Storage section.",
+    "replacement_details": {
+      "old_element": "Storage (in Project Settings)",
+      "new_element": "Storage (in main sidebar) → Settings",
+      "new_location": "Main sidebar under Storage section"
+    }
+  },
+  "start_url": "https://supabase.com/dashboard/project/jwaffyksmxomslupkoxg/storage/buckets"
+}

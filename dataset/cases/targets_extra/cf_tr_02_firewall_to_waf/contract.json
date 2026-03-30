@@ -1,0 +1,24 @@
+{
+  "tutorial_id": "cf_tr_02_firewall_to_waf",
+  "doc_url": "https://developers.cloudflare.com/waf/",
+  "start_url": "https://dash.cloudflare.com/",
+  "steps": [
+    {
+      "step_id": "s1",
+      "action": { "type": "click" },
+      "anchor": {
+        "role": "link",
+        "name": "Firewall",
+        "signature": { "container_kind": "sidebar", "section_path": ["Zone navigation"] }
+      },
+      "post": { "must_have_heading": ["Firewall Rules"] }
+    }
+  ],
+  "meta": {
+    "source": "https://developers.cloudflare.com/waf/reference/migration-guides/firewall-rules-to-custom-rules/",
+    "drift_type": "target_replacement",
+    "patch_type": "REPLACE_TARGET",
+    "change_date": "2023-05-01",
+    "rationale": "Cloudflare renamed 'Firewall' to 'Security' in the sidebar, and 'Firewall Rules' to 'WAF Custom Rules'. Old tutorials pointing to 'Firewall' link no longer work."
+  }
+}

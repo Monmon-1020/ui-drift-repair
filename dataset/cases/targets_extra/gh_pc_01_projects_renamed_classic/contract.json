@@ -1,0 +1,64 @@
+{
+  "tutorial_id": "gh_pc_01_projects_renamed_classic",
+  "doc_url": "https://docs.github.com/en/issues/organizing-your-work-with-project-boards",
+  "steps": [
+    {
+      "step_id": "s1",
+      "action": {
+        "type": "click"
+      },
+      "anchor": {
+        "role": "link",
+        "name": "Projects",
+        "signature": {
+          "container_kind": "main",
+          "section_path": [
+            "Repository",
+            "Navigation"
+          ],
+          "context_text": [
+            "Repository tabs",
+            "Issues",
+            "Pull requests"
+          ]
+        }
+      },
+      "post": {
+        "url_pattern": "github.com/Monmon-1020/Agent/projects"
+      }
+    },
+    {
+      "step_id": "s2",
+      "action": {
+        "type": "click"
+      },
+      "anchor": {
+        "role": "button",
+        "name": "New project",
+        "signature": {
+          "container_kind": "main",
+          "section_path": [
+            "Projects"
+          ],
+          "context_text": [
+            "Create a new project board"
+          ]
+        }
+      },
+      "post": {
+        "must_have_heading": [
+          "Create a new project"
+        ]
+      }
+    }
+  ],
+  "meta": {
+    "source": "https://github.blog/changelog/2024-05-23-sunset-notice-projects-classic/",
+    "drift_type": "postcondition_update",
+    "patch_type": "POSTCONDITION_UPDATE",
+    "commit": null,
+    "change_date": "2024-05-23",
+    "rationale": "GitHub renamed its original Projects feature to 'Projects (classic)' and introduced a new Projects experience in 2024. Old tutorials that navigated to create a project would still work, but the heading changed from 'Create a new project' to 'Create a new project (classic)' or similar wording, and the UI presented different options (new Projects vs. classic). Projects (classic) was sunset on August 23, 2024, but the navigation path remained valid with redirects to the new experience."
+  },
+  "start_url": "https://github.com/Monmon-1020/Agent"
+}

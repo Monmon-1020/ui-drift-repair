@@ -1,0 +1,89 @@
+{
+  "scoring_params": {
+    "min_age_days": 60,
+    "ui_keyword_weight": 5,
+    "line_change_weight": 1,
+    "age_penalty_divisor": 30
+  },
+  "commits": [
+    {
+      "hash": "cc09ee65f1905a5cf69f5976b2fe14075133a9db",
+      "date": "2025-09-02",
+      "message": "Hide `ruleset history` for Free, Team & Pro (#57357)",
+      "score": 115,
+      "ui_keyword_hits": 13,
+      "added_lines": 35,
+      "deleted_lines": 9,
+      "age_days": 125
+    },
+    {
+      "hash": "933b09b42262ccedd2e0d9b65eea30c81cc0d1e8",
+      "date": "2025-09-02",
+      "message": "[Improvement]: Correct Default Elasticsearch Worker Limits in GHES 3.13 Documentation (#57351)",
+      "score": 115,
+      "ui_keyword_hits": 13,
+      "added_lines": 35,
+      "deleted_lines": 9,
+      "age_days": 125
+    },
+    {
+      "hash": "27c1cc2a4578d8318ee8556532f040cab04febc2",
+      "date": "2025-09-01",
+      "message": "chore: updated using the audit log api for your enterprise file (#40103)",
+      "score": 115,
+      "ui_keyword_hits": 13,
+      "added_lines": 35,
+      "deleted_lines": 9,
+      "age_days": 126
+    },
+    {
+      "hash": "6c2bb1b946a3b0df41c21e4ebdf9d45f8250a314",
+      "date": "2025-09-01",
+      "message": "Delete orphaned files (2025-09-01-16-29) (#57348)",
+      "score": 115,
+      "ui_keyword_hits": 13,
+      "added_lines": 35,
+      "deleted_lines": 9,
+      "age_days": 126
+    },
+    {
+      "hash": "5c8a1339c313efc979b7f2dcfc28111a6c7de922",
+      "date": "2025-09-11",
+      "message": "Update linux commands and the steps to schedule a backup (#57496)",
+      "score": 72,
+      "ui_keyword_hits": 6,
+      "added_lines": 30,
+      "deleted_lines": 5,
+      "age_days": 116
+    },
+    {
+      "hash": "32c1990a077205d3407a37c6e0c019dafc72f1a3",
+      "date": "2025-11-17",
+      "message": "docs: note that initialized node is set as the backup-server (#58493)",
+      "score": 25,
+      "ui_keyword_hits": 0,
+      "added_lines": 25,
+      "deleted_lines": 1,
+      "age_days": 49
+    },
+    {
+      "hash": "69dd2224088bf1e882284457e6ec642c229a3a96",
+      "date": "2025-12-08",
+      "message": "Add section on configuring backups from replica node (#58696)",
+      "score": 0,
+      "ui_keyword_hits": 0,
+      "added_lines": 0,
+      "deleted_lines": 0,
+      "age_days": 28
+    }
+  ],
+  "top_k_commits": [
+    "cc09ee65f1905a5cf69f5976b2fe14075133a9db",
+    "933b09b42262ccedd2e0d9b65eea30c81cc0d1e8",
+    "27c1cc2a4578d8318ee8556532f040cab04febc2",
+    "6c2bb1b946a3b0df41c21e4ebdf9d45f8250a314",
+    "5c8a1339c313efc979b7f2dcfc28111a6c7de922",
+    "32c1990a077205d3407a37c6e0c019dafc72f1a3"
+  ],
+  "selected_v1": "cc09ee65f1905a5cf69f5976b2fe14075133a9db"
+}

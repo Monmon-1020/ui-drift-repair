@@ -1,0 +1,76 @@
+{
+  "tutorial_id": "gh_pc_04_actions_workflows_menu",
+  "doc_url": "https://docs.github.com/en/actions/using-workflows",
+  "steps": [
+    {
+      "step_id": "s1",
+      "action": {
+        "type": "navigate"
+      },
+      "anchor": {
+        "role": "link",
+        "name": "Repository",
+        "signature": {
+          "container_kind": "main",
+          "section_path": [
+            "GitHub",
+            "Your repositories"
+          ],
+          "context_text": [
+            "Access repository"
+          ]
+        }
+      },
+      "post": {
+        "url_pattern": "github.com/Monmon-1020/Agent"
+      }
+    },
+    {
+      "step_id": "s2",
+      "action": {
+        "type": "click"
+      },
+      "anchor": {
+        "role": "link",
+        "name": "Actions",
+        "signature": {
+          "container_kind": "main",
+          "section_path": [
+            "Repository",
+            "Navigation"
+          ],
+          "context_text": [
+            "Repository tabs",
+            "Code",
+            "Issues",
+            "Pull requests"
+          ]
+        }
+      },
+      "post": {
+        "must_have_heading": [
+          "Workflows"
+        ],
+        "url_pattern": "github.com/Monmon-1020/Agent/actions",
+        "description": "Before October 2022, the tab was called 'Workflows' and the heading matched"
+      }
+    }
+  ],
+  "meta": {
+    "source": "https://github.blog/news-insights/product-news/improving-navigation-for-github-actions/",
+    "drift_type": "postcondition_update",
+    "patch_type": "POSTCONDITION_UPDATE",
+    "commit": null,
+    "change_date": "2022-10-20",
+    "rationale": "GitHub renamed the repository tab from 'Workflows' to 'Actions' in October 2022 to better represent the full scope of the GitHub Actions ecosystem beyond just workflow management. The navigation location remained identical (same position in repository tabs), and clicking it still takes users to the same workflows page at the same URL pattern. However, old tutorials that instructed users to 'click the Workflows tab' or verified success by checking for the 'Workflows' tab name would fail, even though the functionality and destination are completely unchanged. The page heading also changed to reflect the broader 'Actions' scope rather than just 'Workflows'.",
+    "postcondition_changes": {
+      "old_tab_name": "Workflows",
+      "new_tab_name": "Actions",
+      "old_heading": "Workflows",
+      "new_heading": "Actions",
+      "navigation_unchanged": "Same tab position, same URL, same functionality",
+      "note": "Tab rename also introduced new sidebar structure with management section and pagination"
+    }
+  },
+  "start_url": "https://github.com/Monmon-1020/Agent"
+}

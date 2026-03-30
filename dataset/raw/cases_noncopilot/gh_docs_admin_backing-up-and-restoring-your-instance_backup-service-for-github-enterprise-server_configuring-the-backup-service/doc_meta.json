@@ -1,0 +1,20 @@
+{
+  "case_id": "gh_docs_admin_backing-up-and-restoring-your-instance_backup-service-for-github-enterprise-server_configuring-the-backup-service",
+  "doc_url": "https://docs.github.com/en/admin/backing-up-and-restoring-your-instance/backup-service-for-github-enterprise-server/configuring-the-backup-service",
+  "repo": "github/docs",
+  "path": "content/admin/backing-up-and-restoring-your-instance/backup-service-for-github-enterprise-server/configuring-the-backup-service.md",
+  "branch": "main",
+  "edit_url": "https://github.com/github/docs/blob/main/content/admin/backing-up-and-restoring-your-instance/backup-service-for-github-enterprise-server/configuring-the-backup-service.md",
+  "extraction_method": "html",
+  "collected_at": "2026-01-05T11:20:56.207Z",
+  "total_commits": 7,
+  "top_k": 6,
+  "selected_commits": [
+    "cc09ee65f1905a5cf69f5976b2fe14075133a9db",
+    "933b09b42262ccedd2e0d9b65eea30c81cc0d1e8",
+    "27c1cc2a4578d8318ee8556532f040cab04febc2",
+    "6c2bb1b946a3b0df41c21e4ebdf9d45f8250a314",
+    "5c8a1339c313efc979b7f2dcfc28111a6c7de922",
+    "32c1990a077205d3407a37c6e0c019dafc72f1a3"
+  ]
+}
