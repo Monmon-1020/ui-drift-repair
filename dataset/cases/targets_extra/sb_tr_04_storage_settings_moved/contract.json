@@ -21,7 +21,10 @@
         }
       },
       "post": {
-        "url_pattern": "/project/[project-id]/storage"
+        "url_pattern": "/storage",
+        "must_have_heading": [
+          "Storage"
+        ]
       }
     },
     {
@@ -45,10 +48,10 @@
         }
       },
       "post": {
+        "url_pattern": "/settings/storage",
         "must_have_heading": [
           "Storage Settings"
-        ],
-        "url_pattern": "/project/[project-id]/settings/storage"
+        ]
       }
     }
   ],

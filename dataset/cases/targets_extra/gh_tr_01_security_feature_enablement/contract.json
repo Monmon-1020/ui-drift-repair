@@ -23,8 +23,9 @@
         }
       },
       "post": {
+        "url_pattern": "/settings/security_analysis",
         "must_have_heading": [
-          "Security features enabled"
+          "Code security"
         ]
       }
     }

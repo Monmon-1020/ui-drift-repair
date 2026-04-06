@@ -22,7 +22,10 @@
         }
       },
       "post": {
-        "url_pattern": "supabase.com/dashboard/project/[project-ref]",
+        "url_pattern": "supabase.com/dashboard/project/",
+        "must_have_heading": [
+          "Project"
+        ],
         "description": "Old format used path-based project reference"
       }
     }

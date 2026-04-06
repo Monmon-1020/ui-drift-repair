@@ -5,13 +5,22 @@
   "steps": [
     {
       "step_id": "s1",
-      "action": { "type": "click" },
+      "action": {
+        "type": "click"
+      },
       "anchor": {
         "role": "link",
         "name": "Performance",
-        "signature": { "container_kind": "sidebar" }
+        "signature": {
+          "container_kind": "sidebar"
+        }
       },
-      "post": { "must_have_heading": ["Performance"] }
+      "post": {
+        "url_pattern": "/performance",
+        "must_have_heading": [
+          "Performance"
+        ]
+      }
     }
   ],
   "meta": {

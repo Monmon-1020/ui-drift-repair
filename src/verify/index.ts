@@ -26,6 +26,17 @@ export async function verify(
     }
   }
 
+  // must_have_text チェック
+  if (post.must_have_text && post.must_have_text.length > 0) {
+    for (const expected of post.must_have_text) {
+      const result = await pollCheck(
+        () => checkTextExists(page, expected),
+        5000
+      );
+      checks.push({ predicate: `text_exists:${expected}`, result });
+    }
+  }
+
   // url_pattern チェック
   if (post.url_pattern) {
     const result = await pollCheck(
@@ -62,8 +73,31 @@ async function checkHeading(page: Page, expected: string): Promise<boolean> {
   return headings.some((h) => h.toLowerCase().includes(lower));
 }
 
-async function checkElementExists(page: Page, selector: string): Promise<boolean> {
-  const count = await page.locator(selector).count().catch(() => 0);
+async function checkTextExists(page: Page, expected: string): Promise<boolean> {
+  const bodyText = await page.evaluate(() =>
+    document.body?.innerText || ''
+  );
+  return bodyText.toLowerCase().includes(expected.toLowerCase());
+}
+
+/**
+ * 要素存在チェック。以下のフォーマットをサポート:
+ * - "role:name"      → getByRole('role', { name: 'name' })
+ * - その他           → CSS セレクタとして扱う
+ */
+async function checkElementExists(page: Page, spec: string): Promise<boolean> {
+  // role:name フォーマット
+  const m = spec.match(/^([a-z]+):(.+)$/i);
+  if (m) {
+    const [, role, name] = m;
+    const count = await page
+      .getByRole(role as any, { name, exact: false })
+      .count()
+      .catch(() => 0);
+    return count > 0;
+  }
+  // CSS セレクタとして
+  const count = await page.locator(spec).count().catch(() => 0);
   return count > 0;
 }
 

@@ -5,15 +5,21 @@
   "steps": [
     {
       "step_id": "s1",
-      "action": { "type": "click" },
+      "action": {
+        "type": "click"
+      },
       "anchor": {
         "role": "link",
         "name": "Storage",
-        "signature": { "container_kind": "sidebar" }
+        "signature": {
+          "container_kind": "sidebar"
+        }
       },
       "post": {
-        "must_have_heading": ["Storage"],
-        "url_pattern": "/stores",
+        "url_pattern": "/storage",
+        "must_have_heading": [
+          "Storage"
+        ],
         "description": "URL changed from /storage to /stores in the new dashboard"
       }
     }

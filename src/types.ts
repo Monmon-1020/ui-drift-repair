@@ -36,6 +36,7 @@ export interface Anchor {
 
 export interface PostCondition {
   must_have_heading?: string[];
+  must_have_text?: string[];
   url_pattern?: string;
   element_exists?: string;
   description?: string;
@@ -70,6 +71,7 @@ export interface PageSnapshot {
   url: string;
   title: string;
   candidates: Candidate[];
+  headings?: string[];
 }
 
 // ============================================================================
@@ -117,7 +119,10 @@ export interface Diagnosis {
   resolve: ResolveResult;
   act: ActResult | null;
   verify: VerifyResult | null;
+  /** 操作前のページ状態（observe結果） */
   snapshot: PageSnapshot;
+  /** 操作後のページ状態（postcondition判定や修復用） */
+  postSnapshot?: PageSnapshot;
 }
 
 // ============================================================================

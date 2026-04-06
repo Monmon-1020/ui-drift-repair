@@ -5,14 +5,21 @@
   "steps": [
     {
       "step_id": "s1",
-      "action": { "type": "click" },
+      "action": {
+        "type": "click"
+      },
       "anchor": {
         "role": "link",
         "name": "Secure",
-        "signature": { "container_kind": "sidebar" }
+        "signature": {
+          "container_kind": "sidebar"
+        }
       },
       "post": {
-        "must_have_heading": ["Security Dashboard"],
+        "url_pattern": "/user/application_security/",
+        "must_have_heading": [
+          "Security Dashboard"
+        ],
         "description": "Heading changed from 'Security Dashboard' to 'Vulnerability Report'"
       }
     }

@@ -5,23 +5,45 @@
   "steps": [
     {
       "step_id": "s1",
-      "action": { "type": "click" },
+      "action": {
+        "type": "click"
+      },
       "anchor": {
         "role": "link",
         "name": "Branches",
-        "signature": { "container_kind": "sidebar", "section_path": ["Settings", "Code and automation"] }
+        "signature": {
+          "container_kind": "sidebar",
+          "section_path": [
+            "Settings",
+            "Code and automation"
+          ]
+        }
       },
-      "post": { "must_have_heading": ["Branch protection rules"] }
+      "post": {
+        "url_pattern": "/settings/branches",
+        "must_have_heading": [
+          "Branch protection rules"
+        ]
+      }
     },
     {
       "step_id": "s2",
-      "action": { "type": "click" },
+      "action": {
+        "type": "click"
+      },
       "anchor": {
         "role": "button",
         "name": "Add rule",
-        "signature": { "container_kind": "main" }
+        "signature": {
+          "container_kind": "main"
+        }
       },
-      "post": { "must_have_heading": ["Branch protection rule"] }
+      "post": {
+        "url_pattern": "/branches",
+        "must_have_text": [
+          "Branch name pattern"
+        ]
+      }
     }
   ],
   "meta": {

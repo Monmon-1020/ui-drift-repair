@@ -5,23 +5,45 @@
   "steps": [
     {
       "step_id": "s1",
-      "action": { "type": "click" },
+      "action": {
+        "type": "click"
+      },
       "anchor": {
         "role": "link",
         "name": "Actions",
-        "signature": { "container_kind": "sidebar", "section_path": ["Settings", "Code and automation"] }
+        "signature": {
+          "container_kind": "sidebar",
+          "section_path": [
+            "Settings",
+            "Code and automation"
+          ]
+        }
       },
-      "post": { "url_pattern": "/settings/actions" }
+      "post": {
+        "url_pattern": "/settings/actions",
+        "must_have_heading": [
+          "Actions permissions"
+        ]
+      }
     },
     {
       "step_id": "s2",
-      "action": { "type": "click" },
+      "action": {
+        "type": "click"
+      },
       "anchor": {
         "role": "link",
         "name": "General",
-        "signature": { "container_kind": "sidebar" }
+        "signature": {
+          "container_kind": "sidebar"
+        }
       },
-      "post": { "must_have_heading": ["Actions permissions"] }
+      "post": {
+        "url_pattern": "/settings/actions",
+        "must_have_heading": [
+          "Actions permissions"
+        ]
+      }
     }
   ],
   "meta": {

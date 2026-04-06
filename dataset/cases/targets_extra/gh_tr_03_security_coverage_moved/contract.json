@@ -21,8 +21,9 @@
         }
       },
       "post": {
+        "url_pattern": "/Agent/settings",
         "must_have_heading": [
-          "Organization settings"
+          "General"
         ]
       }
     },
@@ -47,8 +48,9 @@
         }
       },
       "post": {
+        "url_pattern": "/security_analysis",
         "must_have_heading": [
-          "Security coverage"
+          "Code security"
         ]
       }
     },
@@ -74,8 +76,9 @@
         }
       },
       "post": {
-        "must_have_heading": [
-          "Enable security feature"
+        "url_pattern": "/security_analysis",
+        "must_have_text": [
+          "Enable"
         ]
       }
     }

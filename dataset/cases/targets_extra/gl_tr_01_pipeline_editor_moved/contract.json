@@ -5,23 +5,47 @@
   "steps": [
     {
       "step_id": "s1",
-      "action": { "type": "click" },
+      "action": {
+        "type": "click"
+      },
       "anchor": {
         "role": "link",
         "name": "CI/CD",
-        "signature": { "container_kind": "sidebar", "section_path": ["Project navigation"] }
+        "signature": {
+          "container_kind": "sidebar",
+          "section_path": [
+            "Project navigation"
+          ]
+        }
       },
-      "post": { "must_have_heading": ["CI/CD"] }
+      "post": {
+        "url_pattern": "/ci/",
+        "must_have_heading": [
+          "CI/CD"
+        ]
+      }
     },
     {
       "step_id": "s2",
-      "action": { "type": "click" },
+      "action": {
+        "type": "click"
+      },
       "anchor": {
         "role": "link",
         "name": "Editor",
-        "signature": { "container_kind": "sidebar", "section_path": ["CI/CD"] }
+        "signature": {
+          "container_kind": "sidebar",
+          "section_path": [
+            "CI/CD"
+          ]
+        }
       },
-      "post": { "must_have_heading": ["Pipeline editor"] }
+      "post": {
+        "url_pattern": "/ci/pipeline_editor",
+        "must_have_heading": [
+          "Pipeline editor"
+        ]
+      }
     }
   ],
   "meta": {

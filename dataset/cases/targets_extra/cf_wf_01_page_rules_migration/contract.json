@@ -5,23 +5,47 @@
   "steps": [
     {
       "step_id": "s1",
-      "action": { "type": "click" },
+      "action": {
+        "type": "click"
+      },
       "anchor": {
         "role": "link",
         "name": "Rules",
-        "signature": { "container_kind": "sidebar", "section_path": ["Zone navigation"] }
+        "signature": {
+          "container_kind": "sidebar",
+          "section_path": [
+            "Zone navigation"
+          ]
+        }
       },
-      "post": { "must_have_heading": ["Rules"] }
+      "post": {
+        "url_pattern": "/rules",
+        "must_have_heading": [
+          "Rules"
+        ]
+      }
     },
     {
       "step_id": "s2",
-      "action": { "type": "click" },
+      "action": {
+        "type": "click"
+      },
       "anchor": {
         "role": "link",
         "name": "Page Rules",
-        "signature": { "container_kind": "main", "section_path": ["Rules"] }
+        "signature": {
+          "container_kind": "main",
+          "section_path": [
+            "Rules"
+          ]
+        }
       },
-      "post": { "must_have_heading": ["Page Rules"] }
+      "post": {
+        "url_pattern": "/rules/page-rules",
+        "must_have_heading": [
+          "Page Rules"
+        ]
+      }
     }
   ],
   "meta": {

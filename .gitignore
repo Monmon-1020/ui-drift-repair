@@ -41,3 +41,4 @@ workflow.md
 jest.config.js
 *.pdf
 package-lock.json
+memo.md

@@ -5,33 +5,61 @@
   "steps": [
     {
       "step_id": "s1",
-      "action": { "type": "click" },
+      "action": {
+        "type": "click"
+      },
       "anchor": {
         "role": "link",
         "name": "Site configuration",
-        "signature": { "container_kind": "sidebar" }
+        "signature": {
+          "container_kind": "sidebar"
+        }
       },
-      "post": { "url_pattern": "/configuration" }
+      "post": {
+        "url_pattern": "/configuration",
+        "must_have_heading": [
+          "Site configuration"
+        ]
+      }
     },
     {
       "step_id": "s2",
-      "action": { "type": "click" },
+      "action": {
+        "type": "click"
+      },
       "anchor": {
         "role": "link",
         "name": "Environment variables",
-        "signature": { "container_kind": "sidebar" }
+        "signature": {
+          "container_kind": "sidebar"
+        }
       },
-      "post": { "must_have_heading": ["Environment variables"] }
+      "post": {
+        "url_pattern": "/configuration/env",
+        "must_have_heading": [
+          "Environment variables"
+        ]
+      }
     },
     {
       "step_id": "s3",
-      "action": { "type": "click" },
+      "action": {
+        "type": "click"
+      },
       "anchor": {
         "role": "button",
         "name": "Add a variable",
-        "signature": { "container_kind": "main" }
+        "signature": {
+          "container_kind": "main"
+        }
       },
-      "post": {}
+      "post": {
+        "url_pattern": "/configuration/env",
+        "must_have_text": [
+          "Key",
+          "Values"
+        ]
+      }
     }
   ],
   "meta": {

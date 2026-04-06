@@ -5,13 +5,25 @@
   "steps": [
     {
       "step_id": "s1",
-      "action": { "type": "click" },
+      "action": {
+        "type": "click"
+      },
       "anchor": {
         "role": "link",
         "name": "Interconnects",
-        "signature": { "container_kind": "sidebar", "section_path": ["Account navigation"] }
+        "signature": {
+          "container_kind": "sidebar",
+          "section_path": [
+            "Account navigation"
+          ]
+        }
       },
-      "post": { "must_have_heading": ["Interconnects"] }
+      "post": {
+        "url_pattern": "/interconnects",
+        "must_have_heading": [
+          "Interconnects"
+        ]
+      }
     }
   ],
   "meta": {

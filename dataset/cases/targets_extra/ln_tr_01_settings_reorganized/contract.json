@@ -21,6 +21,7 @@
         }
       },
       "post": {
+        "url_pattern": "/settings",
         "must_have_heading": [
           "Settings"
         ]
@@ -46,9 +47,9 @@
         }
       },
       "post": {
+        "url_pattern": "/settings/workspace",
         "must_have_heading": [
-          "Workspace Settings",
-          "General"
+          "Workspace"
         ]
       }
     },
@@ -73,8 +74,9 @@
         }
       },
       "post": {
+        "url_pattern": "/settings/features",
         "must_have_heading": [
-          "Feature Configuration"
+          "Features"
         ]
       }
     }

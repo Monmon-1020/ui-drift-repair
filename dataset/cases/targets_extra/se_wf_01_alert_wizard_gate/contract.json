@@ -5,23 +5,41 @@
   "steps": [
     {
       "step_id": "s1",
-      "action": { "type": "click" },
+      "action": {
+        "type": "click"
+      },
       "anchor": {
         "role": "link",
         "name": "Alerts",
-        "signature": { "container_kind": "sidebar" }
+        "signature": {
+          "container_kind": "sidebar"
+        }
       },
-      "post": { "must_have_heading": ["Alerts"] }
+      "post": {
+        "url_pattern": "/alerts",
+        "must_have_heading": [
+          "Alerts"
+        ]
+      }
     },
     {
       "step_id": "s2",
-      "action": { "type": "click" },
+      "action": {
+        "type": "click"
+      },
       "anchor": {
         "role": "button",
         "name": "Create Alert",
-        "signature": { "container_kind": "main" }
+        "signature": {
+          "container_kind": "main"
+        }
       },
-      "post": { "must_have_heading": ["Create Alert Rule"] }
+      "post": {
+        "url_pattern": "/alerts/new",
+        "must_have_heading": [
+          "Create Alert Rule"
+        ]
+      }
     }
   ],
   "meta": {

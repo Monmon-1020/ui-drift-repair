@@ -5,23 +5,47 @@
   "steps": [
     {
       "step_id": "s1",
-      "action": { "type": "click" },
+      "action": {
+        "type": "click"
+      },
       "anchor": {
         "role": "link",
         "name": "Settings",
-        "signature": { "container_kind": "nav", "section_path": ["Project tabs"] }
+        "signature": {
+          "container_kind": "nav",
+          "section_path": [
+            "Project tabs"
+          ]
+        }
       },
-      "post": { "url_pattern": "/settings" }
+      "post": {
+        "url_pattern": "/settings",
+        "must_have_heading": [
+          "Project Settings"
+        ]
+      }
     },
     {
       "step_id": "s2",
-      "action": { "type": "click" },
+      "action": {
+        "type": "click"
+      },
       "anchor": {
         "role": "link",
         "name": "Environment Variables",
-        "signature": { "container_kind": "sidebar", "section_path": ["Project Settings"] }
+        "signature": {
+          "container_kind": "sidebar",
+          "section_path": [
+            "Project Settings"
+          ]
+        }
       },
-      "post": { "must_have_heading": ["Environment Variables"] }
+      "post": {
+        "url_pattern": "/settings/environment-variables",
+        "must_have_heading": [
+          "Environment Variables"
+        ]
+      }
     }
   ],
   "meta": {

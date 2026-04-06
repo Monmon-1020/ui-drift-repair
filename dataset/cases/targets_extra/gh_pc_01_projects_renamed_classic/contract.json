@@ -24,7 +24,10 @@
         }
       },
       "post": {
-        "url_pattern": "github.com/Monmon-1020/Agent/projects"
+        "url_pattern": "/Agent/projects",
+        "must_have_heading": [
+          "Projects"
+        ]
       }
     },
     {
@@ -46,6 +49,7 @@
         }
       },
       "post": {
+        "url_pattern": "/projects/new",
         "must_have_heading": [
           "Create a new project"
         ]

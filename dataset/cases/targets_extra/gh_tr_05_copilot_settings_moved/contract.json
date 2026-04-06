@@ -5,23 +5,44 @@
   "steps": [
     {
       "step_id": "s1",
-      "action": { "type": "click" },
+      "action": {
+        "type": "click"
+      },
       "anchor": {
         "role": "link",
         "name": "Copilot",
-        "signature": { "container_kind": "sidebar", "section_path": ["User settings"] }
+        "signature": {
+          "container_kind": "sidebar",
+          "section_path": [
+            "User settings"
+          ]
+        }
       },
-      "post": { "must_have_heading": ["Copilot"] }
+      "post": {
+        "url_pattern": "/settings/copilot",
+        "must_have_heading": [
+          "Copilot"
+        ]
+      }
     },
     {
       "step_id": "s2",
-      "action": { "type": "click" },
+      "action": {
+        "type": "click"
+      },
       "anchor": {
         "role": "link",
         "name": "Suggestions matching public code",
-        "signature": { "container_kind": "main" }
+        "signature": {
+          "container_kind": "main"
+        }
       },
-      "post": {}
+      "post": {
+        "url_pattern": "/settings/copilot",
+        "must_have_text": [
+          "public code"
+        ]
+      }
     }
   ],
   "meta": {

@@ -22,7 +22,10 @@
         }
       },
       "post": {
-        "url_pattern": "github.com/Monmon-1020/Agent"
+        "url_pattern": "/Agent",
+        "must_have_heading": [
+          "Agent"
+        ]
       }
     },
     {
@@ -46,6 +49,7 @@
         }
       },
       "post": {
+        "url_pattern": "/Agent",
         "must_have_text": [
           "Create new file"
         ]
@@ -72,6 +76,10 @@
         }
       },
       "post": {
+        "url_pattern": "/new/main",
+        "must_have_text": [
+          "Name your file"
+        ],
         "description": "Old tutorial instructed to create file at .github/copilot-instructions.md for custom chat modes"
       }
     },
@@ -96,6 +104,7 @@
         }
       },
       "post": {
+        "url_pattern": "/new/main",
         "must_have_text": [
           "chat modes",
           ".github/copilot-instructions.md"

@@ -22,6 +22,7 @@
         }
       },
       "post": {
+        "url_pattern": "/orgs/Monmon-1020/teams",
         "must_have_heading": [
           "Teams"
         ]

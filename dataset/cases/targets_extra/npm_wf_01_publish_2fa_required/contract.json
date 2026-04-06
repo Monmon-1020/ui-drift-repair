@@ -24,6 +24,7 @@
         }
       },
       "post": {
+        "url_pattern": "npmjs.com/settings",
         "must_have_heading": [
           "Account Settings"
         ]
@@ -50,8 +51,9 @@
         }
       },
       "post": {
+        "url_pattern": "/tfa",
         "must_have_text": [
-          "2FA enabled",
+          "2FA",
           "WebAuthn"
         ]
       }

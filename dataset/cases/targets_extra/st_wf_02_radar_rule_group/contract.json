@@ -5,33 +5,63 @@
   "steps": [
     {
       "step_id": "s1",
-      "action": { "type": "click" },
+      "action": {
+        "type": "click"
+      },
       "anchor": {
         "role": "link",
         "name": "Radar",
-        "signature": { "container_kind": "sidebar" }
+        "signature": {
+          "container_kind": "sidebar"
+        }
       },
-      "post": { "must_have_heading": ["Radar"] }
+      "post": {
+        "url_pattern": "/radar",
+        "must_have_heading": [
+          "Radar"
+        ]
+      }
     },
     {
       "step_id": "s2",
-      "action": { "type": "click" },
+      "action": {
+        "type": "click"
+      },
       "anchor": {
         "role": "link",
         "name": "Rules",
-        "signature": { "container_kind": "sidebar", "section_path": ["Radar"] }
+        "signature": {
+          "container_kind": "sidebar",
+          "section_path": [
+            "Radar"
+          ]
+        }
       },
-      "post": { "must_have_heading": ["Rules"] }
+      "post": {
+        "url_pattern": "/radar/rules",
+        "must_have_heading": [
+          "Rules"
+        ]
+      }
     },
     {
       "step_id": "s3",
-      "action": { "type": "click" },
+      "action": {
+        "type": "click"
+      },
       "anchor": {
         "role": "button",
         "name": "Add rule",
-        "signature": { "container_kind": "main" }
+        "signature": {
+          "container_kind": "main"
+        }
       },
-      "post": { "must_have_heading": ["Add rule"] }
+      "post": {
+        "url_pattern": "/radar/rules/new",
+        "must_have_heading": [
+          "Add rule"
+        ]
+      }
     }
   ],
   "meta": {

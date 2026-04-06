@@ -25,7 +25,10 @@
         }
       },
       "post": {
-        "url_pattern": "github.com/Monmon-1020/Agent/settings"
+        "url_pattern": "/Agent/settings",
+        "must_have_heading": [
+          "General"
+        ]
       }
     },
     {
@@ -49,10 +52,10 @@
         }
       },
       "post": {
+        "url_pattern": "/settings/secrets/actions",
         "must_have_heading": [
           "Actions secrets"
         ],
-        "url_pattern": "github.com/Monmon-1020/Agent/settings/secrets",
         "description": "Old tutorial expected to see 'Actions secrets' heading, but it changed to 'Actions secrets and variables'"
       }
     },
@@ -78,10 +81,10 @@
         }
       },
       "post": {
+        "url_pattern": "/settings/secrets/actions",
         "must_have_heading": [
           "Actions secrets"
         ],
-        "url_pattern": "github.com/Monmon-1020/Agent/settings/secrets/actions",
         "description": "Old tutorial expected page heading to be 'Actions secrets' only"
       }
     }

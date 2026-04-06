@@ -12,12 +12,20 @@
         "name": "Project",
         "signature": {
           "container_kind": "main",
-          "section_path": ["GitLab", "Projects"],
-          "context_text": ["Access your project"]
+          "section_path": [
+            "GitLab",
+            "Projects"
+          ],
+          "context_text": [
+            "Access your project"
+          ]
         }
       },
       "post": {
-        "url_pattern": "gitlab.com/[namespace]/[project]"
+        "url_pattern": "docs.gitlab.com/ci/pipelines",
+        "must_have_heading": [
+          "CI/CD pipelines"
+        ]
       }
     },
     {
@@ -30,14 +38,22 @@
         "name": "Pipelines",
         "signature": {
           "container_kind": "sidebar",
-          "section_path": ["Project", "CI/CD"],
-          "context_text": ["CI/CD section", "Build automation"]
+          "section_path": [
+            "Project",
+            "CI/CD"
+          ],
+          "context_text": [
+            "CI/CD section",
+            "Build automation"
+          ]
         }
       },
       "post": {
-        "must_have_heading": ["Pipelines"],
-        "url_pattern": "gitlab.com/[namespace]/[project]/pipelines",
-        "description": "Old tutorial expected Pipelines under 'CI/CD' section in sidebar"
+        "url_pattern": "/pipelines",
+        "must_have_heading": [
+          "Pipelines"
+        ],
+        "description": "Old tutorial expected Pipelines under 'CI/CD' section"
       }
     },
     {
@@ -50,13 +66,21 @@
         "name": "Editor",
         "signature": {
           "container_kind": "sidebar",
-          "section_path": ["Project", "CI/CD"],
-          "context_text": ["Pipeline configuration", "Edit pipeline"]
+          "section_path": [
+            "Project",
+            "CI/CD"
+          ],
+          "context_text": [
+            "Pipeline configuration",
+            "Edit pipeline"
+          ]
         }
       },
       "post": {
-        "must_have_heading": ["Editor"],
-        "url_pattern": "gitlab.com/[namespace]/[project]/-/ci/editor",
+        "url_pattern": "/-/ci/editor",
+        "must_have_heading": [
+          "Editor"
+        ],
         "description": "Old tutorial expected 'Editor' link under 'CI/CD' section"
       }
     }

@@ -22,7 +22,10 @@
         }
       },
       "post": {
-        "url_pattern": "[org-slug].sentry.io/stats"
+        "url_pattern": "/stats/",
+        "must_have_heading": [
+          "Stats"
+        ]
       }
     },
     {
@@ -46,10 +49,11 @@
         }
       },
       "post": {
+        "url_pattern": "/stats/",
         "must_have_text": [
           "Dropped"
         ],
-        "description": "Old terminology showed 'Dropped' for events that exceeded rate limits"
+        "description": "Old terminology showed 'Dropped' for events"
       }
     }
   ],

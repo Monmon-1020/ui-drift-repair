@@ -23,7 +23,7 @@
         }
       },
       "post": {
-        "must_have_heading": []
+        "element_exists": "button:Frame tool"
       }
     },
     {
@@ -48,7 +48,7 @@
         }
       },
       "post": {
-        "must_have_heading": []
+        "element_exists": "button:Shape tools"
       }
     },
     {
@@ -72,7 +72,7 @@
         }
       },
       "post": {
-        "must_have_heading": []
+        "element_exists": "button:Pen tool"
       }
     }
   ],

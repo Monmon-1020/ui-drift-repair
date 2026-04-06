@@ -5,13 +5,25 @@
   "steps": [
     {
       "step_id": "s1",
-      "action": { "type": "click" },
+      "action": {
+        "type": "click"
+      },
       "anchor": {
         "role": "link",
         "name": "Firewall",
-        "signature": { "container_kind": "sidebar", "section_path": ["Zone navigation"] }
+        "signature": {
+          "container_kind": "sidebar",
+          "section_path": [
+            "Zone navigation"
+          ]
+        }
       },
-      "post": { "must_have_heading": ["Firewall Rules"] }
+      "post": {
+        "url_pattern": "/firewall",
+        "must_have_heading": [
+          "Firewall Rules"
+        ]
+      }
     }
   ],
   "meta": {

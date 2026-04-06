@@ -28,6 +28,7 @@ const INTERACTIVE_SELECTOR = [
 export async function observe(page: Page): Promise<PageSnapshot> {
   const url = page.url();
   const title = await page.title();
+  const headings = await collectHeadings(page);
 
   const candidates = await page.evaluate((selector: string) => {
     const elements = document.querySelectorAll(selector);
@@ -139,5 +140,27 @@ export async function observe(page: Page): Promise<PageSnapshot> {
     eid: `e${i}`,
   }));
 
-  return { url, title, candidates: withEid };
+  return { url, title, candidates: withEid, headings };
+}
+
+/**
+ * ページ上のh1-h6テキストを取得（軽量、postSnapshot用にも使う）
+ */
+export async function collectHeadings(page: Page): Promise<string[]> {
+  return page.evaluate(() =>
+    Array.from(document.querySelectorAll('h1,h2,h3,h4,h5,h6'))
+      .map((el) => (el.textContent || '').trim())
+      .filter((t) => t.length > 0 && t.length < 200)
+      .slice(0, 30)
+  );
+}
+
+/**
+ * 操作後の軽量スナップショット（候補要素は不要、URL+タイトル+見出しのみ）
+ */
+export async function observePostState(page: Page): Promise<PageSnapshot> {
+  const url = page.url();
+  const title = await page.title();
+  const headings = await collectHeadings(page);
+  return { url, title, candidates: [], headings };
 }

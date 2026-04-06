@@ -5,13 +5,25 @@
   "steps": [
     {
       "step_id": "s1",
-      "action": { "type": "click" },
+      "action": {
+        "type": "click"
+      },
       "anchor": {
         "role": "tab",
         "name": "Deployments",
-        "signature": { "container_kind": "nav", "section_path": ["Project tabs"] }
+        "signature": {
+          "container_kind": "nav",
+          "section_path": [
+            "Project tabs"
+          ]
+        }
       },
-      "post": { "must_have_heading": ["Deployments"] }
+      "post": {
+        "url_pattern": "/deployments",
+        "must_have_heading": [
+          "Deployments"
+        ]
+      }
     }
   ],
   "meta": {

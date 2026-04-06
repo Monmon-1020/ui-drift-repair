@@ -5,23 +5,45 @@
   "steps": [
     {
       "step_id": "s1",
-      "action": { "type": "click" },
+      "action": {
+        "type": "click"
+      },
       "anchor": {
         "role": "button",
         "name": "Set up",
-        "signature": { "container_kind": "main", "section_path": ["Code scanning"] }
+        "signature": {
+          "container_kind": "main",
+          "section_path": [
+            "Code scanning"
+          ]
+        }
       },
-      "post": {}
+      "post": {
+        "url_pattern": "/settings/security_analysis",
+        "must_have_text": [
+          "Default",
+          "Advanced"
+        ]
+      }
     },
     {
       "step_id": "s2",
-      "action": { "type": "click" },
+      "action": {
+        "type": "click"
+      },
       "anchor": {
         "role": "button",
         "name": "Default",
-        "signature": { "container_kind": "dialog" }
+        "signature": {
+          "container_kind": "dialog"
+        }
       },
-      "post": {}
+      "post": {
+        "url_pattern": "/security/code-scanning",
+        "must_have_heading": [
+          "CodeQL default configuration"
+        ]
+      }
     }
   ],
   "meta": {

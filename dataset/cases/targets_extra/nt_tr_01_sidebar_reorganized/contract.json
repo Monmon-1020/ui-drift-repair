@@ -5,13 +5,25 @@
   "steps": [
     {
       "step_id": "s1",
-      "action": { "type": "click" },
+      "action": {
+        "type": "click"
+      },
       "anchor": {
         "role": "link",
         "name": "Settings & members",
-        "signature": { "container_kind": "sidebar" }
+        "signature": {
+          "container_kind": "sidebar"
+        }
       },
-      "post": { "must_have_heading": ["Settings"] }
+      "post": {
+        "must_have_heading": [
+          "Settings"
+        ],
+        "must_have_text": [
+          "Workspace",
+          "Members"
+        ]
+      }
     }
   ],
   "meta": {

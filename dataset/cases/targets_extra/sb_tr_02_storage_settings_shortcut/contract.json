@@ -23,8 +23,9 @@
         }
       },
       "post": {
+        "url_pattern": "/project/",
         "must_have_heading": [
-          "Storage Settings"
+          "Storage"
         ]
       }
     }

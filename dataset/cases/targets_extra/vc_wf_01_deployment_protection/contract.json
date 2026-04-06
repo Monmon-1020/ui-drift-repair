@@ -5,33 +5,60 @@
   "steps": [
     {
       "step_id": "s1",
-      "action": { "type": "click" },
+      "action": {
+        "type": "click"
+      },
       "anchor": {
         "role": "link",
         "name": "Settings",
-        "signature": { "container_kind": "nav" }
+        "signature": {
+          "container_kind": "nav"
+        }
       },
-      "post": { "url_pattern": "/settings" }
+      "post": {
+        "url_pattern": "/settings",
+        "must_have_heading": [
+          "Project Settings"
+        ]
+      }
     },
     {
       "step_id": "s2",
-      "action": { "type": "click" },
+      "action": {
+        "type": "click"
+      },
       "anchor": {
         "role": "link",
         "name": "Deployment Protection",
-        "signature": { "container_kind": "sidebar" }
+        "signature": {
+          "container_kind": "sidebar"
+        }
       },
-      "post": { "must_have_heading": ["Deployment Protection"] }
+      "post": {
+        "url_pattern": "/settings/deployment-protection",
+        "must_have_heading": [
+          "Deployment Protection"
+        ]
+      }
     },
     {
       "step_id": "s3",
-      "action": { "type": "click" },
+      "action": {
+        "type": "click"
+      },
       "anchor": {
         "role": "button",
         "name": "Save",
-        "signature": { "container_kind": "main" }
+        "signature": {
+          "container_kind": "main"
+        }
       },
-      "post": {}
+      "post": {
+        "url_pattern": "/settings/deployment-protection",
+        "must_have_text": [
+          "saved"
+        ]
+      }
     }
   ],
   "meta": {

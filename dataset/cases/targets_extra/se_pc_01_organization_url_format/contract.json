@@ -21,7 +21,11 @@
         }
       },
       "post": {
-        "url_pattern": "sentry.io/organizations/[org-slug]/settings"
+        "url_pattern": "sentry.io/organizations/",
+        "must_have_heading": [
+          "Organization Settings"
+        ],
+        "description": "Old format used /organizations/[slug] path"
       }
     }
   ],

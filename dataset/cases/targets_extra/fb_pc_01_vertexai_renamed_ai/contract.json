@@ -22,7 +22,10 @@
         }
       },
       "post": {
-        "url_pattern": "console.firebase.google.com"
+        "url_pattern": "console.firebase.google.com",
+        "must_have_heading": [
+          "Welcome"
+        ]
       }
     },
     {
@@ -46,10 +49,11 @@
         }
       },
       "post": {
+        "url_pattern": "/build",
         "must_have_heading": [
           "Vertex AI in Firebase"
         ],
-        "description": "Old tutorial expected to see 'Vertex AI in Firebase' heading before the May 2025 rename"
+        "description": "Old tutorial expected 'Vertex AI in Firebase' heading before May 2025 rename"
       }
     },
     {
@@ -73,11 +77,12 @@
         }
       },
       "post": {
+        "url_pattern": "/build",
         "must_have_text": [
           "firebase/vertexai",
           "getVertexAI()"
         ],
-        "description": "Old tutorial showed import path as 'firebase/vertexai' and method 'getVertexAI()'"
+        "description": "Old tutorial showed import path as 'firebase/vertexai'"
       }
     }
   ],

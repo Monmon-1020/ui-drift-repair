@@ -5,23 +5,41 @@
   "steps": [
     {
       "step_id": "s1",
-      "action": { "type": "click" },
+      "action": {
+        "type": "click"
+      },
       "anchor": {
         "role": "link",
         "name": "Site configuration",
-        "signature": { "container_kind": "sidebar" }
+        "signature": {
+          "container_kind": "sidebar"
+        }
       },
-      "post": { "url_pattern": "/configuration" }
+      "post": {
+        "url_pattern": "/configuration",
+        "must_have_heading": [
+          "Site configuration"
+        ]
+      }
     },
     {
       "step_id": "s2",
-      "action": { "type": "click" },
+      "action": {
+        "type": "click"
+      },
       "anchor": {
         "role": "link",
         "name": "Build & deploy",
-        "signature": { "container_kind": "sidebar" }
+        "signature": {
+          "container_kind": "sidebar"
+        }
       },
-      "post": { "must_have_heading": ["Build & deploy"] }
+      "post": {
+        "url_pattern": "/configuration/deploys",
+        "must_have_heading": [
+          "Build & deploy"
+        ]
+      }
     }
   ],
   "meta": {

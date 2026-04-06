@@ -24,8 +24,9 @@
         }
       },
       "post": {
+        "url_pattern": "/Agent/settings",
         "must_have_heading": [
-          "Settings"
+          "General"
         ]
       }
     },
@@ -51,6 +52,7 @@
         }
       },
       "post": {
+        "url_pattern": "/settings/environments",
         "must_have_heading": [
           "Environments"
         ]
@@ -78,8 +80,9 @@
         }
       },
       "post": {
-        "must_have_heading": [
-          "Environment protection rules"
+        "url_pattern": "/settings/environments",
+        "must_have_text": [
+          "Configure environment"
         ]
       }
     },
@@ -104,6 +107,7 @@
         }
       },
       "post": {
+        "url_pattern": "/settings/environments",
         "must_have_text": [
           "Add up to 6 reviewers"
         ]
@@ -129,6 +133,7 @@
         }
       },
       "post": {
+        "url_pattern": "/settings/environments",
         "must_have_text": [
           "reviewer selected"
         ]
@@ -154,6 +159,7 @@
         }
       },
       "post": {
+        "url_pattern": "/settings/environments",
         "must_have_text": [
           "Protection rules saved"
         ]
@@ -206,6 +212,7 @@
         }
       },
       "post": {
+        "url_pattern": "/actions/runs/",
         "must_have_heading": [
           "Review pending deployments"
         ]
@@ -232,9 +239,9 @@
         }
       },
       "post": {
+        "url_pattern": "/actions/runs/",
         "must_have_text": [
-          "Deployment approved",
-          "Running"
+          "Deployment approved"
         ]
       }
     }

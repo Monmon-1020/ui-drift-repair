@@ -5,23 +5,47 @@
   "steps": [
     {
       "step_id": "s1",
-      "action": { "type": "click" },
+      "action": {
+        "type": "click"
+      },
       "anchor": {
         "role": "link",
         "name": "Gateway",
-        "signature": { "container_kind": "sidebar", "section_path": ["Zero Trust navigation"] }
+        "signature": {
+          "container_kind": "sidebar",
+          "section_path": [
+            "Zero Trust navigation"
+          ]
+        }
       },
-      "post": { "must_have_heading": ["Gateway"] }
+      "post": {
+        "url_pattern": "/gateway",
+        "must_have_heading": [
+          "Gateway"
+        ]
+      }
     },
     {
       "step_id": "s2",
-      "action": { "type": "click" },
+      "action": {
+        "type": "click"
+      },
       "anchor": {
         "role": "link",
         "name": "Firewall Policies",
-        "signature": { "container_kind": "sidebar", "section_path": ["Gateway"] }
+        "signature": {
+          "container_kind": "sidebar",
+          "section_path": [
+            "Gateway"
+          ]
+        }
       },
-      "post": { "must_have_heading": ["Firewall Policies"] }
+      "post": {
+        "url_pattern": "/gateway/policies",
+        "must_have_heading": [
+          "Firewall Policies"
+        ]
+      }
     }
   ],
   "meta": {

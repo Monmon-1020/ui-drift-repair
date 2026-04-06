@@ -5,23 +5,44 @@
   "steps": [
     {
       "step_id": "s1",
-      "action": { "type": "click" },
+      "action": {
+        "type": "click"
+      },
       "anchor": {
         "role": "link",
         "name": "Workers",
-        "signature": { "container_kind": "sidebar", "section_path": ["Account navigation"] }
+        "signature": {
+          "container_kind": "sidebar",
+          "section_path": [
+            "Account navigation"
+          ]
+        }
       },
-      "post": { "must_have_heading": ["Workers"] }
+      "post": {
+        "url_pattern": "/workers",
+        "must_have_heading": [
+          "Workers"
+        ]
+      }
     },
     {
       "step_id": "s2",
-      "action": { "type": "click" },
+      "action": {
+        "type": "click"
+      },
       "anchor": {
         "role": "button",
         "name": "Create a Worker",
-        "signature": { "container_kind": "main" }
+        "signature": {
+          "container_kind": "main"
+        }
       },
-      "post": { "must_have_heading": ["Create"] }
+      "post": {
+        "url_pattern": "/workers/services/new",
+        "must_have_heading": [
+          "Create"
+        ]
+      }
     }
   ],
   "meta": {

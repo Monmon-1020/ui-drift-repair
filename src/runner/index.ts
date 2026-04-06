@@ -19,7 +19,7 @@ import fs from 'fs';
 import path from 'path';
 import { chromium, type Page } from 'playwright';
 import type { CaseResult, Contract, Diagnosis, StepResult } from '../types.js';
-import { observe } from '../observe/index.js';
+import { observe, observePostState } from '../observe/index.js';
 import { resolve } from '../resolve/index.js';
 import { act } from '../act/index.js';
 import { verify } from '../verify/index.js';
@@ -90,12 +90,14 @@ async function runCase(
     }
 
     let verifyResult = null;
+    let postSnapshot = undefined;
     if (actResult?.status === 'ok') {
       verifyResult = await verify(page, step.post);
       console.log(`    Verify: ${verifyResult.passed ? 'PASS' : 'FAIL'}`);
+      postSnapshot = await observePostState(page);
     }
 
-    const diagnosis = diagnose(step, resolveResult, actResult, verifyResult, snapshot);
+    const diagnosis = diagnose(step, resolveResult, actResult, verifyResult, snapshot, postSnapshot);
     console.log(`    Diagnosis: ${diagnosis.label}`);
 
     stepResults.push({ step_id: step.step_id, diagnosis });

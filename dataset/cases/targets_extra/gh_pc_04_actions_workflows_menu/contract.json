@@ -22,7 +22,10 @@
         }
       },
       "post": {
-        "url_pattern": "github.com/Monmon-1020/Agent"
+        "url_pattern": "/Agent",
+        "must_have_heading": [
+          "Agent"
+        ]
       }
     },
     {

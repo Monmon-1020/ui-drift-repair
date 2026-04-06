@@ -21,7 +21,10 @@
         }
       },
       "post": {
-        "url_pattern": "/project/[project-id]/database"
+        "url_pattern": "/database",
+        "must_have_heading": [
+          "Database"
+        ]
       }
     },
     {
@@ -45,10 +48,10 @@
         }
       },
       "post": {
+        "url_pattern": "/settings/database",
         "must_have_heading": [
           "Database Settings"
-        ],
-        "url_pattern": "/project/[project-id]/settings/database"
+        ]
       }
     }
   ],

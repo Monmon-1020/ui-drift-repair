@@ -21,7 +21,8 @@ export function diagnose(
   resolveResult: ResolveResult,
   actResult: ActResult | null,
   verifyResult: VerifyResult | null,
-  snapshot: PageSnapshot
+  snapshot: PageSnapshot,
+  postSnapshot?: PageSnapshot
 ): Diagnosis {
   const label = determineLabel(resolveResult, actResult, verifyResult);
 
@@ -32,6 +33,7 @@ export function diagnose(
     act: actResult,
     verify: verifyResult,
     snapshot,
+    postSnapshot,
   };
 }
 
